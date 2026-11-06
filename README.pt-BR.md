@@ -17,15 +17,6 @@
   </p>
 
   <p align="center">
-    <a href="https://github.com/Vnxcarvalho/Alethe-2.0/actions/workflows/ci.yml"><img alt="CI" src="https://img.shields.io/github/actions/workflow/status/Vnxcarvalho/Alethe-2.0/ci.yml?branch=main&label=ci&style=flat-square"></a>
-    <a href="https://github.com/Vnxcarvalho/Alethe-2.0/releases"><img alt="Última versão" src="https://img.shields.io/github/v/release/Vnxcarvalho/Alethe-2.0?style=flat-square"></a>
-    <a href="https://github.com/Vnxcarvalho/Alethe-2.0/blob/main/LICENSE"><img alt="Licença" src="https://img.shields.io/github/license/Vnxcarvalho/Alethe-2.0?style=flat-square"></a>
-    <a href="https://github.com/Vnxcarvalho/Alethe-2.0/graphs/contributors"><img alt="Contribuidores" src="https://img.shields.io/github/contributors/Vnxcarvalho/Alethe-2.0?style=flat-square"></a>
-    <a href="https://github.com/Vnxcarvalho/Alethe-2.0/stargazers"><img alt="Stars" src="https://img.shields.io/github/stars/Vnxcarvalho/Alethe-2.0?style=flat-square"></a>
-    <a href="https://github.com/Vnxcarvalho/Alethe-2.0/issues"><img alt="Issues abertas" src="https://img.shields.io/github/issues/Vnxcarvalho/Alethe-2.0?style=flat-square"></a>
-  </p>
-
-  <p align="center">
     <a href="https://github.com/Vnxcarvalho/Alethe-2.0/releases">Download</a>
     ·
     <a href="https://github.com/Vnxcarvalho/Alethe-2.0/issues/new?labels=bug">Reportar bug</a>
@@ -47,12 +38,6 @@
 > sincronização manual via GitHub Gist já está disponível; sync ou backup hospedados pelo projeto
 > podem ser oferecidos separadamente no futuro. Veja o
 > [guia de privacidade e fluxo de dados](./docs/PRIVACY.md) (em inglês).
-
-<div align="center">
-
-https://github.com/user-attachments/assets/e5e52485-51e8-476c-acf3-4a5a5400dacf
-
-</div>
 
 ## O que é o Alethe
 

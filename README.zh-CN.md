@@ -17,15 +17,6 @@
   </p>
 
   <p align="center">
-    <a href="https://github.com/Vnxcarvalho/Alethe-2.0/actions/workflows/ci.yml"><img alt="CI" src="https://img.shields.io/github/actions/workflow/status/Vnxcarvalho/Alethe-2.0/ci.yml?branch=main&label=ci&style=flat-square"></a>
-    <a href="https://github.com/Vnxcarvalho/Alethe-2.0/releases"><img alt="Latest release" src="https://img.shields.io/github/v/release/Vnxcarvalho/Alethe-2.0?style=flat-square"></a>
-    <a href="https://github.com/Vnxcarvalho/Alethe-2.0/blob/main/LICENSE"><img alt="License" src="https://img.shields.io/github/license/Vnxcarvalho/Alethe-2.0?style=flat-square"></a>
-    <a href="https://github.com/Vnxcarvalho/Alethe-2.0/graphs/contributors"><img alt="Contributors" src="https://img.shields.io/github/contributors/Vnxcarvalho/Alethe-2.0?style=flat-square"></a>
-    <a href="https://github.com/Vnxcarvalho/Alethe-2.0/stargazers"><img alt="Stars" src="https://img.shields.io/github/stars/Vnxcarvalho/Alethe-2.0?style=flat-square"></a>
-    <a href="https://github.com/Vnxcarvalho/Alethe-2.0/issues"><img alt="Open issues" src="https://img.shields.io/github/issues/Vnxcarvalho/Alethe-2.0?style=flat-square"></a>
-  </p>
-
-  <p align="center">
     <a href="https://github.com/Vnxcarvalho/Alethe-2.0/releases">下载</a>
     ·
     <a href="https://github.com/Vnxcarvalho/Alethe-2.0/issues/new?labels=bug">报告问题</a>
