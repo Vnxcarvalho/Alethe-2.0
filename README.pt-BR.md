@@ -17,8 +17,6 @@
   </p>
 
   <p align="center">
-    <a href="https://github.com/Vnxcarvalho/Alethe-2.0/issues/new?labels=bug">Reportar bug</a>
-    ·
     <a href="https://github.com/Vnxcarvalho/Alethe-2.0/issues/new?labels=enhancement">Pedir feature</a>
     ·
     <a href="./SECURITY.md">Segurança</a>
