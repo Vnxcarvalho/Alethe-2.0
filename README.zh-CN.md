@@ -17,8 +17,6 @@
   </p>
 
   <p align="center">
-    <a href="https://github.com/Vnxcarvalho/Alethe-2.0/releases">下载</a>
-    ·
     <a href="https://github.com/Vnxcarvalho/Alethe-2.0/issues/new?labels=bug">报告问题</a>
     ·
     <a href="https://github.com/Vnxcarvalho/Alethe-2.0/issues/new?labels=enhancement">功能建议</a>
