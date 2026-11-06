@@ -87,7 +87,7 @@
   },
   "plugins": {
     "updater": {
-      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDdERjQwQTVDMDJFMDY3QzQKUldURVorQUNYQXIwZlpTZjNhc1dNamhiSERnalducjJCdDdiR0NFYy8ydnJqcU52VG05cFNqcHUK",
+      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDRDQzA4Q0M0RkM4RTIzQUMKUldTc0k0Nzh4SXpBVExYc1ZpMXFNZXNLeDRDL3htbm8zeFd3dFdsU3VuQzNqSDhwcGJFT0lOVUQK",
       "endpoints": ["https://github.com/Vnxcarvalho/Alethe-2.0/releases/latest/download/latest.json"],
       "windows": {
         "installMode": "passive"
