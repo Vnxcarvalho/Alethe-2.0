@@ -1,7 +1,10 @@
 name: CI
 
-# Reusable only: release.yml calls it. It does not run on push or pull request.
 on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
   workflow_call:
 
 # Cancela runs antigos do mesmo branch/PR quando um novo chega.
