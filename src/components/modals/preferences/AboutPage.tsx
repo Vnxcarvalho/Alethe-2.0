@@ -40,7 +40,7 @@ import styles from '../PreferencesModal.module.css'
 import about from './AboutPage.module.css'
 import { SettingsSection } from './primitives'
 
-const REPO_URL = 'https://github.com/Kc1t/alethe-agents'
+const REPO_URL = 'https://github.com/Vnxcarvalho/Alethe-2.0'
 
 const CREATOR_LINKS: { label: string; url: string; Icon: LucideIcon }[] = [
   { label: 'GitHub', url: 'https://github.com/Kc1t', Icon: Github },
@@ -504,7 +504,7 @@ function InfoSection() {
     },
     {
       label: t('prefs.aboutSource'),
-      action: 'github.com/Kc1t/alethe-agents',
+      action: 'github.com/Vnxcarvalho/Alethe-2.0',
       Icon: ExternalLink,
       run: () => openInBrowser(REPO_URL),
     },

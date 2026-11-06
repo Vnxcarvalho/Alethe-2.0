@@ -402,7 +402,7 @@ plugin cannot import from the host by module name.
 
 Preferences → Plugins lists plugins published by other people. The index is a single file,
 `plugins.json`, at the root of this repository, read from
-`raw.githubusercontent.com/Kc1t/alethe-agents/main/plugins.json`:
+`raw.githubusercontent.com/Vnxcarvalho/Alethe-2.0/main/plugins.json`:
 
 ```jsonc
 {

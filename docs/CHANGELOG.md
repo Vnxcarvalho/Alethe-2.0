@@ -446,6 +446,9 @@ Notable user-facing changes to **Alethe** are documented here. The format is bas
 
 ### Changed
 
+- **Updates and release links now use the Alethe-2.0 repository.** The update check, release
+  downloads, the plugin catalogue and the repository links in the app point to
+  `Vnxcarvalho/Alethe-2.0`. Update signatures still need the new repository's own signing key.
 - **New default look.** A fresh install starts on the Elite Pure Black theme with the clean visual
   style, reduced motion, 90% zoom, the Dark Lemon terminal theme, and wider sidebars. Saved
   preferences are kept. Without a profile photo, the avatar shows the app icon and follows the

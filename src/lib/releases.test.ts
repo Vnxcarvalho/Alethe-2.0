@@ -55,7 +55,7 @@ describe('releases', () => {
 
   it('builds the release page from the version, not from the response', () => {
     expect(releasePageUrl('1.6.0')).toBe(
-      'https://github.com/Kc1t/alethe-agents/releases/tag/v1.6.0',
+      'https://github.com/Vnxcarvalho/Alethe-2.0/releases/tag/v1.6.0',
     )
   })
 

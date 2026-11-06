@@ -12,7 +12,7 @@ use std::time::{Duration, SystemTime, UNIX_EPOCH};
 
 use serde::{Deserialize, Serialize};
 
-const INDEX_URL: &str = "https://raw.githubusercontent.com/Kc1t/alethe-agents/main/plugins.json";
+const INDEX_URL: &str = "https://raw.githubusercontent.com/Vnxcarvalho/Alethe-2.0/main/plugins.json";
 
 /// Where the catalogue is actually read from.
 ///

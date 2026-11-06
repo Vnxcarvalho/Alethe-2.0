@@ -62,9 +62,9 @@ describe('AboutPage', () => {
     render(<AboutPage />)
     fireEvent.click(screen.getByRole('button', { name: 'Open a pull request' }))
     fireEvent.click(screen.getByRole('button', { name: 'Report a bug' }))
-    expect(openInBrowser).toHaveBeenCalledWith('https://github.com/Kc1t/alethe-agents/compare')
+    expect(openInBrowser).toHaveBeenCalledWith('https://github.com/Vnxcarvalho/Alethe-2.0/compare')
     expect(openInBrowser).toHaveBeenCalledWith(
-      'https://github.com/Kc1t/alethe-agents/issues/new?template=bug_report.yml',
+      'https://github.com/Vnxcarvalho/Alethe-2.0/issues/new?template=bug_report.yml',
     )
   })
 
@@ -93,7 +93,7 @@ describe('AboutPage', () => {
     const row = (await screen.findByText('v1.2.3')).closest('li') as HTMLElement
     fireEvent.click(within(row).getByRole('button', { name: 'Download' }))
     expect(openInBrowser).toHaveBeenCalledWith(
-      'https://github.com/Kc1t/alethe-agents/releases/tag/v1.2.3',
+      'https://github.com/Vnxcarvalho/Alethe-2.0/releases/tag/v1.2.3',
     )
     expect(installRelease).not.toHaveBeenCalled()
   })
