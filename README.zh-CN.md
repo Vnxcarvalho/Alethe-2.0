@@ -293,10 +293,6 @@ _暂无条目。_ 用 Alethe 做出了什么？把它加到 [`SHOWCASE.md`](SHOW
   </tr>
 </table>
 
-## 也支持手机
-
-https://github.com/user-attachments/assets/ae3aed75-2ead-43c4-a9ca-fd29d83b7e1d
-
 ## 贡献者
 
 感谢每一位帮助塑造 Alethe 的人。

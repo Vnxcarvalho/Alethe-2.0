@@ -429,10 +429,6 @@ See Alethe in real development workflows and learn how to orchestrate coding age
   </tr>
 </table>
 
-## Also On Mobile
-
-https://github.com/user-attachments/assets/ae3aed75-2ead-43c4-a9ca-fd29d83b7e1d
-
 ## Contributors
 
 Thanks to everyone helping shape Alethe.
