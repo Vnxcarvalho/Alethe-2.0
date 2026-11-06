@@ -41,16 +41,21 @@ mod tests {
 
     #[test]
     fn recognises_the_tmux_name_and_nothing_else() {
-        assert!(is_tmux_path(Path::new(r"C:\Users\me\AppData\Local\Alethe\tmux-shim\tmux.exe")));
+        // Backslash separators only split into components on Windows.
+        #[cfg(windows)]
+        {
+            assert!(is_tmux_path(Path::new(r"C:\Users\me\AppData\Local\Alethe\tmux-shim\tmux.exe")));
+            assert!(!is_tmux_path(Path::new(r"C:\Program Files\Alethe\alethe.exe")));
+        }
         assert!(is_tmux_path(Path::new("/home/me/.local/share/alethe/tmux")));
         assert!(is_tmux_path(Path::new("TMUX.EXE")));
-        assert!(!is_tmux_path(Path::new(r"C:\Program Files\Alethe\alethe.exe")));
         assert!(!is_tmux_path(Path::new("alethe-tmux.exe")));
         assert!(!is_tmux_path(Path::new("tmux-shim.exe")));
     }
 
     #[test]
     fn the_team_helper_is_a_shim_too_but_not_tmux() {
+        #[cfg(windows)]
         assert!(is_tmux_path(Path::new(r"C:\x\tmux-shim\alethe-team.exe")));
         assert!(is_tmux_path(Path::new("alethe-team")));
         assert!(super::is_team_path(Path::new("alethe-team.exe")));
