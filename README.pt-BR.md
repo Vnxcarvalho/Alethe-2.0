@@ -17,8 +17,6 @@
   </p>
 
   <p align="center">
-    <a href="https://github.com/Vnxcarvalho/Alethe-2.0/issues/new?labels=enhancement">Pedir feature</a>
-    ·
     <a href="./SECURITY.md">Segurança</a>
     ·
     <a href="./docs/PRIVACY.md">Privacidade</a>

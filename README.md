@@ -17,8 +17,6 @@
   </p>
 
   <p align="center">
-    <a href="https://github.com/Vnxcarvalho/Alethe-2.0/issues/new?labels=enhancement">Request Feature</a>
-    ·
     <a href="./SECURITY.md">Security</a>
     ·
     <a href="./docs/PRIVACY.md">Privacy</a>
@@ -371,59 +369,6 @@ _Nothing here yet._ Built something with Alethe? Add it to [`SHOWCASE.md`](SHOWC
 <!-- showcase:end -->
 
 See [`SHOWCASE.md`](SHOWCASE.md) for the full list and how to submit.
-
-## Watch Alethe in Action
-
-See Alethe in real development workflows and learn how to orchestrate coding agents in parallel.
-
-<table>
-  <tr>
-    <th width="38%">Video</th>
-    <th>What you will see</th>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://www.youtube.com/watch?v=8jvrucR7QCU&amp;t=54s">
-        <img src="https://i.ytimg.com/vi/8jvrucR7QCU/hqdefault.jpg" alt="Stop Using One AI Agent at a Time: Orchestrate AI Agents" width="100%">
-      </a>
-    </td>
-    <td>
-      <strong><a href="https://www.youtube.com/watch?v=8jvrucR7QCU&amp;t=54s">Stop Using One AI Agent at a Time: Orchestrate AI Agents</a></strong>
-      <br><br>
-      A practical introduction to coordinating multiple AI coding agents instead of working with only one at a time.
-      <br><br>
-      <sub>Kauã Miguel - Dev · Portuguese</sub>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://www.youtube.com/watch?v=ujW-e6w3NQA">
-        <img src="https://i.ytimg.com/vi/ujW-e6w3NQA/hqdefault.jpg" alt="How to Orchestrate AI Agents with a FREE Skill" width="100%">
-      </a>
-    </td>
-    <td>
-      <strong><a href="https://www.youtube.com/watch?v=ujW-e6w3NQA">How to Orchestrate AI Agents with a FREE Skill</a></strong>
-      <br><br>
-      A tutorial on orchestrating AI coding agents with the free Alethe Orchestrate skill.
-      <br><br>
-      <sub>Kauã Miguel - Dev · Portuguese</sub>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://www.youtube.com/watch?v=reUN7CkMbgM&amp;t=100s">
-        <img src="https://i.ytimg.com/vi/reUN7CkMbgM/hqdefault.jpg" alt="A Day in the Life of a Software Developer — Devlog 1" width="100%">
-      </a>
-    </td>
-    <td>
-      <strong><a href="https://www.youtube.com/watch?v=reUN7CkMbgM&amp;t=100s">A Day in the Life of a Software Developer — Devlog 1</a></strong>
-      <br><br>
-      A real-world developer workflow showing Alethe as part of the day-to-day coding process.
-      <br><br>
-      <sub>Guilherme Dev · Portuguese</sub>
-    </td>
-  </tr>
-</table>
 
 ## Contributors
 

@@ -17,8 +17,6 @@
   </p>
 
   <p align="center">
-    <a href="https://github.com/Vnxcarvalho/Alethe-2.0/issues/new?labels=enhancement">功能建议</a>
-    ·
     <a href="./SECURITY.md">安全</a>
     ·
     <a href="./docs/PRIVACY.md">隐私</a>
@@ -235,59 +233,6 @@ _暂无条目。_ 用 Alethe 做出了什么？把它加到 [`SHOWCASE.md`](SHOW
 <!-- showcase:end -->
 
 完整列表与提交方式见 [`SHOWCASE.md`](SHOWCASE.md)。
-
-## 观看 Alethe 实战
-
-看看 Alethe 在真实开发流程中的用法，学习如何并行编排编程智能体。
-
-<table>
-  <tr>
-    <th width="38%">视频</th>
-    <th>你将看到</th>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://www.youtube.com/watch?v=8jvrucR7QCU&amp;t=54s">
-        <img src="https://i.ytimg.com/vi/8jvrucR7QCU/hqdefault.jpg" alt="Stop Using One AI Agent at a Time: Orchestrate AI Agents" width="100%">
-      </a>
-    </td>
-    <td>
-      <strong><a href="https://www.youtube.com/watch?v=8jvrucR7QCU&amp;t=54s">Stop Using One AI Agent at a Time: Orchestrate AI Agents</a></strong>
-      <br><br>
-      实用介绍：如何协调多个 AI 编程智能体，而不是一次只用一个。
-      <br><br>
-      <sub>Kauã Miguel - Dev · 葡萄牙语</sub>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://www.youtube.com/watch?v=ujW-e6w3NQA">
-        <img src="https://i.ytimg.com/vi/ujW-e6w3NQA/hqdefault.jpg" alt="How to Orchestrate AI Agents with a FREE Skill" width="100%">
-      </a>
-    </td>
-    <td>
-      <strong><a href="https://www.youtube.com/watch?v=ujW-e6w3NQA">How to Orchestrate AI Agents with a FREE Skill</a></strong>
-      <br><br>
-      教程：使用免费的 Alethe Orchestrate 技能来编排 AI 编程智能体。
-      <br><br>
-      <sub>Kauã Miguel - Dev · 葡萄牙语</sub>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://www.youtube.com/watch?v=reUN7CkMbgM&amp;t=100s">
-        <img src="https://i.ytimg.com/vi/reUN7CkMbgM/hqdefault.jpg" alt="A Day in the Life of a Software Developer — Devlog 1" width="100%">
-      </a>
-    </td>
-    <td>
-      <strong><a href="https://www.youtube.com/watch?v=reUN7CkMbgM&amp;t=100s">A Day in the Life of a Software Developer — Devlog 1</a></strong>
-      <br><br>
-      真实开发者工作流，展示 Alethe 如何融入日常编码。
-      <br><br>
-      <sub>Guilherme Dev · 葡萄牙语</sub>
-    </td>
-  </tr>
-</table>
 
 ## 贡献者
 
