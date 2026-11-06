@@ -17,8 +17,6 @@
   </p>
 
   <p align="center">
-    <a href="./SECURITY.md">Security</a>
-    ·
     <a href="./docs/PRIVACY.md">Privacy</a>
     ·
     <a href="#contributing">Contribute</a>
