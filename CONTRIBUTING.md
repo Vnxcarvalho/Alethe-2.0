@@ -6,7 +6,7 @@ TUIs, Linux CLI detection, the Git diff explorer. Yours can be next.
 
 This guide is written so you can go from `git clone` to an open pull request without having to
 ask anyone anything. If a step here doesn't work, that's a bug in this document — please
-[open an issue](https://github.com/Kc1t/alethe-agents/issues/new?labels=documentation) and say so.
+[open an issue](https://github.com/Vnxcarvalho/Alethe-2.0/issues/new?labels=documentation) and say so.
 
 **Language:** the codebase, docs, and commit messages are in English. Issues and pull request
 descriptions in **English or Portuguese are both fine** — write in whichever you think clearly.
@@ -32,7 +32,7 @@ Nobody will be turned away over language.
 
 Roughly ordered from "you can do this today" to "talk to us first":
 
-1. **Pick a [`good first issue`](https://github.com/Kc1t/alethe-agents/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22).**
+1. **Pick a [`good first issue`](https://github.com/Vnxcarvalho/Alethe-2.0/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22).**
    These are scoped on purpose: the file is named, the expected result is described, and you
    don't need to understand the whole app to finish one.
 2. **Report a bug** with steps to reproduce, your OS, and the app version. A good bug report is
@@ -41,7 +41,7 @@ Roughly ordered from "you can do this today" to "talk to us first":
    Running it on your machine and reporting exactly what broke is genuinely useful.
 4. **Improve docs, screenshots, or setup notes.** If something confused you during setup, you're
    the best-positioned person in the world to fix it. See the [theme guide](docs/THEMES.md) for adding or documenting themes.
-5. **Pick a [`help wanted`](https://github.com/Kc1t/alethe-agents/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) issue.**
+5. **Pick a [`help wanted`](https://github.com/Vnxcarvalho/Alethe-2.0/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) issue.**
    Bigger, less hand-held, still well-defined.
 6. **Propose a feature.** Open an issue describing the *workflow* it would improve before writing
    code — it's the cheapest way to avoid building something that won't be merged.
@@ -86,7 +86,7 @@ sudo apt install -y libwebkit2gtk-4.1-dev libappindicator3-dev librsvg2-dev patc
 ### Clone and run
 
 ```sh
-git clone https://github.com/Kc1t/alethe-agents.git
+git clone https://github.com/Vnxcarvalho/Alethe-2.0.git
 cd alethe-agents
 npm install
 npm run app

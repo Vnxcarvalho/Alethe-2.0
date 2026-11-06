@@ -36,6 +36,8 @@ Mac synced through: `v1.7.0` (`80e44a3`)
 
 ## Unreleased
 
+- `pending` · `skip (repository URLs and update channel of this fork only)` · feat(updater): updates, releases and the plugin catalogue use the Alethe-2.0 repository
+  - Files: `src-tauri/tauri.conf.json` (updater endpoint and `pubkey`), `src-tauri/src/release_install.rs`, `src-tauri/src/plugin_catalog.rs`, `src/lib/releases.ts`, `plugins.json`. No persisted data changes; the Mac app keeps its own update feed
 - `pending` · `contract` · feat(branding): add the Carvalho app icon and make it the default
   - Files: `src/lib/themeIcons.ts`, `src/lib/types.ts` (`AppIconTheme`), `src/assets/theme-icons/carvalho.png` and `32|48|64/carvalho.png`, `src-tauri/icons/*` (`icon.icns` regenerated)
   - Contract: `appIconTheme` in `projects.json` preferences gains the value `carvalho`, now the default; the Mac app must accept it, and an unknown value falls back to `carvalho`. The Mac Dock icon comes from the regenerated `icon.icns`

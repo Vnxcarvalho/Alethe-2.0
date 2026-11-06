@@ -62,5 +62,5 @@ content.
 
 For crashes, setup help, ordinary bugs, documentation problems, and feature requests that do not
 contain a security concern, use the public
-[GitHub issue tracker](https://github.com/Kc1t/alethe-agents/issues). See
+[GitHub issue tracker](https://github.com/Vnxcarvalho/Alethe-2.0/issues). See
 [`CONTRIBUTING.md`](CONTRIBUTING.md) for the requested reproduction and contribution details.

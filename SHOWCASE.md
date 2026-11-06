@@ -20,7 +20,7 @@ Open a pull request adding one row to the table above. That is the whole process
 approval needed beforehand, no form to fill in first.
 
 If you'd rather not clone the repo, open a
-[showcase submission issue](https://github.com/Kc1t/alethe-agents/issues/new?template=showcase.yml)
+[showcase submission issue](https://github.com/Vnxcarvalho/Alethe-2.0/issues/new?template=showcase.yml)
 instead and it will be added for you.
 
 ### Format
@@ -50,4 +50,4 @@ write-up instead if you have one.
 ---
 
 Adding a row is a real pull request against this repository, so you show up in the
-[contributors](https://github.com/Kc1t/alethe-agents/graphs/contributors) too.
+[contributors](https://github.com/Vnxcarvalho/Alethe-2.0/graphs/contributors) too.
