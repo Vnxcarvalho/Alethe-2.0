@@ -2,7 +2,7 @@
 
 <br />
 <div align="center">
-  <a href="https://github.com/Kc1t/alethe-agents">
+  <a href="https://github.com/Vnxcarvalho/Alethe-2.0">
     <img src="./src/assets/theme-icons/carvalho.png" alt="Alethe Logo" width="160">
   </a>
 
@@ -17,20 +17,20 @@
   </p>
 
   <p align="center">
-    <a href="https://github.com/Kc1t/alethe-agents/actions/workflows/ci.yml"><img alt="CI" src="https://img.shields.io/github/actions/workflow/status/Kc1t/alethe-agents/ci.yml?branch=main&label=ci&style=flat-square"></a>
-    <a href="https://github.com/Kc1t/alethe-agents/releases"><img alt="Latest release" src="https://img.shields.io/github/v/release/Kc1t/alethe-agents?style=flat-square"></a>
-    <a href="https://github.com/Kc1t/alethe-agents/blob/main/LICENSE"><img alt="License" src="https://img.shields.io/github/license/Kc1t/alethe-agents?style=flat-square"></a>
-    <a href="https://github.com/Kc1t/alethe-agents/graphs/contributors"><img alt="Contributors" src="https://img.shields.io/github/contributors/Kc1t/alethe-agents?style=flat-square"></a>
-    <a href="https://github.com/Kc1t/alethe-agents/stargazers"><img alt="Stars" src="https://img.shields.io/github/stars/Kc1t/alethe-agents?style=flat-square"></a>
-    <a href="https://github.com/Kc1t/alethe-agents/issues"><img alt="Open issues" src="https://img.shields.io/github/issues/Kc1t/alethe-agents?style=flat-square"></a>
+    <a href="https://github.com/Vnxcarvalho/Alethe-2.0/actions/workflows/ci.yml"><img alt="CI" src="https://img.shields.io/github/actions/workflow/status/Vnxcarvalho/Alethe-2.0/ci.yml?branch=main&label=ci&style=flat-square"></a>
+    <a href="https://github.com/Vnxcarvalho/Alethe-2.0/releases"><img alt="Latest release" src="https://img.shields.io/github/v/release/Vnxcarvalho/Alethe-2.0?style=flat-square"></a>
+    <a href="https://github.com/Vnxcarvalho/Alethe-2.0/blob/main/LICENSE"><img alt="License" src="https://img.shields.io/github/license/Vnxcarvalho/Alethe-2.0?style=flat-square"></a>
+    <a href="https://github.com/Vnxcarvalho/Alethe-2.0/graphs/contributors"><img alt="Contributors" src="https://img.shields.io/github/contributors/Vnxcarvalho/Alethe-2.0?style=flat-square"></a>
+    <a href="https://github.com/Vnxcarvalho/Alethe-2.0/stargazers"><img alt="Stars" src="https://img.shields.io/github/stars/Vnxcarvalho/Alethe-2.0?style=flat-square"></a>
+    <a href="https://github.com/Vnxcarvalho/Alethe-2.0/issues"><img alt="Open issues" src="https://img.shields.io/github/issues/Vnxcarvalho/Alethe-2.0?style=flat-square"></a>
   </p>
 
   <p align="center">
-    <a href="https://github.com/Kc1t/alethe-agents/releases">Download</a>
+    <a href="https://github.com/Vnxcarvalho/Alethe-2.0/releases">Download</a>
     ·
-    <a href="https://github.com/Kc1t/alethe-agents/issues/new?labels=bug">Report Bug</a>
+    <a href="https://github.com/Vnxcarvalho/Alethe-2.0/issues/new?labels=bug">Report Bug</a>
     ·
-    <a href="https://github.com/Kc1t/alethe-agents/issues/new?labels=enhancement">Request Feature</a>
+    <a href="https://github.com/Vnxcarvalho/Alethe-2.0/issues/new?labels=enhancement">Request Feature</a>
     ·
     <a href="./SECURITY.md">Security</a>
     ·
@@ -306,7 +306,7 @@ experience. Coherence over volume.
 
 ## Install
 
-Use the published installers from [Releases](https://github.com/Kc1t/alethe-agents/releases).
+Use the published installers from [Releases](https://github.com/Vnxcarvalho/Alethe-2.0/releases).
 
 > [!WARNING]
 > Windows builds are **not code-signed yet**, so Defender may flag `alethe.exe` as
@@ -325,7 +325,7 @@ notarization are on the [roadmap](#roadmap).
 ## Run From Source
 
 ```sh
-git clone https://github.com/Kc1t/alethe-agents.git
+git clone https://github.com/Vnxcarvalho/Alethe-2.0.git
 cd alethe-agents
 npm install
 npm run app
@@ -373,7 +373,7 @@ is already running, the existing window is focused. The command lands in `~/.loc
 Contributions are welcome. Read [`CONTRIBUTING.md`](CONTRIBUTING.md) for setup, project layout, and
 house rules. The easiest ways to help:
 
-- Pick an issue labeled [`good first issue`](https://github.com/Kc1t/alethe-agents/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22) or [`help wanted`](https://github.com/Kc1t/alethe-agents/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) — comment to claim it.
+- Pick an issue labeled [`good first issue`](https://github.com/Vnxcarvalho/Alethe-2.0/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22) or [`help wanted`](https://github.com/Vnxcarvalho/Alethe-2.0/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) — comment to claim it.
 - Report a bug with clear reproduction steps, or request a feature with the workflow it improves.
 - Improve docs, screenshots, and platform validation — Linux and macOS are the least tested.
 
@@ -476,5 +476,5 @@ the Alethe brand requires prior written permission from Kauã Miguel. See
 - Security reports: [`SECURITY.md`](SECURITY.md)
 - Privacy and data flows: [`docs/PRIVACY.md`](docs/PRIVACY.md)
 - Maintainer: [Kc1t](https://github.com/Kc1t)
-- Project: <https://github.com/Kc1t/alethe-agents>
-- Bugs and feature requests: <https://github.com/Kc1t/alethe-agents/issues>
+- Project: <https://github.com/Vnxcarvalho/Alethe-2.0>
+- Bugs and feature requests: <https://github.com/Vnxcarvalho/Alethe-2.0/issues>

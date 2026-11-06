@@ -2,7 +2,7 @@
 
 <br />
 <div align="center">
-  <a href="https://github.com/Kc1t/alethe-agents">
+  <a href="https://github.com/Vnxcarvalho/Alethe-2.0">
     <img src="./src/assets/theme-icons/carvalho.png" alt="Alethe Logo" width="160">
   </a>
 
@@ -17,20 +17,20 @@
   </p>
 
   <p align="center">
-    <a href="https://github.com/Kc1t/alethe-agents/actions/workflows/ci.yml"><img alt="CI" src="https://img.shields.io/github/actions/workflow/status/Kc1t/alethe-agents/ci.yml?branch=main&label=ci&style=flat-square"></a>
-    <a href="https://github.com/Kc1t/alethe-agents/releases"><img alt="Latest release" src="https://img.shields.io/github/v/release/Kc1t/alethe-agents?style=flat-square"></a>
-    <a href="https://github.com/Kc1t/alethe-agents/blob/main/LICENSE"><img alt="License" src="https://img.shields.io/github/license/Kc1t/alethe-agents?style=flat-square"></a>
-    <a href="https://github.com/Kc1t/alethe-agents/graphs/contributors"><img alt="Contributors" src="https://img.shields.io/github/contributors/Kc1t/alethe-agents?style=flat-square"></a>
-    <a href="https://github.com/Kc1t/alethe-agents/stargazers"><img alt="Stars" src="https://img.shields.io/github/stars/Kc1t/alethe-agents?style=flat-square"></a>
-    <a href="https://github.com/Kc1t/alethe-agents/issues"><img alt="Open issues" src="https://img.shields.io/github/issues/Kc1t/alethe-agents?style=flat-square"></a>
+    <a href="https://github.com/Vnxcarvalho/Alethe-2.0/actions/workflows/ci.yml"><img alt="CI" src="https://img.shields.io/github/actions/workflow/status/Vnxcarvalho/Alethe-2.0/ci.yml?branch=main&label=ci&style=flat-square"></a>
+    <a href="https://github.com/Vnxcarvalho/Alethe-2.0/releases"><img alt="Latest release" src="https://img.shields.io/github/v/release/Vnxcarvalho/Alethe-2.0?style=flat-square"></a>
+    <a href="https://github.com/Vnxcarvalho/Alethe-2.0/blob/main/LICENSE"><img alt="License" src="https://img.shields.io/github/license/Vnxcarvalho/Alethe-2.0?style=flat-square"></a>
+    <a href="https://github.com/Vnxcarvalho/Alethe-2.0/graphs/contributors"><img alt="Contributors" src="https://img.shields.io/github/contributors/Vnxcarvalho/Alethe-2.0?style=flat-square"></a>
+    <a href="https://github.com/Vnxcarvalho/Alethe-2.0/stargazers"><img alt="Stars" src="https://img.shields.io/github/stars/Vnxcarvalho/Alethe-2.0?style=flat-square"></a>
+    <a href="https://github.com/Vnxcarvalho/Alethe-2.0/issues"><img alt="Open issues" src="https://img.shields.io/github/issues/Vnxcarvalho/Alethe-2.0?style=flat-square"></a>
   </p>
 
   <p align="center">
-    <a href="https://github.com/Kc1t/alethe-agents/releases">下载</a>
+    <a href="https://github.com/Vnxcarvalho/Alethe-2.0/releases">下载</a>
     ·
-    <a href="https://github.com/Kc1t/alethe-agents/issues/new?labels=bug">报告问题</a>
+    <a href="https://github.com/Vnxcarvalho/Alethe-2.0/issues/new?labels=bug">报告问题</a>
     ·
-    <a href="https://github.com/Kc1t/alethe-agents/issues/new?labels=enhancement">功能建议</a>
+    <a href="https://github.com/Vnxcarvalho/Alethe-2.0/issues/new?labels=enhancement">功能建议</a>
     ·
     <a href="./SECURITY.md">安全</a>
     ·
@@ -175,7 +175,7 @@
 
 ## 安装
 
-请从 [Releases](https://github.com/Kc1t/alethe-agents/releases) 使用已发布的安装包。
+请从 [Releases](https://github.com/Vnxcarvalho/Alethe-2.0/releases) 使用已发布的安装包。
 
 > [!WARNING]
 > Windows 构建**尚未代码签名**，因此 Defender 可能把 `alethe.exe` 标为
@@ -187,7 +187,7 @@
 ## 从源码运行
 
 ```sh
-git clone https://github.com/Kc1t/alethe-agents.git
+git clone https://github.com/Vnxcarvalho/Alethe-2.0.git
 cd alethe-agents
 npm install
 npm run app
@@ -231,7 +231,7 @@ alethe ~/some/project # 打开指定文件夹
 
 欢迎贡献。请阅读 [`CONTRIBUTING.md`](CONTRIBUTING.md) 了解环境搭建、项目结构与约定。最容易上手的方式：
 
-- 认领带 [`good first issue`](https://github.com/Kc1t/alethe-agents/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22) 或 [`help wanted`](https://github.com/Kc1t/alethe-agents/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) 标签的议题——先留言声明。
+- 认领带 [`good first issue`](https://github.com/Vnxcarvalho/Alethe-2.0/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22) 或 [`help wanted`](https://github.com/Vnxcarvalho/Alethe-2.0/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) 标签的议题——先留言声明。
 - 用清晰复现步骤报告 bug，或说明能改进的工作流来提功能建议。
 - 改进文档、截图与平台验证——Linux 与 macOS 测试最少。
 
@@ -368,5 +368,5 @@ https://github.com/user-attachments/assets/ae3aed75-2ead-43c4-a9ca-fd29d83b7e1d
 - 安全报告：[`SECURITY.md`](SECURITY.md)
 - 隐私与数据流：[`docs/PRIVACY.md`](docs/PRIVACY.md)
 - 维护者：[Kc1t](https://github.com/Kc1t)
-- 项目：<https://github.com/Kc1t/alethe-agents>
-- Bug 与功能请求：<https://github.com/Kc1t/alethe-agents/issues>
+- 项目：<https://github.com/Vnxcarvalho/Alethe-2.0>
+- Bug 与功能请求：<https://github.com/Vnxcarvalho/Alethe-2.0/issues>
