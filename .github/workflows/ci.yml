@@ -22,7 +22,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v5
         with:
-          node-version: lts/*
+          node-version: 24
           cache: npm
           cache-dependency-path: package-lock.json
 
@@ -97,4 +97,10 @@ jobs:
 
       - name: cargo test
         working-directory: src-tauri
-        run: cargo test
+        shell: bash
+        run: |
+          set +e
+          cargo test 2>&1 | tee test-output.txt
+          code=${PIPESTATUS[0]}
+          grep -E '^test .* FAILED|panicked at' test-output.txt | head -30 | while IFS= read -r line; do echo "::error::$line"; done
+          exit $code
