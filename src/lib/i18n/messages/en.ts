@@ -1454,6 +1454,10 @@ export const en = {
   'whatsNew.close': 'Got it',
   'whatsNew.update': 'View update',
   'whatsNew.releaseHeading': 'v{version} — {date}',
+  'whatsNew.v172.note1':
+    'A new update button in the title bar, right after your profile name, offers the new version with Later and Update now.',
+  'whatsNew.v172.note2':
+    'The Windows installer is now published automatically with every version and linked from the README.',
   'whatsNew.v171.note1':
     'Agent teams: Claude Code and Antigravity can open a lead plus one terminal per teammate, with a built-in tmux.',
   'whatsNew.v171.note2': 'Plugin API 3, a plugin marketplace and the new Agent Voice plugin.',

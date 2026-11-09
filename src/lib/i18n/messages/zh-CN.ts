@@ -1236,6 +1236,8 @@ export const zhCN: Record<MessageKey, string> = {
   'whatsNew.close': '明白了',
   'whatsNew.update': '查看更新',
   'whatsNew.releaseHeading': 'v{version} — {date}',
+  'whatsNew.v172.note1': '标题栏中、个人资料名称之后新增了更新按钮，可选择“稍后”或“立即更新”。',
+  'whatsNew.v172.note2': 'Windows 安装程序现在会随每个版本自动发布，并在 README 中提供链接。',
   'whatsNew.v171.note1':
     '智能体团队：Claude Code 和 Antigravity 可以打开一个负责人终端和每位队友各一个终端，并内置 tmux。',
   'whatsNew.v171.note2': 'Plugin API 3、插件市场以及全新的 Agent Voice 插件。',

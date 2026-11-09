@@ -1482,6 +1482,10 @@ export const ptBR: Record<MessageKey, string> = {
   'whatsNew.close': 'Entendi',
   'whatsNew.update': 'Ver atualização',
   'whatsNew.releaseHeading': 'v{version} — {date}',
+  'whatsNew.v172.note1':
+    'Um novo botão de atualização na barra de título, logo após o nome do perfil, oferece a nova versão com Depois e Atualizar agora.',
+  'whatsNew.v172.note2':
+    'O instalador do Windows agora é publicado automaticamente a cada versão e tem link no README.',
   'whatsNew.v171.note1':
     'Times de agentes: Claude Code e Antigravity abrem um líder e um terminal por colega, com um tmux embutido.',
   'whatsNew.v171.note2': 'Plugin API 3, um marketplace de plugins e o novo plugin Agent Voice.',
