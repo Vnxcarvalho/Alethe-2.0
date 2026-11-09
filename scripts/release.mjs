@@ -14,8 +14,9 @@
  *
  * Refuses to run when the in-app What's New panel has no notes for the new version.
  *
- * Pushing the tag does NOT trigger a build (release.yml only runs through workflow_dispatch).
- * To publish the installers afterwards: npm run release:publish
+ * Pushing the version bump to main starts release.yml, which publishes the Windows installer for a
+ * version that has no release yet. Pushing the tag alone triggers nothing. To build macOS and Linux
+ * as well: npm run release:publish
  */
 import { readFileSync, writeFileSync, existsSync } from 'node:fs'
 import { execSync } from 'node:child_process'
@@ -107,7 +108,7 @@ run(`git push origin ${branch}`)
 run(`git push origin ${tag}`)
 
 console.log(`\n✓ ${tag} committed, tagged and pushed (branch ${branch}).`)
-console.log('  This did NOT publish installers — it only stamped the version in git.')
-console.log('  To publish the release: npm run release:publish')
+console.log('  The push to main starts the Windows release on GitHub Actions.')
+console.log('  For macOS and Linux too, run: npm run release:publish')
 if (dryRun) console.log('\n(dry-run: nothing was written or pushed)')
 console.log('')
