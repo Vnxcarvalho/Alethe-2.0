@@ -52,7 +52,6 @@ import { ProjectNode } from './ProjectNode'
 import styles from './ProjectSidebar.module.css'
 import { createSidebarMenus } from './sidebarMenus'
 import { SidebarMergePanel } from './SidebarMergePanel'
-import { SidebarUpdate } from './SidebarUpdate'
 
 type ContextMenuState = { x: number; y: number; items: MenuItem[] } | null
 
@@ -737,7 +736,6 @@ function CleanProjectSidebar() {
       ) : null}
       <div className={styles.sidebarFooter}>
         <SidebarNowPlaying />
-        <SidebarUpdate />
         <UserProfile />
       </div>
     </aside>

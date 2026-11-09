@@ -49,7 +49,6 @@ import { NormalProjectNode as ProjectNode } from './NormalProjectNode'
 import styles from './NormalProjectSidebar.module.css'
 import { createSidebarMenus } from './sidebarMenus'
 import { SidebarMergePanel } from './SidebarMergePanel'
-import { SidebarUpdate } from './SidebarUpdate'
 
 type ContextMenuState = { x: number; y: number; items: MenuItem[] } | null
 
@@ -730,7 +729,6 @@ export function NormalProjectSidebar() {
         </div>
       ) : null}
       <SidebarNowPlaying />
-      <SidebarUpdate />
       <UserProfile />
     </aside>
   )

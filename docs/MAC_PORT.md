@@ -36,6 +36,8 @@ Mac synced through: `v1.7.0` (`80e44a3`)
 
 ## Unreleased
 
+- `pending` · `ui` · feat(ui): show the update prompt in the title bar
+  - Files: `src/components/TitleBar/index.tsx`, `src/components/TitleBar/TitleBar.module.css`. The update chip leaves the sidebar footer and becomes a button after the profile name in the title bar. No persisted data changes.
 - `pending` · `skip (repository URLs and update channel of this fork only)` · feat(updater): updates, releases and the plugin catalogue use the Alethe-2.0 repository
   - Files: `src-tauri/tauri.conf.json` (updater endpoint and `pubkey`), `src-tauri/src/release_install.rs`, `src-tauri/src/plugin_catalog.rs`, `src/lib/releases.ts`, `plugins.json`. No persisted data changes; the Mac app keeps its own update feed
 - `pending` · `contract` · feat(branding): add the Carvalho app icon and make it the default

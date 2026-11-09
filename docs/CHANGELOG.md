@@ -445,6 +445,9 @@ Notable user-facing changes to **Alethe** are documented here. The format is bas
   installer instead.
 
 ### Changed
+- **Update prompt in the title bar.** When a newer version is available, a button with the new
+  version number now sits right after the profile name in the title bar, replacing the chip at the
+  bottom of the sidebar. It opens the same prompt, with **Later** and **Update now**.
 
 - **Updates and release links now use the Alethe-2.0 repository.** The update check, release
   downloads, the plugin catalogue and the repository links in the app point to

@@ -1,6 +1,7 @@
 import { getCurrentWindow } from '@tauri-apps/api/window'
 import {
   ArrowLeft,
+  ArrowUpCircle,
   ArrowRight,
   Coffee,
   Maximize2,
@@ -710,6 +711,18 @@ export function TitleBar() {
                 <span className={styles.profilePillLabel}>
                   {activeProfile?.name ?? t('profile.localAccount')}
                 </span>
+              </button>
+            ) : null}
+            {updateInfo ? (
+              <button
+                type="button"
+                className={styles.updatePill}
+                title={t('update.chipTitle', { version: updateInfo.version })}
+                onClick={() => openModal('updateAvailable')}
+              >
+                <ArrowUpCircle size={12} />
+                <span>{t('update.chipLabel')}</span>
+                <span className={styles.updatePillVersion}>{updateInfo.version}</span>
               </button>
             ) : null}
           </div>

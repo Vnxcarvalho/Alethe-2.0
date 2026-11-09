@@ -617,6 +617,35 @@
   border-color: var(--border-strong);
 }
 
+.updatePill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  font-family: var(--font-mono);
+  color: var(--fg-muted);
+  background: var(--bg-sunken);
+  min-height: 22px;
+  padding: 2px 8px;
+  border-radius: 8px;
+  margin-left: 6px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  flex-shrink: 0;
+  transition: border-color 0.15s ease;
+}
+.updatePill:hover {
+  color: var(--fg);
+  border-color: var(--accent-border);
+}
+.updatePill svg {
+  color: var(--status-working);
+}
+.updatePillVersion {
+  font-variant-numeric: tabular-nums;
+  opacity: 0.85;
+}
+
 .profilePillLabel {
   overflow: hidden;
   text-overflow: ellipsis;
