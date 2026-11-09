@@ -10,6 +10,12 @@ on:
     paths:
       - src-tauri/tauri.conf.json
   workflow_dispatch:
+    inputs:
+      platforms:
+        description: Which installers to build
+        type: choice
+        options: [all, windows]
+        default: all
 
 jobs:
   # Decides what this run builds. Pushes build Windows only and skip versions that already
@@ -31,6 +37,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           EVENT: ${{ github.event_name }}
+          PLATFORMS: ${{ inputs.platforms }}
         run: |
           set -euo pipefail
           VERSION="v$(node -p "require('./src-tauri/tauri.conf.json').version")"
@@ -39,7 +46,7 @@ jobs:
           MAC_ARM='{"platform":"macos-latest","label":"macOS Apple Silicon","args":"--target aarch64-apple-darwin"}'
           MAC_INTEL='{"platform":"macos-latest","label":"macOS Intel","args":"--target x86_64-apple-darwin"}'
 
-          if [ "$EVENT" = "push" ]; then
+          if [ "$EVENT" = "push" ] || [ "$PLATFORMS" = "windows" ]; then
             if gh release view "$VERSION" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
               echo "skip=true" >> "$GITHUB_OUTPUT"
               echo "$VERSION already has a release — nothing to publish"

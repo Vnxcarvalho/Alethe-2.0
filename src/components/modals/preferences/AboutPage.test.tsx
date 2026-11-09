@@ -1,6 +1,7 @@
 import { fireEvent, render, screen, within } from '@testing-library/react'
 import { beforeEach, describe, expect, it, vi } from 'vitest'
 
+import { version as appVersion } from '../../../../package.json'
 import { fetchAletheReleases } from '../../../lib/releases'
 import { openInBrowser } from '../../../lib/tauri/filesystem'
 import { EMPTY_PROJECTS_FILE } from '../../../lib/types'
@@ -9,7 +10,7 @@ import { useProjectsStore } from '../../../stores/projectsStore'
 import { AboutPage } from './AboutPage'
 
 vi.mock('@tauri-apps/api/app', () => ({
-  getVersion: vi.fn(async () => '1.7.0'),
+  getVersion: vi.fn(async () => (await import('../../../../package.json')).version),
   getTauriVersion: vi.fn(async () => '2.8.0'),
 }))
 
@@ -37,7 +38,11 @@ vi.mock('../../../lib/updater', () => ({
 vi.mock('../../../lib/releases', async (importOriginal) => ({
   ...(await importOriginal<typeof import('../../../lib/releases')>()),
   fetchAletheReleases: vi.fn(async () => [
-    { version: '1.7.0', publishedAt: '2026-09-20T12:00:00Z', installable: true },
+    {
+      version: (await import('../../../../package.json')).version,
+      publishedAt: '2026-09-20T12:00:00Z',
+      installable: true,
+    },
     { version: '1.6.0', publishedAt: '2026-08-17T12:00:00Z', installable: true },
     { version: '1.2.3', publishedAt: '2026-07-01T12:00:00Z', installable: false },
   ]),
@@ -75,7 +80,7 @@ describe('AboutPage', () => {
     const older = await screen.findByText('v1.6.0')
     expect(fetchAletheReleases).toHaveBeenCalledTimes(1)
     const list = older.closest('ul') as HTMLElement
-    expect(within(list).queryByText('v1.7.0')).not.toBeInTheDocument()
+    expect(within(list).queryByText(`v${appVersion}`)).not.toBeInTheDocument()
     const row = older.closest('li') as HTMLElement
 
     fireEvent.click(within(row).getByRole('button', { name: 'Install' }))

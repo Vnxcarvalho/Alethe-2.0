@@ -55,7 +55,7 @@ describe('release workflow quality gate', () => {
     expect(publishingJobs).not.toHaveLength(0)
 
     for (const job of publishingJobs) {
-      expect(job).toMatch(/^\s{4}needs: quality$/m)
+      expect(jobNeeds(job)).toContain('quality')
       expect(job).toMatch(/^\s{4}permissions:\n\s{6}contents: write$/m)
       expect(job).toContain('secrets.GITHUB_TOKEN')
       expect(job).toContain('secrets.TAURI_SIGNING_PRIVATE_KEY')
@@ -68,7 +68,16 @@ describe('release workflow quality gate', () => {
     // Jobs after the build edit the release it created, so they may write to it, but they never
     // see the signing key and none of them starts before the gate: each waits on the gate, or on a
     // job that does.
-    const others = blocks.filter((block) => block !== qualityJob && !publishingJobs.includes(block))
+    // `plan` is the one job that runs before the gate: it only reads the repository to pick the
+    // platforms, so it gets read-only access and no signing key.
+    const planJob = blocks.find((block) => block.startsWith('  plan:'))
+    expect(planJob).toMatch(/^\s{4}permissions:\n\s{6}contents: read$/m)
+    expect(planJob).not.toContain('TAURI_SIGNING_PRIVATE_KEY')
+    expect(jobNeeds(qualityJob ?? '')).toContain('plan')
+
+    const others = blocks.filter(
+      (block) => block !== qualityJob && block !== planJob && !publishingJobs.includes(block),
+    )
     const gated = new Set(['quality', ...publishingJobs.map(jobName)])
     for (let grew = true; grew;) {
       grew = false
