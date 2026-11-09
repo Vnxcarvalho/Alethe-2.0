@@ -1454,6 +1454,8 @@ export const en = {
   'whatsNew.close': 'Got it',
   'whatsNew.update': 'View update',
   'whatsNew.releaseHeading': 'v{version} — {date}',
+  'whatsNew.v173.note1':
+    'Fixed "Update now": updates now download, install and restart the app from the update prompt. If you are on 1.7.2 or earlier, install this version once from the installer.',
   'whatsNew.v172.note1':
     'A new update button in the title bar, right after your profile name, offers the new version with Later and Update now.',
   'whatsNew.v172.note2':
