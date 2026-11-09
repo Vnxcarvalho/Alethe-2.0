@@ -17,6 +17,11 @@
   </p>
 
   <p align="center">
+    <a href="https://github.com/Vnxcarvalho/Alethe-2.0/releases/latest"><b>下载 Alethe</b></a>
+    （Windows、macOS、Linux）
+  </p>
+
+  <p align="center">
     <a href="./docs/PRIVACY.md">隐私</a>
     ·
     <a href="#contributing">参与贡献</a>
