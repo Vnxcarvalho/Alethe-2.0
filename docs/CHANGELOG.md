@@ -580,6 +580,11 @@ Notable user-facing changes to **Alethe** are documented here. The format is bas
 
 ### Fixed
 
+- **Updating from inside the app.** Choosing **Update now** failed with "download not allowed by ACL":
+  the app was missing the permission to download and install an update in two steps. The update now
+  downloads, installs and restarts as intended. Versions before this one still hold the old
+  permission, so the first update to this version has to be installed from the installer.
+
 - **Handing a conversation to Codex survives its startup dialogs.** The handoff prompt now waits
   until Codex's composer is ready and no trust, hooks-review or update dialog is open, so it no longer
   picks an option in one and fails with "config/read failed"; it is sent once the dialog is closed.

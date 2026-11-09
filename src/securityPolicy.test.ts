@@ -164,6 +164,8 @@ describe('production renderer security policy', () => {
       'notification:allow-request-permission',
       'notification:allow-notify',
       'updater:allow-check',
+      'updater:allow-download',
+      'updater:allow-install',
       'updater:allow-download-and-install',
       'process:allow-restart',
     ])
