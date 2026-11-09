@@ -36,6 +36,8 @@ Mac synced through: `v1.7.0` (`80e44a3`)
 
 ## Unreleased
 
+- `skip (Windows job-object guard used by the updater; the Mac app has its own updater)` · `platform` · fix(updater): release the process guard before the installer takes over
+  - Files: `src-tauri/src/pty.rs`, `src-tauri/src/release_install.rs`, `src/lib/updater.ts`. No persisted data changes.
 - `skip (Tauri capability for the Windows/Linux updater; the Mac app has its own updater)` · `platform` · fix(updater): allow download and install in the main capability
   - Files: `src-tauri/capabilities/default.json`, `src/securityPolicy.test.ts`. No persisted data changes.
 - `pending` · `ui` · feat(ui): show the update prompt in the title bar

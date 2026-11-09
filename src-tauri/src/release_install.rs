@@ -95,7 +95,12 @@ pub fn install_downloaded_release(pending: State<'_, PendingRelease>) -> Result<
         .map_err(|_| "release_state_poisoned".to_string())?
         .take()
         .ok_or_else(|| "no_release_downloaded".to_string())?;
-    update.install(bytes).map_err(|error| error.to_string())
+    // The installer would die with the app's job object, so release it before handing over.
+    crate::pty::apply_kill_on_close_guard(false)?;
+    update.install(bytes).map_err(|error| {
+        let _ = crate::pty::apply_kill_on_close_guard(true);
+        error.to_string()
+    })
 }
 
 #[cfg(test)]

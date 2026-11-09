@@ -2,7 +2,7 @@ import { relaunch } from '@tauri-apps/plugin-process'
 import { check, type DownloadEvent, type Update } from '@tauri-apps/plugin-updater'
 
 import { flushProjectsState } from '../stores/projectsStore'
-import { downloadRelease, installDownloadedRelease } from './tauri/releases'
+import { downloadRelease, installDownloadedRelease, setKillOnCloseGuard } from './tauri/releases'
 
 export type UpdateInfo = {
   version: string
@@ -43,7 +43,13 @@ export async function installPendingUpdate(
   await pending.download(progressReporter(onProgress))
   // Installing exits the process on Windows, so nothing after it can save.
   await flushProjectsState().catch(() => {})
-  await pending.install()
+  await setKillOnCloseGuard(false)
+  try {
+    await pending.install()
+  } catch (error) {
+    await setKillOnCloseGuard(true).catch(() => {})
+    throw error
+  }
 
   await relaunch()
 }

@@ -1949,6 +1949,55 @@ pub fn install_kill_on_close_guard() {
     let _ = JOB_GUARD_ACTIVE.set(active);
 }
 
+/// Turns the kill-on-close behaviour of the app's job object on or off.
+///
+/// An installer started by the updater is a descendant of the app, so it sits in the same job.
+/// While the guard is on, the app exiting to let the installer run closes the job and Windows
+/// kills the installer halfway through. Turn the guard off right before handing over, and back on
+/// if the hand-over fails.
+#[cfg(windows)]
+pub fn apply_kill_on_close_guard(enabled: bool) -> Result<(), String> {
+    use std::mem::{size_of, zeroed};
+    use windows_sys::Win32::Foundation::HANDLE;
+    use windows_sys::Win32::System::JobObjects::{
+        JobObjectExtendedLimitInformation, SetInformationJobObject,
+        JOBOBJECT_EXTENDED_LIMIT_INFORMATION, JOB_OBJECT_LIMIT_KILL_ON_JOB_CLOSE,
+    };
+
+    let Some(job) = PTY_JOB_HANDLE.get() else {
+        return Ok(());
+    };
+    let applied = unsafe {
+        let mut info: JOBOBJECT_EXTENDED_LIMIT_INFORMATION = zeroed();
+        info.BasicLimitInformation.LimitFlags = if enabled {
+            JOB_OBJECT_LIMIT_KILL_ON_JOB_CLOSE
+        } else {
+            0
+        };
+        SetInformationJobObject(
+            *job as HANDLE,
+            JobObjectExtendedLimitInformation,
+            (&info as *const JOBOBJECT_EXTENDED_LIMIT_INFORMATION).cast(),
+            size_of::<JOBOBJECT_EXTENDED_LIMIT_INFORMATION>() as u32,
+        ) != 0
+    };
+    if applied {
+        Ok(())
+    } else {
+        Err("job_guard_update_failed".to_string())
+    }
+}
+
+#[cfg(not(windows))]
+pub fn apply_kill_on_close_guard(_enabled: bool) -> Result<(), String> {
+    Ok(())
+}
+
+#[tauri::command]
+pub fn set_kill_on_close_guard(enabled: bool) -> Result<(), String> {
+    apply_kill_on_close_guard(enabled)
+}
+
 #[cfg(not(windows))]
 pub fn install_kill_on_close_guard() {
     // On Linux there is no equivalent of a Windows Job Object. Instead, the shutdown

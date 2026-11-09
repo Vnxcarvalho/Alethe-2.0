@@ -580,6 +580,12 @@ Notable user-facing changes to **Alethe** are documented here. The format is bas
 
 ### Fixed
 
+- **The in-app update now finishes and reopens Alethe on Windows.** The installer started by the
+  updater was killed when the app closed, so the version never changed and nothing reopened. The
+  app now lets go of its process guard right before handing over to the installer, and puts it back
+  if the installer cannot start. Versions before this one still have the problem, so the first
+  update to this version has to be installed from the installer.
+
 - **Updating from inside the app.** Choosing **Update now** failed with "download not allowed by ACL":
   the app was missing the permission to download and install an update in two steps. The update now
   downloads, installs and restarts as intended. Versions before this one still hold the old
