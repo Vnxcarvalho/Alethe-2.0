@@ -1454,6 +1454,11 @@ export const en = {
   'whatsNew.close': 'Got it',
   'whatsNew.update': 'View update',
   'whatsNew.releaseHeading': 'v{version} — {date}',
+  'whatsNew.v171.note1':
+    'Agent teams: Claude Code and Antigravity can open a lead plus one terminal per teammate, with a built-in tmux.',
+  'whatsNew.v171.note2': 'Plugin API 3, a plugin marketplace and the new Agent Voice plugin.',
+  'whatsNew.v171.note3':
+    'Cloud sync now merges instead of overwriting, with per-account and per-project MCP servers and skills.',
   'whatsNew.v170.note1':
     'Features now load as plugins: Git Control, Todo List and the Theme Pack ship as official plugins, and a plugin can be imported from its folder.',
   'whatsNew.v170.note2':

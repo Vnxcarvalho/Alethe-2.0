@@ -17,8 +17,7 @@
   </p>
 
   <p align="center">
-    <a href="https://github.com/Vnxcarvalho/Alethe-2.0/releases/latest"><b>下载 Alethe</b></a>
-    （Windows、macOS、Linux）
+    <a href="https://github.com/Vnxcarvalho/Alethe-2.0/releases/latest/download/Alethe-Setup.exe"><b>下载 Windows 版 Alethe</b></a>
   </p>
 
   <p align="center">

@@ -1236,6 +1236,10 @@ export const zhCN: Record<MessageKey, string> = {
   'whatsNew.close': '明白了',
   'whatsNew.update': '查看更新',
   'whatsNew.releaseHeading': 'v{version} — {date}',
+  'whatsNew.v171.note1':
+    '智能体团队：Claude Code 和 Antigravity 可以打开一个负责人终端和每位队友各一个终端，并内置 tmux。',
+  'whatsNew.v171.note2': 'Plugin API 3、插件市场以及全新的 Agent Voice 插件。',
+  'whatsNew.v171.note3': '云同步现在会合并而不是覆盖，并支持按账户和按项目的 MCP 服务器与技能。',
   'whatsNew.v170.note1':
     '功能现在以插件形式加载：Git Control、Todo List 和 Theme Pack 作为官方插件提供，也可以从文件夹导入插件。',
   'whatsNew.v170.note2':

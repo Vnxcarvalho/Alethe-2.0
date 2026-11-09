@@ -1482,6 +1482,11 @@ export const ptBR: Record<MessageKey, string> = {
   'whatsNew.close': 'Entendi',
   'whatsNew.update': 'Ver atualização',
   'whatsNew.releaseHeading': 'v{version} — {date}',
+  'whatsNew.v171.note1':
+    'Times de agentes: Claude Code e Antigravity abrem um líder e um terminal por colega, com um tmux embutido.',
+  'whatsNew.v171.note2': 'Plugin API 3, um marketplace de plugins e o novo plugin Agent Voice.',
+  'whatsNew.v171.note3':
+    'A sincronização na nuvem agora mescla em vez de sobrescrever, com servidores MCP e skills por conta e por projeto.',
   'whatsNew.v170.note1':
     'Recursos agora carregam como plugins: Git Control, Todo List e o Theme Pack viram plugins oficiais, e um plugin pode ser importado a partir da sua pasta.',
   'whatsNew.v170.note2':

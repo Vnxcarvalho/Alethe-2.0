@@ -17,8 +17,7 @@
   </p>
 
   <p align="center">
-    <a href="https://github.com/Vnxcarvalho/Alethe-2.0/releases/latest"><b>Baixar o Alethe</b></a>
-    (Windows, macOS, Linux)
+    <a href="https://github.com/Vnxcarvalho/Alethe-2.0/releases/latest/download/Alethe-Setup.exe"><b>Baixar o Alethe para Windows</b></a>
   </p>
 
   <p align="center">
