@@ -1482,6 +1482,8 @@ export const ptBR: Record<MessageKey, string> = {
   'whatsNew.close': 'Entendi',
   'whatsNew.update': 'Ver atualização',
   'whatsNew.releaseHeading': 'v{version} — {date}',
+  'whatsNew.v174.note1':
+    'Versão de manutenção sem mudanças visíveis, publicada para verificar que a atualização pelo próprio app funciona.',
   'whatsNew.v173.note1':
     'Corrigido o "Atualizar agora": as atualizações agora baixam, instalam e reiniciam o app pelo aviso de atualização. Se você está na 1.7.2 ou anterior, instale esta versão uma vez pelo instalador.',
   'whatsNew.v172.note1':

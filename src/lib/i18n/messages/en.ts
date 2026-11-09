@@ -1454,6 +1454,8 @@ export const en = {
   'whatsNew.close': 'Got it',
   'whatsNew.update': 'View update',
   'whatsNew.releaseHeading': 'v{version} — {date}',
+  'whatsNew.v174.note1':
+    'Maintenance release with no visible changes, published to verify that updating from inside the app works.',
   'whatsNew.v173.note1':
     'Fixed "Update now": updates now download, install and restart the app from the update prompt. If you are on 1.7.2 or earlier, install this version once from the installer.',
   'whatsNew.v172.note1':

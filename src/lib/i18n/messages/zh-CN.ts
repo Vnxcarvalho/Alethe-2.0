@@ -1236,6 +1236,7 @@ export const zhCN: Record<MessageKey, string> = {
   'whatsNew.close': '明白了',
   'whatsNew.update': '查看更新',
   'whatsNew.releaseHeading': 'v{version} — {date}',
+  'whatsNew.v174.note1': '维护版本，没有可见变化，发布目的是验证应用内更新可以正常工作。',
   'whatsNew.v173.note1':
     '修复了“立即更新”：现在可以通过更新提示下载、安装并重启应用。如果你使用的是 1.7.2 或更早版本，请先通过安装程序安装一次此版本。',
   'whatsNew.v172.note1': '标题栏中、个人资料名称之后新增了更新按钮，可选择“稍后”或“立即更新”。',
