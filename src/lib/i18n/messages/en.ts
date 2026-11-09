@@ -1454,6 +1454,8 @@ export const en = {
   'whatsNew.close': 'Got it',
   'whatsNew.update': 'View update',
   'whatsNew.releaseHeading': 'v{version} — {date}',
+  'whatsNew.v175.note1':
+    'Fixed in-app updates on Windows: the installer is no longer killed when the app closes, so the update finishes and Alethe reopens by itself. If you are on 1.7.4 or earlier, install this version once from the installer.',
   'whatsNew.v174.note1':
     'Maintenance release with no visible changes, published to verify that updating from inside the app works.',
   'whatsNew.v173.note1':

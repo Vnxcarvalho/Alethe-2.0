@@ -1482,6 +1482,8 @@ export const ptBR: Record<MessageKey, string> = {
   'whatsNew.close': 'Entendi',
   'whatsNew.update': 'Ver atualização',
   'whatsNew.releaseHeading': 'v{version} — {date}',
+  'whatsNew.v175.note1':
+    'Corrigidas as atualizações pelo app no Windows: o instalador não é mais encerrado quando o app fecha, então a atualização termina e o Alethe reabre sozinho. Se você está na 1.7.4 ou anterior, instale esta versão uma vez pelo instalador.',
   'whatsNew.v174.note1':
     'Versão de manutenção sem mudanças visíveis, publicada para verificar que a atualização pelo próprio app funciona.',
   'whatsNew.v173.note1':
