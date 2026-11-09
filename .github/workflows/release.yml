@@ -114,7 +114,7 @@ jobs:
       # that fails, while the release is still a draft.
       - name: Verify the AppImage bundles no Wayland library
         if: matrix.platform == 'ubuntu-22.04'
-        run: ./scripts/verify-appimage.sh
+        run: bash ./scripts/verify-appimage.sh
 
   # The release body written by tauri-action is a single generic line, the same for
   # every version. The real notes live in the repo, one file per version, so they are
