@@ -1236,6 +1236,8 @@ export const zhCN: Record<MessageKey, string> = {
   'whatsNew.close': '明白了',
   'whatsNew.update': '查看更新',
   'whatsNew.releaseHeading': 'v{version} — {date}',
+  'whatsNew.v176.note1':
+    '维护版本，没有可见变化，发布目的是验证应用内更新可以完成并自动重新打开 Alethe。',
   'whatsNew.v175.note1':
     '修复了 Windows 上的应用内更新：应用关闭时不再终止安装程序，更新可以完成，Alethe 会自动重新打开。如果你使用的是 1.7.4 或更早版本，请先通过安装程序安装一次此版本。',
   'whatsNew.v174.note1': '维护版本，没有可见变化，发布目的是验证应用内更新可以正常工作。',
