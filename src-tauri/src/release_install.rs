@@ -5,7 +5,7 @@ use tauri::ipc::Channel;
 use tauri::{AppHandle, State, Url};
 use tauri_plugin_updater::{Update, UpdaterExt};
 
-const RELEASES_DOWNLOAD_URL: &str = "https://github.com/Vnxcarvalho/Alethe-2.0/releases/download";
+const RELEASES_DOWNLOAD_URL: &str = "https://github.com/Vnxcarvalho/Arcadia/releases/download";
 
 #[derive(Default)]
 pub struct PendingRelease(Mutex<Option<(Update, Vec<u8>)>>);
@@ -111,7 +111,7 @@ mod tests {
     fn only_plain_release_versions_build_a_manifest_url() {
         assert_eq!(
             release_manifest_url("1.6.0").unwrap().as_str(),
-            "https://github.com/Vnxcarvalho/Alethe-2.0/releases/download/v1.6.0/latest.json"
+            "https://github.com/Vnxcarvalho/Arcadia/releases/download/v1.6.0/latest.json"
         );
         for version in [
             "",

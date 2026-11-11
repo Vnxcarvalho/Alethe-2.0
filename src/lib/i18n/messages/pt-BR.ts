@@ -2924,7 +2924,8 @@ export const ptBR: Record<MessageKey, string> = {
   'prefs.categoryTutorials': 'Tutoriais',
   'prefs.categoryTutorialsDesc': 'Vídeos que mostram a Arcadia em uso real',
   'tutorials.videosTitle': 'Vídeos',
-  'tutorials.videosDesc': 'Veja como orquestrar agentes com a Arcadia, aqui mesmo nas Preferências.',
+  'tutorials.videosDesc':
+    'Veja como orquestrar agentes com a Arcadia, aqui mesmo nas Preferências.',
   'tutorials.play': 'Reproduzir {title}',
   'tutorials.openYoutube': 'Abrir no YouTube',
   'tutorials.channel': 'Mais no canal do YouTube',
@@ -2983,7 +2984,8 @@ export const ptBR: Record<MessageKey, string> = {
   'prefs.aboutOpenPullRequest': 'Abrir um pull request',
   'prefs.aboutContributingGuide': 'Guia de contribuição',
   'prefs.aboutInfoTitle': 'Informações',
-  'prefs.aboutInfoDesc': 'Licença, privacidade, código-fonte e onde o Arcadia guarda seus arquivos.',
+  'prefs.aboutInfoDesc':
+    'Licença, privacidade, código-fonte e onde o Arcadia guarda seus arquivos.',
   'prefs.aboutLicense': 'Licença',
   'prefs.aboutPrivacy': 'Privacidade',
   'prefs.aboutPrivacyAction': 'Como o Arcadia trata seus dados',
@@ -3722,7 +3724,8 @@ export const ptBR: Record<MessageKey, string> = {
   'router9.externalMissing': 'Nenhum 9router encontrado no seu PATH',
   'router9.externalDetected':
     'Você já tem um 9router no PATH. Escolha "A minha instalação" para usar ele em vez de uma segunda cópia.',
-  'router9.fallbackManaged': 'A sua instalação sumiu, então a cópia instalada pelo Arcadia é usada.',
+  'router9.fallbackManaged':
+    'A sua instalação sumiu, então a cópia instalada pelo Arcadia é usada.',
   'router9.fallbackExternal':
     'A cópia instalada pelo Arcadia sumiu, então a sua instalação é usada.',
   'router9.installForMe': 'Instalar pra mim',

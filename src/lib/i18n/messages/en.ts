@@ -227,7 +227,8 @@ export const en = {
   'remote.title': 'Remote control',
   'remote.enabled': 'Remote control is available',
   'remote.disabled': 'Remote control is turned off',
-  'remote.description': 'Scan this QR code from a phone on the same network to open Arcadia Remote.',
+  'remote.description':
+    'Scan this QR code from a phone on the same network to open Arcadia Remote.',
   'remote.disabledDescription': 'No phone can connect while this feature is turned off.',
   'remote.statusOn': 'On',
   'remote.statusOff': 'Off',
@@ -2461,7 +2462,8 @@ export const en = {
   'ws.confirmOverwriteForeignAgent':
     'An agent "{name}" that was NOT created by Arcadia already exists in this project. Overwrite?',
   'ws.confirmRemoveAgent': 'Remove the agent "{name}" from the project?',
-  'ws.confirmRemoveForeignAgent': 'The agent "{name}" was NOT created by Arcadia. Remove it anyway?',
+  'ws.confirmRemoveForeignAgent':
+    'The agent "{name}" was NOT created by Arcadia. Remove it anyway?',
   'ws.moreToolCalls': '+{count} tool calls — click to see all',
   'ws.back': 'back',
   'ws.agentCanvasPoc': 'agent canvas — poc',
@@ -2974,7 +2976,8 @@ export const en = {
   'sync.github.confirmPull':
     'Downloading replaces your local projects and stats with the Gist copy. Continue?',
   'sync.legacy.title': 'GitHub Gist (legacy)',
-  'sync.legacy.desc': 'Gist sync is being retired. Download your data once, then use Arcadia Cloud.',
+  'sync.legacy.desc':
+    'Gist sync is being retired. Download your data once, then use Arcadia Cloud.',
   'sync.cloud.title': 'Arcadia Cloud',
   'sync.cloud.freeDesc':
     'Sign in with GitHub to sync preferences, plugins, project settings, and MCP servers and skills across your machines. Free.',
@@ -3980,8 +3983,10 @@ export const en = {
     'The planner found {providers} providers and built {profiles} profiles; you approved them on {date}.',
   'playbooks.usageTitle': 'Usage',
   'playbooks.usagePillTitle': '{provider}: {detail}',
-  'playbooks.usageSimulatedTitle': '{provider}: {detail}. Arcadia does not read this yet; simulated',
-  'playbooks.unreadNote': 'Arcadia does not read this usage yet; the values below are a simulation.',
+  'playbooks.usageSimulatedTitle':
+    '{provider}: {detail}. Arcadia does not read this yet; simulated',
+  'playbooks.unreadNote':
+    'Arcadia does not read this usage yet; the values below are a simulation.',
   'playbooks.stateLow': 'low',
   'playbooks.stateSpare': 'spare',
   'playbooks.resets': 'resets',

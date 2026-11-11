@@ -98,7 +98,7 @@ describe('AboutPage', () => {
     const row = (await screen.findByText('v1.2.3')).closest('li') as HTMLElement
     fireEvent.click(within(row).getByRole('button', { name: 'Download' }))
     expect(openInBrowser).toHaveBeenCalledWith(
-      'https://github.com/Vnxcarvalho/Alethe-2.0/releases/tag/v1.2.3',
+      'https://github.com/Vnxcarvalho/Arcadia/releases/tag/v1.2.3',
     )
     expect(installRelease).not.toHaveBeenCalled()
   })

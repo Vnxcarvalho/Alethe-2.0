@@ -1,4 +1,4 @@
-const REPO = 'Vnxcarvalho/Alethe-2.0'
+const REPO = 'Vnxcarvalho/Arcadia'
 const RELEASES_API_URL = `https://api.github.com/repos/${REPO}/releases?per_page=50`
 const REQUEST_TIMEOUT_MS = 10_000
 const PLAIN_VERSION = /^\d{1,5}\.\d{1,5}\.\d{1,5}$/

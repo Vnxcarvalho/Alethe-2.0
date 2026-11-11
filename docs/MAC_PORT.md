@@ -37,7 +37,7 @@ Mac synced through: `v1.7.0` (`80e44a3`)
 ## Unreleased
 
 - `pending` · `ui` · feat: rename the app from Alethe to Arcadia in UI text and docs
-  - Files: `src/lib/i18n/messages/en.ts`, `index.html`, `src-tauri/tauri.conf.json`. No persisted data changes: `productName`, the bundle identifier, the data folder and the update channel keep their current names.
+  - Files: `src/lib/i18n/messages/en.ts`, `index.html`, `src-tauri/tauri.conf.json`. Update URLs (`tauri.conf.json`, `src/lib/releases.ts`, `release_install.rs`) now point at the `Arcadia` repository. No persisted data changes: `productName`, the bundle identifier and the data folder keep their current names.
 - `skip (Windows job-object guard used by the updater; the Mac app has its own updater)` · `platform` · fix(updater): release the process guard before the installer takes over
   - Files: `src-tauri/src/pty.rs`, `src-tauri/src/release_install.rs`, `src/lib/updater.ts`. No persisted data changes.
 - `skip (Tauri capability for the Windows/Linux updater; the Mac app has its own updater)` · `platform` · fix(updater): allow download and install in the main capability
