@@ -36,6 +36,8 @@ Mac synced through: `v1.7.0` (`80e44a3`)
 
 ## Unreleased
 
+- `pending` · `ui` · fix: rename the remote web app to Arcadia
+  - Files: `src-tauri/remote/locales.js`, `src-tauri/remote/index.html`, `src-tauri/remote/manifest.webmanifest`. No persisted data changes: the `alethe.remote.*` browser storage keys keep their names so paired phones stay signed in.
 - `pending` · `ui` · feat: rename the app from Alethe to Arcadia in UI text and docs
   - Files: `src/lib/i18n/messages/en.ts`, `index.html`, `src-tauri/tauri.conf.json`. Update URLs (`tauri.conf.json`, `src/lib/releases.ts`, `release_install.rs`) now point at the `Arcadia` repository. No persisted data changes: `productName`, the bundle identifier and the data folder keep their current names.
 - `skip (Windows job-object guard used by the updater; the Mac app has its own updater)` · `platform` · fix(updater): release the process guard before the installer takes over
