@@ -1,6 +1,6 @@
-# Alethe visual styles
+# Arcadia visual styles
 
-Alethe supports two application-wide visual languages. They share behavior, accessibility, theme
+Arcadia supports two application-wide visual languages. They share behavior, accessibility, theme
 palettes, and component logic; only presentation changes.
 
 ## Normal

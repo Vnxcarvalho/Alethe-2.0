@@ -3,10 +3,10 @@
 <br />
 <div align="center">
   <a href="https://github.com/Vnxcarvalho/Alethe-2.0">
-    <img src="./src/assets/theme-icons/carvalho.png" alt="Logo do Alethe" width="160">
+    <img src="./src/assets/theme-icons/carvalho.png" alt="Logo do Arcadia" width="160">
   </a>
 
-  <h1 align="center">Alethe</h1>
+  <h1 align="center">Arcadia</h1>
 
   <p align="center">
     <b>O workspace de código com múltiplos agentes.</b>
@@ -17,7 +17,7 @@
   </p>
 
   <p align="center">
-    <a href="https://github.com/Vnxcarvalho/Alethe-2.0/releases/latest/download/Alethe-Setup.exe"><b>Baixar o Alethe para Windows</b></a>
+    <a href="https://github.com/Vnxcarvalho/Alethe-2.0/releases/latest/download/Alethe-Setup.exe"><b>Baixar o Arcadia para Windows</b></a>
   </p>
 
   <p align="center">
@@ -28,22 +28,22 @@
 </div>
 
 > [!IMPORTANT]
-> O Alethe está numa versão pública inicial. O app desktop é gratuito, open source e local-first,
+> O Arcadia está numa versão pública inicial. O app desktop é gratuito, open source e local-first,
 > mas não totalmente offline: a verificação de atualizações e a consulta de uso dos provedores vêm
 > ligadas por padrão, e os outros recursos de rede são opcionais ou disparados por uma ação sua. A
 > sincronização manual via GitHub Gist já está disponível; sync ou backup hospedados pelo projeto
 > podem ser oferecidos separadamente no futuro. Veja o
 > [guia de privacidade e fluxo de dados](./docs/PRIVACY.md) (em inglês).
 
-## O que é o Alethe
+## O que é o Arcadia
 
 Um agente num terminal é fácil. Cinco agentes em três repositórios é o trabalho de verdade, e é aí
 que abas de terminal param de funcionar: sessões se perdem, os servidores MCP de cada agente ficam
 diferentes, e ninguém sabe qual agente está fazendo o quê, e onde.
 
-**O Alethe é um workspace desktop feito para isso.** Cada agente roda num PTY real dentro de um
+**O Arcadia é um workspace desktop feito para isso.** Cada agente roda num PTY real dentro de um
 layout de projeto persistente, mantém sua própria sessão e histórico, e continua vivo quando você
-reorganiza a interface. Além disso, o Alethe gerencia o que os agentes compartilham: os CLIs, os
+reorganiza a interface. Além disso, o Arcadia gerencia o que os agentes compartilham: os CLIs, os
 servidores MCP, as skills e as conversas que você passa de um para outro.
 
 Multiplataforma (Windows, macOS, Linux), local-first, feito com Tauri, Rust, React e `xterm.js`.
@@ -60,13 +60,13 @@ Multiplataforma (Windows, macOS, Linux), local-first, feito com Tauri, Rust, Rea
   </tr>
   <tr>
     <td align="center">
-      <img src="./docs/screenshots/alethe-macos.png" alt="Alethe rodando no macOS" width="100%">
+      <img src="./docs/screenshots/alethe-macos.png" alt="Arcadia rodando no macOS" width="100%">
     </td>
     <td align="center">
-      <img src="./docs/screenshots/alethe-windows.png" alt="Alethe rodando no Windows" width="100%">
+      <img src="./docs/screenshots/alethe-windows.png" alt="Arcadia rodando no Windows" width="100%">
     </td>
     <td align="center">
-      <img src="./docs/screenshots/alethe-linux.png" alt="Alethe rodando no Linux" width="100%">
+      <img src="./docs/screenshots/alethe-linux.png" alt="Arcadia rodando no Linux" width="100%">
     </td>
   </tr>
   <tr>
@@ -95,14 +95,14 @@ Multiplataforma (Windows, macOS, Linux), local-first, feito com Tauri, Rust, Rea
 | <picture><source media="(prefers-color-scheme: dark)" srcset="./docs/assets/agents/shell-dark.svg"><img src="./docs/assets/agents/shell-light.svg" width="28" height="28" alt=""></picture> | **Shell** | pwsh / bash / zsh | O terminal comum, no mesmo modelo de painéis |
 | <picture><source media="(prefers-color-scheme: dark)" srcset="./docs/assets/agents/wsl-dark.svg"><img src="./docs/assets/agents/wsl-light.svg" width="28" height="28" alt=""></picture> | **WSL** | `wsl.exe` | A distro padrão, como shell comum (Windows) |
 
-CLIs que faltam podem ser instalados, atualizados e desinstalados de dentro do Alethe. Ele verifica
+CLIs que faltam podem ser instalados, atualizados e desinstalados de dentro do Arcadia. Ele verifica
 se a máquina tem Node, npm, WinGet, Scoop e Chocolatey e oferece só os métodos que funcionam ali,
 preferindo o instalador oficial de cada fornecedor. CLIs já instalados são encontrados no PATH, no
 registro e em npm/pnpm/Volta/fnm/nvm/Bun/Cargo/Scoop/Chocolatey, e podem apontar para um caminho
 personalizado. Um plugin pode adicionar o próprio agente a essa lista.
 
 Os agentes podem, opcionalmente, passar pelo [9router](https://github.com/decolua/9router), um proxy
-local que distribui o tráfego entre provedores com fallback automático. O Alethe instala e roda uma
+local que distribui o tráfego entre provedores com fallback automático. O Arcadia instala e roda uma
 cópia própria, com versão fixa, sem mexer nos seus pacotes npm globais. O roteamento vem desligado e
 vale só para terminais abertos depois que ele é ligado.
 
@@ -145,7 +145,7 @@ vale só para terminais abertos depois que ele é ligado.
 - Um plugin pode adicionar um painel, uma aba na barra lateral, um comando na paleta, um tema
   completo ou um novo provedor de agente. Ele declara o que precisa no manifesto, e o app recusa
   qualquer coisa que ele não pediu.
-- **Catálogo de plugins**: plugins publicados por outras pessoas aparecem no Alethe com as permissões
+- **Catálogo de plugins**: plugins publicados por outras pessoas aparecem no Arcadia com as permissões
   descritas, e os que têm pacote instalam e atualizam com um clique. O índice fixa cada pacote num
   checksum SHA-256, então o que roda é exatamente o que foi revisado. Um plugin instalado chega
   desligado e passa por uma tela de confiança antes de rodar.
@@ -162,7 +162,7 @@ comandos e capacidades; o código os implementa.
    `zip -r my-plugin.zip my-plugin && sha256sum my-plugin.zip`.
 3. **Entre na lista.** Abra um pull request neste repositório adicionando uma entrada ao
    [`plugins.json`](plugins.json) com `id`, `name`, `downloadUrl` e, para ser instalável de dentro do
-   Alethe, `package.url` e `package.sha256`. Recalcule o hash sempre que o zip mudar.
+   Arcadia, `package.url` e `package.sha256`. Recalcule o hash sempre que o zip mudar.
 4. Depois do merge, a listagem chega a todos em até seis horas, ou na hora com *Atualizar*.
 
 Entrar na lista é uma pessoa lendo o seu pull request, não uma auditoria: o plugin continua chegando
@@ -192,7 +192,7 @@ plugins 3, acompanhando a saída do terminal e usando os ícones e dropdowns de 
 - Tarefas por projeto com timer Pomodoro, perfis isolados, exportação e importação de backup local,
   temas de interface e de terminal, idiomas EN, pt-BR e zh-CN.
 - **Quadro de orquestração**: um agente líder delega partes do trabalho para workers Claude e Codex
-  que o Alethe roda em paralelo, cada um opcionalmente no próprio worktree git, mostrando status,
+  que o Arcadia roda em paralelo, cada um opcionalmente no próprio worktree git, mostrando status,
   custo, tokens e diff no seu card, e podendo pedir sua permissão antes de sair do sandbox. Vem
   desligado.
 - **Sync na nuvem** das suas preferências via login no GitHub, opcional. Comandos de voz e ditado
@@ -209,7 +209,7 @@ plugins 3, acompanhando a saída do terminal e usando os ícones e dropdowns de 
 
 ## Orquestração
 
-O Alethe traz a [`alethe`](https://github.com/Kc1t/alethe-orchestrate-skill), sua skill oficial de
+O Arcadia traz a [`alethe`](https://github.com/Kc1t/alethe-orchestrate-skill), sua skill oficial de
 orquestração. O agente com quem você conversa vira o líder: escolhe um playbook, escreve briefs
 delimitados e os entrega a workers mais baratos (Claude Code, Codex, Antigravity ou Kimi), lendo de
 volta apenas os resultados. Instale pela janela de Skills, para todos os projetos ou dentro de um
@@ -245,7 +245,7 @@ o que cada CLI reportou, nunca uma estimativa.
   </picture>
 </p>
 
-**A skill também funciona sem o Alethe.** Ela é uma skill de agente independente, com repositório
+**A skill também funciona sem o Arcadia.** Ela é uma skill de agente independente, com repositório
 próprio, [Kc1t/alethe-orchestrate-skill](https://github.com/Kc1t/alethe-orchestrate-skill), e roda
 no Claude Code, no Codex e em qualquer agente que leia `SKILL.md`:
 
@@ -255,7 +255,7 @@ npx skills add Kc1t/alethe-orchestrate-skill
 
 O [README](https://github.com/Kc1t/alethe-orchestrate-skill#readme) dela cobre os plugins do Claude
 Code e do Codex, os comandos `/alethe`, os playbooks e o relatório de custo. Mudanças na skill vão
-primeiro para esse repositório; `npm run skill:sync` as traz para o Alethe.
+primeiro para esse repositório; `npm run skill:sync` as traz para o Arcadia.
 
 ## Conceitos principais
 
@@ -286,7 +286,7 @@ Use os instaladores publicados em [Releases](https://github.com/Vnxcarvalho/Alet
 > da página oficial de Releases; não ignore o aviso para um arquivo de outra origem.
 
 Para recuperar: **Segurança do Windows → Proteção contra vírus e ameaças → Histórico de proteção →
-Ações → Restaurar**, e adicione uma exclusão para `%LOCALAPPDATA%\Alethe` (e `src-tauri/target`, se
+Ações → Restaurar**, e adicione uma exclusão para `%LOCALAPPDATA%\Arcadia` (e `src-tauri/target`, se
 compilar do código-fonte). No macOS as versões também ainda não são notarizadas: clique com o botão
 direito no app e escolha **Abrir** para passar pelo Gatekeeper. Assinatura e notarização estão no
 [roadmap](#roadmap).
@@ -323,7 +323,7 @@ alethe                # abre a pasta atual como projeto
 alethe ~/algum/projeto # abre a pasta indicada
 ```
 
-Se a pasta já for um projeto, ele é trazido para o workspace em vez de duplicado. Se o Alethe já
+Se a pasta já for um projeto, ele é trazido para o workspace em vez de duplicado. Se o Arcadia já
 estiver aberto, a janela existente ganha o foco. O comando fica em `~/.local/bin/alethe`
 (macOS/Linux) ou `%LOCALAPPDATA%\Alethe\bin\alethe.cmd` (Windows); reinstale depois de mover o app.
 
@@ -350,7 +350,7 @@ estrutura do projeto e regras da casa. Os jeitos mais fáceis de ajudar:
 
 Para mudanças maiores, abra uma issue antes para discutir a direção.
 
-A lista de contribuidores, os vídeos e os projetos feitos com o Alethe ficam no
+A lista de contribuidores, os vídeos e os projetos feitos com o Arcadia ficam no
 [README em inglês](./README.md#contributors), que é atualizado automaticamente.
 
 ## Licença
@@ -361,8 +361,8 @@ correspondente sob a mesma licença. Veja [`LICENSE`](LICENSE) e [`NOTICE`](NOTI
 
 Serviços oficiais hospedados, como sync, backup, cobrança ou recursos na nuvem, podem ser
 proprietários e oferecidos separadamente. A licença do código não dá direitos sobre o nome
-**Alethe**, o logo, o ícone do app ou a marca oficial. Builds modificadas precisam ter marca
-própria, e o uso comercial da marca Alethe exige permissão prévia por escrito de Kauã Miguel. Veja
+**Arcadia**, o logo, o ícone do app ou a marca oficial. Builds modificadas precisam ter marca
+própria, e o uso comercial da marca Arcadia exige permissão prévia por escrito de Kauã Miguel. Veja
 [`TRADEMARK.md`](TRADEMARK.md).
 
 ## Comunidade

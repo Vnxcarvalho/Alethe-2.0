@@ -3,10 +3,10 @@
 <br />
 <div align="center">
   <a href="https://github.com/Vnxcarvalho/Alethe-2.0">
-    <img src="./src/assets/theme-icons/carvalho.png" alt="Alethe Logo" width="160">
+    <img src="./src/assets/theme-icons/carvalho.png" alt="Arcadia Logo" width="160">
   </a>
 
-  <h1 align="center">Alethe</h1>
+  <h1 align="center">Arcadia</h1>
 
   <p align="center">
     <b>The multi-agent coding workspace.</b>
@@ -17,7 +17,7 @@
   </p>
 
   <p align="center">
-    <a href="https://github.com/Vnxcarvalho/Alethe-2.0/releases/latest/download/Alethe-Setup.exe"><b>Download Alethe for Windows</b></a>
+    <a href="https://github.com/Vnxcarvalho/Alethe-2.0/releases/latest/download/Alethe-Setup.exe"><b>Download Arcadia for Windows</b></a>
   </p>
 
   <p align="center">
@@ -28,21 +28,21 @@
 </div>
 
 > [!IMPORTANT]
-> Alethe is an early public release. The desktop app is free, open source, and local-first, not
+> Arcadia is an early public release. The desktop app is free, open source, and local-first, not
 > local-only: update checks and provider usage polling are on by default, while other network features
 > are optional or action-triggered. Manual GitHub Gist Sync is already available; first-party hosted
 > sync or cloud backup may be offered separately later. See the
 > [privacy and data-flow guide](./docs/PRIVACY.md).
 
-## What Alethe Is
+## What Arcadia Is
 
 One agent in one terminal is easy. Five agents across three repositories is the actual job — and
 that is where terminal tabs stop working: sessions get lost, MCP servers drift out of sync between
 agents, and nobody knows which agent is doing what, where.
 
-**Alethe is a desktop workspace built for that.** Every agent runs in a real PTY inside a persistent
+**Arcadia is a desktop workspace built for that.** Every agent runs in a real PTY inside a persistent
 project layout, keeps its own session and history, and stays alive when you rearrange the UI. On top
-of that, Alethe manages the things agents share: their CLIs, their MCP servers, their skills, and the
+of that, Arcadia manages the things agents share: their CLIs, their MCP servers, their skills, and the
 conversations you move between them.
 
 Cross-platform (Windows, macOS, Linux), local-first, built with Tauri, Rust, React, and `xterm.js`.
@@ -78,13 +78,13 @@ Highlights from the unreleased work since 1.7.0. The full list lives in
   </tr>
   <tr>
     <td align="center">
-      <img src="./docs/screenshots/alethe-macos.png" alt="Alethe running on macOS" width="100%">
+      <img src="./docs/screenshots/alethe-macos.png" alt="Arcadia running on macOS" width="100%">
     </td>
     <td align="center">
-      <img src="./docs/screenshots/alethe-windows.png" alt="Alethe running on Windows" width="100%">
+      <img src="./docs/screenshots/alethe-windows.png" alt="Arcadia running on Windows" width="100%">
     </td>
     <td align="center">
-      <img src="./docs/screenshots/alethe-linux.png" alt="Alethe running on Linux" width="100%">
+      <img src="./docs/screenshots/alethe-linux.png" alt="Arcadia running on Linux" width="100%">
     </td>
   </tr>
   <tr>
@@ -113,14 +113,14 @@ Highlights from the unreleased work since 1.7.0. The full list lives in
 | <picture><source media="(prefers-color-scheme: dark)" srcset="./docs/assets/agents/shell-dark.svg"><img src="./docs/assets/agents/shell-light.svg" width="28" height="28" alt=""></picture> | **Shell** | pwsh / bash / zsh | The plain terminal, same pane model |
 | <picture><source media="(prefers-color-scheme: dark)" srcset="./docs/assets/agents/wsl-dark.svg"><img src="./docs/assets/agents/wsl-light.svg" width="28" height="28" alt=""></picture> | **WSL** | `wsl.exe` | The default distro, as a plain shell (Windows) |
 
-Missing CLIs can be installed, updated, and uninstalled from inside Alethe — it probes the machine
+Missing CLIs can be installed, updated, and uninstalled from inside Arcadia — it probes the machine
 for Node, npm, WinGet, Scoop, and Chocolatey and offers only the methods that actually work there,
 preferring each vendor's official installer. Already-installed CLIs are discovered across PATH,
 registry, npm/pnpm/Volta/fnm/nvm/Bun/Cargo/Scoop/Chocolatey, and can be pointed at a custom path.
 A plugin can add an agent of its own to this list.
 
 Agents can optionally be routed through [9router](https://github.com/decolua/9router), a local proxy
-that spreads traffic across providers with automatic fallback. Alethe installs and runs a private,
+that spreads traffic across providers with automatic fallback. Arcadia installs and runs a private,
 version-pinned copy without touching your global npm packages. Routing is off by default and applies
 only to terminals opened after it is switched on.
 
@@ -162,7 +162,7 @@ only to terminals opened after it is switched on.
 - A plugin can contribute a workspace pane, a sidebar tab, a command palette entry, a full theme, or
   a new agent provider. It declares what it needs in its manifest, and the app refuses anything it
   did not ask for.
-- **Plugin catalogue**: plugins published by other people are listed inside Alethe with their
+- **Plugin catalogue**: plugins published by other people are listed inside Arcadia with their
   permissions spelled out, and a listing that ships a package installs — and updates — in one click.
   The index pins every package to a SHA-256 checksum, so what runs is what the listing was reviewed
   against. An installed plugin arrives switched off and goes through a trust dialog before it runs.
@@ -179,7 +179,7 @@ the tabs, commands and capabilities; the code implements them.
    `zip -r my-plugin.zip my-plugin && sha256sum my-plugin.zip`.
 3. **Get it listed.** Open a pull request against this repository adding one entry to
    [`plugins.json`](plugins.json) with `id`, `name`, `downloadUrl` and — to make it installable from
-   inside Alethe — `package.url` and `package.sha256`. Re-hash whenever the zip changes.
+   inside Arcadia — `package.url` and `package.sha256`. Re-hash whenever the zip changes.
 4. Once merged, the listing reaches everyone within six hours, or immediately on *Refresh*.
 
 Listing is a human reading your pull request, not an audit: the plugin still arrives disabled and
@@ -206,7 +206,7 @@ following terminal output and using the app's own agent icons and dropdowns.
 - Todos per project with a Pomodoro timer, isolated profiles, local backup export/import, UI and
   terminal themes, EN, pt-BR, and zh-CN.
 - **Orchestration board**: a lead agent delegates units of work to Claude and Codex workers that
-  Alethe runs in parallel — each optionally in its own git worktree, each reporting status, cost,
+  Arcadia runs in parallel — each optionally in its own git worktree, each reporting status, cost,
   tokens and diff on its card, and each able to ask you before it leaves its sandbox. Off by default.
 - **Cloud sync** of your preferences through a GitHub sign-in, optional. Voice commands and local
   dictation come from the optional **Jev** plugin, and agents that speak their replies from the
@@ -221,7 +221,7 @@ following terminal output and using the app's own agent icons and dropdowns.
 
 ## Orchestration
 
-Alethe ships [`alethe`](https://github.com/Kc1t/alethe-orchestrate-skill), its official
+Arcadia ships [`alethe`](https://github.com/Kc1t/alethe-orchestrate-skill), its official
 orchestration skill. The agent you talk to becomes the lead: it picks a playbook, writes bounded
 briefs, and hands them to cheaper Claude Code, Codex, Antigravity or Kimi workers, then reads back
 only their results. Install it from the Skills window, for every project or inside one repository,
@@ -256,7 +256,7 @@ what each CLI reported, never an estimate.
   </picture>
 </p>
 
-**The skill also works without Alethe.** It is a standalone agent skill with its own repository,
+**The skill also works without Arcadia.** It is a standalone agent skill with its own repository,
 [Kc1t/alethe-orchestrate-skill](https://github.com/Kc1t/alethe-orchestrate-skill), and runs in
 Claude Code, Codex and any agent that reads `SKILL.md`:
 
@@ -266,7 +266,7 @@ npx skills add Kc1t/alethe-orchestrate-skill
 
 Its [README](https://github.com/Kc1t/alethe-orchestrate-skill#readme) covers the Claude Code and
 Codex plugins, the `/alethe` commands, the playbooks and the cost report. Changes to the skill go to
-that repository first; `npm run skill:sync` brings them into Alethe.
+that repository first; `npm run skill:sync` brings them into Arcadia.
 
 ## Core Concepts
 
@@ -297,7 +297,7 @@ Use the published installers from [Releases](https://github.com/Vnxcarvalho/Alet
 > the official Releases page; do not bypass a warning for an artifact from another source.
 
 To recover it: **Windows Security → Virus & threat protection → Protection history → Actions →
-Restore**, then add an exclusion for `%LOCALAPPDATA%\Alethe` (and `src-tauri/target` if you build
+Restore**, then add an exclusion for `%LOCALAPPDATA%\Arcadia` (and `src-tauri/target` if you build
 from source). Reports of incorrect detection go to
 [Microsoft Security Intelligence](https://www.microsoft.com/wdsi/filesubmission). macOS builds are
 not notarized yet either — right-click the app and choose **Open** to bypass Gatekeeper. Signing and
@@ -335,7 +335,7 @@ alethe                # opens the current folder as a project
 alethe ~/some/project # opens the given folder
 ```
 
-If the folder is already a project, it is brought into the workspace instead of duplicated. If Alethe
+If the folder is already a project, it is brought into the workspace instead of duplicated. If Arcadia
 is already running, the existing window is focused. The command lands in `~/.local/bin/alethe`
 (macOS/Linux) or `%LOCALAPPDATA%\Alethe\bin\alethe.cmd` (Windows) — reinstall it after moving the app.
 
@@ -360,13 +360,13 @@ house rules. The easiest ways to help:
 
 For larger changes, open an issue first so the direction can be discussed.
 
-## Built with Alethe
+## Built with Arcadia
 
-Projects and products built with Alethe as the workspace — agents running in parallel, shells alongside them, sessions resumed across days.
+Projects and products built with Arcadia as the workspace — agents running in parallel, shells alongside them, sessions resumed across days.
 
 <!-- showcase:start -->
 
-_Nothing here yet._ Built something with Alethe? Add it to [`SHOWCASE.md`](SHOWCASE.md) — it's one line and a pull request, and you end up in the contributors list too.
+_Nothing here yet._ Built something with Arcadia? Add it to [`SHOWCASE.md`](SHOWCASE.md) — it's one line and a pull request, and you end up in the contributors list too.
 
 <!-- showcase:end -->
 
@@ -374,7 +374,7 @@ See [`SHOWCASE.md`](SHOWCASE.md) for the full list and how to submit.
 
 ## Contributors
 
-Thanks to everyone helping shape Alethe.
+Thanks to everyone helping shape Arcadia.
 
 <p align="center">
 
@@ -390,9 +390,9 @@ works that are distributed, or made available to users over a network, must prov
 corresponding source under the same license. See [`LICENSE`](LICENSE) and [`NOTICE`](NOTICE).
 
 Official hosted services, such as sync, backup, billing, or cloud features, may be proprietary and
-offered separately. The code license does not grant rights to the **Alethe** name, logo, application
+offered separately. The code license does not grant rights to the **Arcadia** name, logo, application
 icon, or official branding. Modified builds must be independently branded, and commercial use of
-the Alethe brand requires prior written permission from Kauã Miguel. See
+the Arcadia brand requires prior written permission from Kauã Miguel. See
 [`TRADEMARK.md`](TRADEMARK.md).
 
 ## Community

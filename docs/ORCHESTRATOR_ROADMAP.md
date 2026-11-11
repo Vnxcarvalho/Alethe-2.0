@@ -17,7 +17,7 @@ Update the checklist as work lands; update the percentage alongside it in the sa
 
 The orchestrator's differentiation is not "a board that shows agents running" — that is now a
 contested category (Devin Desktop's Agent Command Center, OpenAI's Codex app, Cursor's 8 parallel
-agents). Alethe's edge is **managing several agents from different vendors so you never run out of
+agents). Arcadia's edge is **managing several agents from different vendors so you never run out of
 usage**, and steering work to whichever tool is actually the right (and cheapest) fit. That pain is
 real and documented: Claude Code's 5-hour + weekly caps, Codex's own plan caps, and a third-party
 tool (CAAM) that exists solely to swap CLI accounts on limit. No major competitor manages usage
@@ -95,7 +95,7 @@ options, not yet decided:
       - The aborted turn still emits a normal `result`. Its `terminal_reason` comes from the
         `interrupted`/`aborted_streaming`/`aborted_tools`/`cancelled` family, but which one is not
         worth guessing at, so the job carries an `awaiting_steer` flag instead and the `result` that
-        only acknowledges an interrupt Alethe itself asked for is not reported to the planner as a
+        only acknowledges an interrupt Arcadia itself asked for is not reported to the planner as a
         finished turn.
       - Shipped on top of this: `alethe_steer` on a running Claude worker pushes the correction to
         the front of the inbox and interrupts, so `finish_turn` hands it straight back as the next
@@ -197,7 +197,7 @@ already got, not an assumption. `get_antigravity_usage` already exists for the q
 
 ## Phase 4 — OpenCode
 
-Same shape again. OpenCode already has partial integration in Alethe (MCP config writers,
+Same shape again. OpenCode already has partial integration in Arcadia (MCP config writers,
 GSD hooks) — worth mapping what's reusable before writing anything new.
 
 **Checklist**
@@ -229,7 +229,7 @@ reading shows why the shapes cannot be compared field-by-field:
 
 On the 5-hour window they are tied (20 vs 22) and the choice looks arbitrary. On the week, Codex is
 three times closer to its ceiling. Codex is the one running out, and the 5-hour window hides it
-completely. So "running out" means *the worst window that agent has*, and Alethe resolves it before
+completely. So "running out" means *the worst window that agent has*, and Arcadia resolves it before
 the planner ever sees it — the planner must not have to know that one vendor has three windows and
 the other has two.
 
@@ -250,7 +250,7 @@ wrote:
    actively refusing work at 10% beat one at 99%. Rate-limited is not "nearly gone", it is gone, and
    it now outranks any number.
 
-**Notify, do not reroute (decided).** Alethe surfaces the numbers and names which side has headroom;
+**Notify, do not reroute (decided).** Arcadia surfaces the numbers and names which side has headroom;
 the planner still chooses. No server-side substitution, no preference toggle, in this phase.
 
 **Why this phase, why now**: the product thesis above already names this the differentiator —
@@ -356,7 +356,7 @@ part of this phase, not a separate cleanup.
   own explicit non-goal ("No hosted orchestration. Everything stays local-first") and with the
   visible/take-over-able local terminal promise Phase 1's Claude worker already provides. Scope as
   an opt-in prototype to evaluate, not a commitment.
-- **Consent** — a new orchestrator preference, off by default: "let Alethe redirect work to a
+- **Consent** — a new orchestrator preference, off by default: "let Arcadia redirect work to a
   cheaper agent automatically." Not folded into an existing on-by-default toggle — auto-switch
   changes which vendor sees a user's code and prompts for a given task, a decision the user should
   make explicitly, not one this phase makes for them.
@@ -419,7 +419,7 @@ part of this phase, not a separate cleanup.
       - **It buys enforcement we just decided against.** Its real advantage over
         `economy_agents.rs` is the *enforced* `budget.max_list_cost` and typed `usage.list_cost`.
         This phase deliberately chose notify-only; a hard spend ceiling is not a capability gap
-        today. Revisit only if Alethe ever wants an enforced cap, and then as its own decision.
+        today. Revisit only if Arcadia ever wants an enforced cap, and then as its own decision.
 - [ ] Manual test: force one side past the threshold, confirm the hint names the other side and
       that the worst window is the one being compared
 
@@ -518,7 +518,7 @@ sits behind Phases 1, 2 and 5, which are the ones with live work.
 ## Track — Apply worktree back to its branch (shipped)
 
 Closes the loop an isolated (`isolate: true`) job otherwise left open: you could see the diff, but
-landing it meant leaving Alethe for raw git. Reconciled in two parts:
+landing it meant leaving Arcadia for raw git. Reconciled in two parts:
 
 - **Rust**: `isolate_worktree` in `orchestrator_core.rs` now creates worktrees at the exact same
   path/branch convention `worktrees.rs`'s RFC-003 manager already uses
@@ -584,7 +584,7 @@ Space for brainstorming beyond the phases above. Nothing here is committed.
   routing, touches credential switching, needs its own study.
 - **A generic model router (OpenRouter/LiteLLM-style)** — hypothesis is that OpenCode (Phase 4)
   already covers this once it's a backend, since it routes multiple providers/models on its own.
-  Don't build a duplicate inside Alethe without confirming a real gap first.
+  Don't build a duplicate inside Arcadia without confirming a real gap first.
 - ~~Applying an isolated worktree back to its branch~~ — **done**, see "Track — Apply worktree"
   below. Turned out not to need `mergeStore.ts` at all — its underlying Tauri commands
   (`mergeAnalyze`/`mergePrepare`/`mergeFinalize`) are plain functions with no dependency on a

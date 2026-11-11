@@ -36,6 +36,8 @@ Mac synced through: `v1.7.0` (`80e44a3`)
 
 ## Unreleased
 
+- `pending` · `ui` · feat: rename the app from Alethe to Arcadia in UI text and docs
+  - Files: `src/lib/i18n/messages/en.ts`, `index.html`, `src-tauri/tauri.conf.json`. No persisted data changes: `productName`, the bundle identifier, the data folder and the update channel keep their current names.
 - `skip (Windows job-object guard used by the updater; the Mac app has its own updater)` · `platform` · fix(updater): release the process guard before the installer takes over
   - Files: `src-tauri/src/pty.rs`, `src-tauri/src/release_install.rs`, `src/lib/updater.ts`. No persisted data changes.
 - `skip (Tauri capability for the Windows/Linux updater; the Mac app has its own updater)` · `platform` · fix(updater): allow download and install in the main capability
@@ -75,7 +77,7 @@ Mac synced through: `v1.7.0` (`80e44a3`)
   - Files: `src-tauri/src/handoff.rs`, `src/stores/projectsStore.ts`, `src/components/TerminalPane/index.tsx`
 - `pending` · `backend` · Writing Codex hooks removes the unmarked subagent hook blocks older releases appended to `.codex/config.toml`
   - Files: `src-tauri/src/agent_events.rs`
-- `pending` · `ui` · Tutorials page in Preferences plays the Alethe videos inline (YouTube privacy-enhanced embed) with links to YouTube
+- `pending` · `ui` · Tutorials page in Preferences plays the Arcadia videos inline (YouTube privacy-enhanced embed) with links to YouTube
   - Commit: `dab0d02d` feat: playbooks editor, tutorials, cloud sync v3 and Jev as a plugin
   - Files: `src/lib/tutorials.ts`, `src/components/modals/preferences/TutorialsPage.tsx`, `src/components/modals/PreferencesModal.tsx`
 - `pending` · `ui` · New install defaults: Elite Pure Black, clean style, reduced motion, 90% zoom, Dark Lemon terminal, sidebars 380/420; the default avatar is the app icon
@@ -86,7 +88,7 @@ Mac synced through: `v1.7.0` (`80e44a3`)
   - Files: `src/components/ui/Dropdown.tsx`, `src/components/modals/preferences/CustomAgentsSection.tsx`, `src/components/modals/PreferencesModal.module.css`, `src/components/modals/PreferencesModal.tsx`
 - `pending` · `contract` · Official skills: the bundled skill becomes `alethe` v21 and installs into projects
   - Files: `src-tauri/src/skills.rs`, `src/components/OfficialSkills/index.tsx`, `src/components/modals/mcp/SkillsBrowser.tsx`, `scripts/sync-skill.mjs`
-  - Contract: catalog entries gain `repository`; agent results gain `error`; new `skills_remove_bundled`; `skills_catalog`, `skills_install_bundled` and `skills_remove_bundled` take an optional `projectPath` that targets `<project>/.claude/skills/<name>` for Claude and `<project>/.agents/skills/<name>` for Codex; installing `alethe` removes an Alethe-managed `alethe-orchestrate` folder (one with `.alethe-skill.json`); an empty skill folder counts as not installed; managed files are written to a temporary file and renamed; tooling manifests that name `alethe-orchestrate` map to `alethe`
+  - Contract: catalog entries gain `repository`; agent results gain `error`; new `skills_remove_bundled`; `skills_catalog`, `skills_install_bundled` and `skills_remove_bundled` take an optional `projectPath` that targets `<project>/.claude/skills/<name>` for Claude and `<project>/.agents/skills/<name>` for Codex; installing `alethe` removes an Arcadia-managed `alethe-orchestrate` folder (one with `.alethe-skill.json`); an empty skill folder counts as not installed; managed files are written to a temporary file and renamed; tooling manifests that name `alethe-orchestrate` map to `alethe`
 - `pending` · `contract` · Orchestration policy path on macOS and Linux
   - Files: `src-tauri/src/orchestrator.rs`
   - Contract: `~/.config/alethe/orchestrate.json` (honoring `XDG_CONFIG_HOME`), or `ALETHE_ORCHESTRATE_POLICY` when set, matching the skill's `default_policy_path`; Windows keeps `%APPDATA%\Alethe\alethe-orchestrate.json`
@@ -174,7 +176,7 @@ Mac synced through: `v1.7.0` (`80e44a3`)
   - Files: `src/components/modals/MemoryAnalyticsModal.tsx`, `src-tauri/src/leftover_processes.rs`
 - `skip (Windows Job Objects; macOS terminals already end their process group)` · `platform` · Terminals run in a per-PTY Job Object so killing one ends orphaned descendants
   - Files: `src-tauri/src/process_tree.rs`
-- `pending` · `contract` · Alethe Cloud sync v3: scoped documents, three-way merge, devices, Supporter plan
+- `pending` · `contract` · Arcadia Cloud sync v3: scoped documents, three-way merge, devices, Supporter plan
   - Files: `src/lib/sync/`, `src-tauri/src/cloud_sync.rs`, `src/hooks/useCloudSync.ts`
   - Contract: [`SYNC_PROTOCOL.md`](SYNC_PROTOCOL.md) — `/v1` API with device registration and `If-Match`, payload format 3 (`settings`, `projects`, `tooling`), `sync-state.json` per profile, session token in the keyring as `profile:<id>:cloud-sync-token` (plaintext `cloud_sync.json` tokens migrate on load)
 - `pending` · `ui` · fix(usage): share one Claude usage request with the orchestrator
@@ -377,7 +379,7 @@ Mac synced through: `v1.7.0` (`80e44a3`)
   - Files: `src-tauri/src/plugin_catalog.rs`, `src/App.tsx`, `src/components/modals/PluginMarketplaceModal.module.css` +8
 - `pending` · `ui` · `c6c6ae8` feat(ai-memory): the decisions the panel needs
   - Files: `src/lib/aiMemory.ts`, `src/lib/tauri/aiMemory.ts`
-- `pending` · `ui` · `e7a7951` feat(ai-memory): capture hooks in Alethe's own per-terminal settings
+- `pending` · `ui` · `e7a7951` feat(ai-memory): capture hooks in Arcadia's own per-terminal settings
   - Files: `src-tauri/src/agent_events.rs`, `src-tauri/src/ai_memory.rs`, `src-tauri/src/ai_memory_hooks.rs` +5
 - `pending` · `ui` · `3a40cc1` fix(ai-memory): make the capture default un-forgettable, and bound the hooks lookup
   - Files: `src-tauri/src/ai_memory.rs`, `src/components/AgentCanvasPOC/index.tsx`, `src/components/TerminalPane/index.tsx` +3

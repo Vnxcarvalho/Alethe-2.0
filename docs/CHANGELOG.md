@@ -1,6 +1,6 @@
 # Changelog
 
-Notable user-facing changes to **Alethe** are documented here. The format is based on
+Notable user-facing changes to **Arcadia** are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project follows
 [Semantic Versioning](https://semver.org/). Dates use UTC.
 
@@ -25,7 +25,7 @@ Notable user-facing changes to **Alethe** are documented here. The format is bas
   create a team and it opens the members next to itself, as the Claude Code teams do.
 - **Agent teams.** A new opt-in module (Preferences → Features) makes Claude Code agent teams open
   one terminal per teammate in the project: the leader stays on the left and the team stacks on the
-  right, each pane named after its agent. Alethe gives Claude Code terminals and plain shells its
+  right, each pane named after its agent. Arcadia gives Claude Code terminals and plain shells its
   own `tmux`, so no tmux install or WSL is needed, and Claude agents it launches start in tmux
   teammate mode with full color. Other agents (Codex, OpenCode, Antigravity and the rest) are left
   untouched. The installed app acts as that `tmux` itself, so nothing extra ships with it. Closing
@@ -33,7 +33,7 @@ Notable user-facing changes to **Alethe** are documented here. The format is bas
   startup. It applies to terminals opened after it is turned on. With it on, a Claude terminal
   reopened after closing the app no longer replays its old screen under the new one, which left the
   display garbled. A teammate's conversation is no longer saved as the leader's, so the leader
-  reopens with its own conversation. Teammate terminals now come back when Alethe reopens: each
+  reopens with its own conversation. Teammate terminals now come back when Arcadia reopens: each
   returns in its place as a Claude terminal resuming that teammate's conversation, with the team
   arguments it was launched with. What a teammate was in the middle of doing does not continue.
   Closing the leader's terminal closes its teammates, also after the app was reopened.
@@ -50,7 +50,7 @@ Notable user-facing changes to **Alethe** are documented here. The format is bas
   app's own agent names, colors, icons and dropdowns, read the app language, and receive results a
   host command streams back. Text a plugin types into an agent, including Jev's, now counts as a
   prompt the same way typing it does, so the agent shows as working and its completion is detected.
-- **Tutorials in Preferences.** A new Tutorials page plays the videos that show Alethe in real work
+- **Tutorials in Preferences.** A new Tutorials page plays the videos that show Arcadia in real work
   inside Settings, one at a time, with a link to open each on YouTube and to the channel.
 - **Playbooks editor in Preferences.** A new Playbooks page shows every orchestration playbook as a
   canvas of blocks: the planner, each decision, the role and model each step runs on with its list
@@ -63,7 +63,7 @@ Notable user-facing changes to **Alethe** are documented here. The format is bas
   Claude and Codex quota read live. Create, duplicate or delete playbooks; a shape the skill cannot
   run is outlined with what to fix, and saving writes `alethe-playbooks.yaml`, the file the
   orchestration skill plans with.
-- **Official skills, always listed and installable into a project.** The Skills window lists Alethe's
+- **Official skills, always listed and installable into a project.** The Skills window lists Arcadia's
   official skills even after they are installed, with their version and a link to their source. A
   project's MCP & skills tab installs, updates, or removes them inside the repository, where Claude
   Code reads `.claude/skills` and Codex reads `.agents/skills`, so they travel with the project.
@@ -81,15 +81,15 @@ Notable user-facing changes to **Alethe** are documented here. The format is bas
   terminal that started them closed (Node, Python, shells, agent CLIs) are listed with how long they
   have been running, when they started, their folder, and their memory, each with an End button and
   an End all action.
-- **Alethe Cloud sync that merges instead of overwriting.** A single Sync now button replaces Upload
+- **Arcadia Cloud sync that merges instead of overwriting.** A single Sync now button replaces Upload
   and Download. Edits made on different machines are merged. The cloud carries preferences (now including custom agents and orchestration
   settings), plugin state, project settings, and the account's MCP servers and skills. At startup,
-  Alethe says when another device changed something and offers to sync.
+  Arcadia says when another device changed something and offers to sync.
 - **MCP servers and skills saved per account and per project.** Save the current setup from Accounts
   (global MCP servers and skills) or from a project's new **MCP & skills** tab, and the list travels
-  with sync. On another machine Alethe shows what is installed and what is missing, and installs the
+  with sync. On another machine Arcadia shows what is installed and what is missing, and installs the
   missing items in one click. Secret env and header values are never stored and are asked for again
-  on install; only skills bundled with Alethe install automatically.
+  on install; only skills bundled with Arcadia install automatically.
 - **Project settings travel with sync.** Name, color, validation and health-check commands, merge and
   worktree options, and linked MCP servers sync without terminals or layout. Projects are matched by
   id, Git remote (detected automatically), or folder.
@@ -103,9 +103,9 @@ Notable user-facing changes to **Alethe** are documented here. The format is bas
   the shared version or share this one.
 - **Devices, history, and account controls in Sync.** See the devices signed in to your account and
   sign any of them out, restore an earlier version of settings, projects, or MCP servers and skills,
-  and download or delete everything stored in your Alethe Cloud account.
+  and download or delete everything stored in your Arcadia Cloud account.
 - **Supporter plan.** An optional monthly or yearly subscription, sold through Polar, that turns on
-  automatic background sync and keeps 30 days of version history. Alethe itself stays free and open
+  automatic background sync and keeps 30 days of version history. Arcadia itself stays free and open
   source.
 - **Settings file export and import.** Sync → File saves preferences, project settings, and the MCP
   setup to a `.alethe` file, and imports one after showing what will change. No account is needed and
@@ -139,7 +139,7 @@ Notable user-facing changes to **Alethe** are documented here. The format is bas
   the checkout, blocked workers and failed checks now show up in the report, and marking each
   result used or discarded shows what the spend bought.
 - **Administrator shell tabs.** New terminal and new tab dialogs offer a Windows administrator
-  option when Shell is selected. Elevated shells stay in the Alethe tab and request UAC approval
+  option when Shell is selected. Elevated shells stay in the Arcadia tab and request UAC approval
   through gsudo or Windows Sudo configured in inline mode.
 - **OpenRouter transcriber.** Preferences → Voice now has a Transcriber option: keep the
   on-device model, or send each recording to OpenRouter using the same API key as Jev. Pick
@@ -178,7 +178,7 @@ Notable user-facing changes to **Alethe** are documented here. The format is bas
   the phrase is recognised, and a pause of about two seconds sends by itself. Releasing
   F9 or clicking the stop button still works.
 - **The `alethe` command gains `--version`, `--help` and `update`.** `alethe update` installs a
-  newer release from the terminal, and refuses while Alethe is open, since installing would close it
+  newer release from the terminal, and refuses while Arcadia is open, since installing would close it
   and its terminals. A command installed by an older release shows as outdated in Preferences →
   Integrations until it is reinstalled.
 - **Worker cards now show each worker's model and effort**, including whether each value came from
@@ -186,13 +186,13 @@ Notable user-facing changes to **Alethe** are documented here. The format is bas
 - **Turning on AI Memory now takes you to a working install, and recall actually works.** The switch
   in Preferences → Features grew a panel beneath it: whether ai-memory is there, a button to install
   it — the download checked against the hash the project publishes — and whether it is running, with
-  what it has stored. The agents Alethe launches now *record* to that memory and can *recall* it
+  what it has stored. The agents Arcadia launches now *record* to that memory and can *recall* it
   through its MCP server, so asking one what happened last week has something to find. The service now
   starts on its own once the feature is on and a binary is installed — on this launch and every one
   after — instead of staying off until someone opens the panel and clicks Start by hand. Start and Stop
   show while they are working, and the panel says when it could not check the store rather than
   showing an empty one. What it records stays on your machine as markdown in a git repository you can
-  read without Alethe.
+  read without Arcadia.
 
 - **Plugins got a marketplace of their own.** Browsing left the settings modal for a window
   built to hold a lot of plugins: search that ignores case and accents, filters by what a
@@ -204,20 +204,20 @@ Notable user-facing changes to **Alethe** are documented here. The format is bas
 
 - **A plugin can now open its own tab.** A command a plugin contributes to Ctrl+P can reveal
   the plugin's own panel, and a plugin can open a modal it contributed — wherever you moved
-  that panel to. Until now only the plugins that ship with Alethe could do this, which meant a
+  that panel to. Until now only the plugins that ship with Arcadia could do this, which meant a
   plugin you installed yourself could draw a panel but never take you to it.
 
-- **Alethe now hands its own engineering rules to the agents it delegates to.** Every delegated task
+- **Arcadia now hands its own engineering rules to the agents it delegates to.** Every delegated task
   carries a general set — verify before you report, write the failing test first, record an
   architecture decision in the same change, never weaken shared CI to make your change pass — and the
   lead agent names the set that matches the work, so a frontend worker gets frontend rules instead of
-  database ones. Alethe ships General, Backend and Frontend, written to hold in any language or
+  database ones. Arcadia ships General, Backend and Frontend, written to hold in any language or
   framework; a repository's own conventions always win over them. Edit them, add your own — "Banco de
   Dados", "Pesquisa" — or remove them entirely in Preferences → Multi-Agent & Telemetry, and the
   board shows which set each run was delegated with.
 
 - **Shells the lead agent starts now live on the orchestration board.** Ask it to run your dev
-  server or `docker compose up` and it opens a shell Alethe owns: it keeps running when the project
+  server or `docker compose up` and it opens a shell Arcadia owns: it keeps running when the project
   is off screen or the agent is done, and shows up on the canvas as its own card joined by a line to
   the agent that started it, with stop, restart, run again, open terminal and remove on hover. A
   shell whose agent has closed keeps showing under its own "Shells with no agent" group instead of
@@ -239,15 +239,15 @@ Notable user-facing changes to **Alethe** are documented here. The format is bas
 - **A worker can now be stopped right from the board**, without asking its lead agent to cancel it
   for you — the same stop control a shell already has.
 
-- **The lead agent now knows it is working inside Alethe from its very first turn.** When it
-  connects, Alethe hands it a short briefing: which workers it can delegate to right now, how many
+- **The lead agent now knows it is working inside Arcadia from its very first turn.** When it
+  connects, Arcadia hands it a short briefing: which workers it can delegate to right now, how many
   run at once, and how to collect their reports. It used to find out only by reading a tool's full
   description, by which time it had often already reached for its own subagents instead.
 
-- **The lead agent can now explain Alethe to you.** Ask it how to do something in Alethe — where a
+- **The lead agent can now explain Arcadia to you.** Ask it how to do something in Arcadia — where a
   setting lives, how to start an orchestration, what a shortcut does — and it reads a built-in
   guide to the app before answering, then walks you through the screens instead of guessing. It is
-  told never to edit Alethe's own settings files, which the running app would overwrite.
+  told never to edit Arcadia's own settings files, which the running app would overwrite.
 
 - **Custom agents.** Preferences → Terminal and agents has a Custom agents section where you
   can add your own agent CLIs with an ID, display name, CLI command, optional unrestricted flag,
@@ -294,8 +294,8 @@ Notable user-facing changes to **Alethe** are documented here. The format is bas
   receives the task attached to `--print`, Kimi read-only workers no longer pass the incompatible
   `--plan` flag, and reported token totals are summed from per-provider usage shapes without
   double-counting cached input.
-- **An orchestration skill ships with Alethe, one click away in the Skills tab.** MCP & Skills now
-  lists skills that come with the app under **From Alethe**, with the full `SKILL.md` readable
+- **An orchestration skill ships with Arcadia, one click away in the Skills tab.** MCP & Skills now
+  lists skills that come with the app under **From Arcadia**, with the full `SKILL.md` readable
   before installing. The first one, `alethe-orchestrate`, teaches Claude Code and Codex to split a
   task across Codex, Claude Code, Agy/Antigravity, Kimi, or a custom CLI. Its cross-platform runner
   executes argument-safe batches with seven strategies, deadlines, structured outcomes, resumable
@@ -306,10 +306,10 @@ Notable user-facing changes to **Alethe** are documented here. The format is bas
   requiring MCP.
   Supporting references stay out of the agent's context until needed. Workers started this way are
   plain CLI processes, so they do not appear on the orchestration board and have no live steering or
-  automatic live-quota readings. Installed copies carry an **Alethe** badge, can be removed like any
-  other skill, and offer **Update** when a newer version ships; a skill of the same name that Alethe
+  automatic live-quota readings. Installed copies carry an **Arcadia** badge, can be removed like any
+  other skill, and offer **Update** when a newer version ships; a skill of the same name that Arcadia
   did not install is never overwritten. Updates replace or remove only files recorded as
-  Alethe-managed and preserve extra files in the skill folder.
+  Arcadia-managed and preserve extra files in the skill folder.
 - **Routing rules pick the role a delegated worker runs as.** The orchestration settings now carry
   ordered rules over the task kind (`research`, `code`, `review`, `command`, `scrap`, `docs`), a
   coarse effort class (`light`, `standard`, `deep`) and live quota gates per provider window. A
@@ -319,7 +319,7 @@ Notable user-facing changes to **Alethe** are documented here. The format is bas
   past critical the settings choose between asking, running anyway with a note, or refusing the
   delegation. Advanced role and quota selectors identify their providers with the existing compact
   Claude Code and Codex marks.
-- **Preferences → Terminal → Shell** picks which binary plain Shell tabs open. Alethe still detects
+- **Preferences → Terminal → Shell** picks which binary plain Shell tabs open. Arcadia still detects
   one on its own (PowerShell 7 when available, then Windows PowerShell; `$SHELL` elsewhere), so the
   setting only matters when you want a specific shell — PowerShell 7 installed outside PATH, or
   `bash`, `zsh` and `nu`. The choice survives restarting a tab, and a path that no longer exists
@@ -368,7 +368,7 @@ Notable user-facing changes to **Alethe** are documented here. The format is bas
   orchestrator also switches which provider the workers spend.
 - **Delegated workers can run on a chosen model, effort and read-only sandbox.** A planner can now
   pass `model`, `effort` and `readOnly` when it delegates, so work such as an independent review on
-  another model runs as a worker on the orchestration board instead of outside Alethe. The worker
+  another model runs as a worker on the orchestration board instead of outside Arcadia. The worker
   card shows the model, the effort and a read-only mark, and a worker picked up again keeps them.
   `readOnly` applies to Codex workers; asking for it on a Claude worker is refused, while `effort`
   reaches Claude as `--effort`.
@@ -378,7 +378,7 @@ Notable user-facing changes to **Alethe** are documented here. The format is bas
   `npm install -g codewhale`. Unrestricted mode maps to Grok's `--yolo` (alias of
   `--always-approve`); Codewhale has no documented launch-time unrestricted flag, so Full
   Access remains a TUI posture. Launch can pass a known session id (`grok --resume <id>`,
-  `codewhale resume <id>`), but Alethe does not yet mint or discover those ids across
+  `codewhale resume <id>`), but Arcadia does not yet mint or discover those ids across
   restarts — pane auto-resume is therefore not wired the way Claude/Codex are.
 - **Kimi Code is now a native agent.** Kimi Code (Moonshot AI) appears in every agent picker with
   its own icon and accent color, launches through the `kimi` CLI (unrestricted mode maps to
@@ -393,7 +393,7 @@ Notable user-facing changes to **Alethe** are documented here. The format is bas
   threshold, terminal panes now show the available memory and elapsed wait instead of an opaque
   loading state; the wait is also recorded separately in diagnostics.
 - **Voice commands into the workspace.** `Ctrl+Shift+Space` opens a command bar where you say or
-  type what you want, and Alethe routes it into a real action: launching one or more agents in a
+  type what you want, and Arcadia routes it into a real action: launching one or more agents in a
   project, handing the task to a terminal that is already open, bringing one up, or stopping one.
   Routing runs on TypeSafe Jev, a model that only picks between options built from live workspace
   state, so the prompt handed over is a verbatim span of what you said, never text the model wrote.
@@ -437,7 +437,7 @@ Notable user-facing changes to **Alethe** are documented here. The format is bas
   panel now list each model-scoped weekly limit, such as Fable, below the Opus row, and the
   orchestrator counts them when it checks Claude's remaining quota
   ([#208](https://github.com/Kc1t/alethe-agents/issues/208)).
-- **A fuller About page.** Preferences → About now shows who builds Alethe, with links to the
+- **A fuller About page.** Preferences → About now shows who builds Arcadia, with links to the
   creator's GitHub, YouTube, Instagram, and LinkedIn; shortcuts to report a bug, request a feature,
   or open a pull request; and the license, privacy notes, source code, data folder, and logs.
   **Older versions** lists earlier releases from GitHub and installs the chosen one through the
@@ -445,6 +445,10 @@ Notable user-facing changes to **Alethe** are documented here. The format is bas
   installer instead.
 
 ### Changed
+- **Alethe is now Arcadia.** The name changes across the app (window title, every screen and
+  message, in all three languages), the READMEs and the documentation. The installer file name, the
+  data folder, the update channel and the repository address keep their current names for now, so
+  existing installs keep updating and keep their data. The new logo and icons are still to come.
 - **Update prompt in the title bar.** When a newer version is available, a button with the new
   version number now sits right after the profile name in the title bar, replacing the chip at the
   bottom of the sidebar. It opens the same prompt, with **Later** and **Update now**.
@@ -473,7 +477,7 @@ Notable user-facing changes to **Alethe** are documented here. The format is bas
   [`Kc1t/alethe-orchestrate-skill`](https://github.com/Kc1t/alethe-orchestrate-skill): a playbook
   editor and HTML reports, real quota checks with a stop line, a freestyle mode that only watches
   cost, and playbook conditions on a model's price (`price-above`) and the spend so far
-  (`spent-above`). Installing it replaces an `alethe-orchestrate` copy that Alethe installed; a folder you made
+  (`spent-above`). Installing it replaces an `alethe-orchestrate` copy that Arcadia installed; a folder you made
   yourself is left alone.
 - **Jev is now a plugin.** Voice commands, Ctrl+E dictation, the Jev history tab, and the voice
   settings moved out of the app into the `alethe.jev` plugin, installed from Preferences → Plugins.
@@ -485,10 +489,10 @@ Notable user-facing changes to **Alethe** are documented here. The format is bas
   close and type into terminals, show notifications, and follow app events. Each of these is a
   separate permission shown in the trust dialog before the plugin is turned on. These additions are
   plugin API version 2: existing plugins keep working, and plugins that need version 2 are hidden
-  from older versions of Alethe instead of failing there.
-- Release builds now connect to the hosted Alethe Cloud server. Before, they pointed at a local address
+  from older versions of Arcadia instead of failing there.
+- Release builds now connect to the hosted Arcadia Cloud server. Before, they pointed at a local address
   and cloud sign-in could not complete.
-- The Alethe Cloud session token is stored in the system credential store instead of a plain file,
+- The Arcadia Cloud session token is stored in the system credential store instead of a plain file,
   and signing out also revokes the device on the server.
 - **One agent list everywhere.** Onboarding now also detects the Cursor CLI, and agent names in
   onboarding and Preferences → Terminal match the rest of the app (for example "Claude Code").
@@ -500,14 +504,14 @@ Notable user-facing changes to **Alethe** are documented here. The format is bas
   models and tools, or this device's cloud session. Importing a backup keeps the current device signed
   in and resets its sync state, so the next sync cannot delete anything.
 - GitHub Gist sync is being retired. New connections are no longer offered; a connected profile can
-  still download its Gist once before moving to Alethe Cloud.
+  still download its Gist once before moving to Arcadia Cloud.
 - Plugin Market profiles now open in a modal without adding workspace panes or requiring a project.
   The sidebar and preferences catalogue share status/source filters, sorting, result counts, and
   accent-insensitive multiword search across names, authors, descriptions, repositories, and permissions.
   Installed local plugins can be uninstalled from their profile; bundled plugins explain how to disable them.
 
 - **Preferences sections fold away.** Every section on a Preferences page now has a clickable
-  heading, so a long page reads as a list of subjects instead of one wall of settings. Alethe
+  heading, so a long page reads as a list of subjects instead of one wall of settings. Arcadia
   remembers what you left open. On Multi-Agent & Telemetry the bulky read-only sections
   — metrics, traces and the audit log — start folded; jumping to a setting from the search
   opens its section on the way.
@@ -528,8 +532,8 @@ Notable user-facing changes to **Alethe** are documented here. The format is bas
   **Preferences → Features**.
 - **Usage reading is now opt-in, per provider.** Reading your Claude Code, Codex or Antigravity
   usage means using the credentials of the CLI already installed and contacting that provider, so
-  Alethe now asks first. **Preferences → Integrations → AI usage reading** has one switch per
-  provider, and onboarding asks the same question. While a provider is off, Alethe never reads its
+  Arcadia now asks first. **Preferences → Integrations → AI usage reading** has one switch per
+  provider, and onboarding asks the same question. While a provider is off, Arcadia never reads its
   credentials or contacts it: no check at startup, none in the background, none when the usage
   panel opens. Hiding a card or a topbar pill is still a separate, purely visual choice. A card
   whose provider is off says so and offers to turn it on. New profiles start with all three off;
@@ -580,7 +584,7 @@ Notable user-facing changes to **Alethe** are documented here. The format is bas
 
 ### Fixed
 
-- **The in-app update now finishes and reopens Alethe on Windows.** The installer started by the
+- **The in-app update now finishes and reopens Arcadia on Windows.** The installer started by the
   updater was killed when the app closed, so the version never changed and nothing reopened. The
   app now lets go of its process guard right before handing over to the installer, and puts it back
   if the installer cannot start. Versions before this one still have the problem, so the first
@@ -596,8 +600,8 @@ Notable user-facing changes to **Alethe** are documented here. The format is bas
   picks an option in one and fails with "config/read failed"; it is sent once the dialog is closed.
 - **A handoff packet lasts as long as its pane.** The context file the other agent reads is no longer
   deleted after its first reply, so a turn that fails can be sent again; packets no pane uses are
-  removed when Alethe starts.
-- **Old Alethe hooks leave `.codex/config.toml`.** Earlier releases added another copy of their
+  removed when Arcadia starts.
+- **Old Arcadia hooks leave `.codex/config.toml`.** Earlier releases added another copy of their
   subagent hooks on every Codex launch; the next launch removes them and keeps only the current block.
 - **Skill installs report each agent.** A failure for one agent no longer hides what happened for the
   others, an interrupted first install no longer leaves a folder that reads as "name already in use",
@@ -611,7 +615,7 @@ Notable user-facing changes to **Alethe** are documented here. The format is bas
   and Codex, the agents it supports.
 - **Searchable pickers inside dialogs keep the cursor in their search box.** Model pickers in
   Preferences and the project agent settings lost focus to the dialog as soon as the list opened.
-- **Antigravity panes find a new conversation right away.** Alethe also reads Antigravity's
+- **Antigravity panes find a new conversation right away.** Arcadia also reads Antigravity's
   `last_conversations.json`, so a chat started in a pane is saved and reopened even before
   `conversation_metadata.json` lists it, including in folders whose path has a space.
 - **Long Claude Code replies no longer get their earlier lines written over the newer ones on
@@ -633,16 +637,16 @@ Notable user-facing changes to **Alethe** are documented here. The format is bas
   even while the agent is busy and Enter would only queue it.
 - **Long task titles in the Todo sidebar wrap instead of being cut off.** Tags and project links
   move below the title, and rows keep their height when the hover actions appear.
-- **On macOS, agents installed with npm, bun, pnpm, Volta, nvm or fnm are found when Alethe is
+- **On macOS, agents installed with npm, bun, pnpm, Volta, nvm or fnm are found when Arcadia is
   opened from the Dock or Finder.** Remote control's Tailscale mode also finds the CLI bundled in
   Tailscale.app or installed with Homebrew.
 - **Picking `C:\Windows\System32\wsl.exe` as the terminal shell opens WSL**, the same as `wsl.exe`.
 - **Right-click paste no longer pastes twice.** The same clipboard text arriving again within two
   seconds is ignored by the terminal.
-- **Cloning keeps the repository's own agent guides.** Cloning a repository from Alethe no longer
+- **Cloning keeps the repository's own agent guides.** Cloning a repository from Arcadia no longer
   overwrites its `AGENTS.md` or `CLAUDE.md` with the generated briefing, and a README with accented
   or other non-ASCII characters no longer crashes the briefing step.
-- **New terminals open right away on macOS.** Alethe read the Mac's free memory as 0 MB whenever
+- **New terminals open right away on macOS.** Arcadia read the Mac's free memory as 0 MB whenever
   macOS was compressing memory, so every new CLI sat on "Waiting for memory" for up to 45 seconds,
   the RAM indicator stayed red, and the resource manager kept trimming caches and hibernating idle
   terminals. Free memory now comes from the share the macOS kernel reports as available.
@@ -653,11 +657,11 @@ Notable user-facing changes to **Alethe** are documented here. The format is bas
   moves it into that group; before, only the group's name strip took the drop.
 
 - **Exporting a backup no longer stops at a permission error.** Files the embedded browser keeps
-  locked while Alethe is open are left out, and any other file in use is skipped and named in the
+  locked while Arcadia is open are left out, and any other file in use is skipped and named in the
   confirmation instead of failing the whole export.
 - On Linux, terminals and files or links opened from the AppImage no longer inherit the AppImage's
   bundled library and runtime paths. System tools such as `curl` and `python` run normally inside
-  Alethe terminals again, and links open in the browser with its own libraries.
+  Arcadia terminals again, and links open in the browser with its own libraries.
 - **Pasting images and Finder files into a terminal works on macOS.** Ctrl+V or Cmd+V with a
   screenshot or a copied image now saves it as a PNG and pastes its path, so Claude Code attaches
   it as an image; files copied in Finder paste as their paths. Before, only text was read and an
@@ -666,8 +670,8 @@ Notable user-facing changes to **Alethe** are documented here. The format is bas
 - Closing or killing a terminal on Windows now also ends the dev servers and background jobs it
   started, even when the shell that launched them had already exited. Each terminal runs inside its
   own Job Object, so a `npm run dev` left behind by an agent no longer keeps holding memory.
-- Starting Alethe or saving the Orchestration preferences no longer erases the budgets, model
-  tiers and provider order set through the orchestration skill. Alethe now updates only the
+- Starting Arcadia or saving the Orchestration preferences no longer erases the budgets, model
+  tiers and provider order set through the orchestration skill. Arcadia now updates only the
   preferences it shows and moves your preferred provider to the front of the saved order.
 - Worktrees the orchestration skill creates under `.alethe/worktrees/` no longer show in
   `git status` or get staged by `git add -A`.
@@ -679,7 +683,7 @@ Notable user-facing changes to **Alethe** are documented here. The format is bas
   reads and the top bar never got one to show. All readers now share a single request.
 
 - Claude panes reopen on the conversation they were on when the project folder has a space, an
-  underscore, an accent or other punctuation in its path. Alethe looked for the saved conversation
+  underscore, an accent or other punctuation in its path. Arcadia looked for the saved conversation
   in the wrong directory, treated it as gone and started a new chat on every launch.
 - A Claude pane now follows `/clear` and an in-CLI `/resume` immediately, instead of only after the
   next prompt, so closing the app right after switching conversations no longer brings back the
@@ -734,7 +738,7 @@ Notable user-facing changes to **Alethe** are documented here. The format is bas
   whether the planner's own terminal is alive, and its count badge is hidden entirely instead of
   showing "(0)" when there is nothing to report.
 - Resuming a conversation from history (Recent Chats or Claude's own history) could silently drop
-  the Alethe orchestrator connection: the agent came back without its MCP config and could no longer
+  the Arcadia orchestrator connection: the agent came back without its MCP config and could no longer
   delegate work or open shells. It also occasionally showed up on the board under a raw, unreadable
   id instead of its terminal's name. Both are now resolved the same way a freshly spawned session is.
 - An orchestrator shell's last output could occasionally be lost right after it exited: the
@@ -772,12 +776,12 @@ Notable user-facing changes to **Alethe** are documented here. The format is bas
   shells kept separate copies of that state.
 - Putting a group or project on standby now tears all of its terminal and agent process trees down
   through one reliable batch operation. Per-instance PTY registries also prevent Claude, Codex,
-  shell, and MCP wrapper processes from surviving an app update or overlapping Alethe instance.
+  shell, and MCP wrapper processes from surviving an app update or overlapping Arcadia instance.
 - Codex handoffs on Windows now write escaped bridge-script paths to project `config.toml` files,
   preventing `\U` TOML parse errors from blocking the receiving session.
 
 - **Agent CLIs installed under fnm or a custom Volta home are found on Linux.** Launched from a
-  desktop menu, Alethe does not inherit the PATH your shell sets up, so a CLI installed through
+  desktop menu, Arcadia does not inherit the PATH your shell sets up, so a CLI installed through
   fnm, or through Volta with `VOLTA_HOME` pointing somewhere other than `~/.volta`, was reported
   as missing.
 - Explorer rows in the left sidebar no longer stay on a transformed layer and render blurry after
@@ -794,10 +798,10 @@ Notable user-facing changes to **Alethe** are documented here. The format is bas
   affected.
 - Mermaid, nanoid and DOMPurify are updated past versions with published security advisories,
   among them a DOMPurify issue that could let a crafted diagram run script.
-- On Linux, the settings file that lets Claude Code report back to Alethe is no longer written
+- On Linux, the settings file that lets Claude Code report back to Arcadia is no longer written
   to the shared temp folder, where other users of the machine could read the access token in
   it. It now lives in your own runtime folder, readable only by you.
-- On Linux, opening Alethe while it is already running no longer exits without a word. It says
+- On Linux, opening Arcadia while it is already running no longer exits without a word. It says
   it is focusing the open window, or, when that instance is stuck, which process holds it and
   how to end it.
 - Text copy and paste works on KDE Plasma without `wl-clipboard` or `xclip`, through Klipper.
@@ -806,7 +810,7 @@ Notable user-facing changes to **Alethe** are documented here. The format is bas
 - A Codex worker that Codex refuses to start, for example on a model or reasoning effort it
   does not accept, now fails with Codex's reason. It used to show as running, holding a slot,
   until its time budget ran out, or for good when it had none.
-- Alethe no longer closes by itself while a delegated worker streams a long reply with accented
+- Arcadia no longer closes by itself while a delegated worker streams a long reply with accented
   or other non-ASCII text. Trimming the live reply to its last 16,000 bytes could cut a character
   in half, which crashed the whole app
   ([#256](https://github.com/Kc1t/alethe-agents/issues/256)).
@@ -913,11 +917,11 @@ Notable user-facing changes to **Alethe** are documented here. The format is bas
   no longer ship with a stale panel. Release dates in the panel no longer show the day before for
   anyone west of UTC
   ([#213](https://github.com/Kc1t/alethe-agents/issues/213)).
-- **Graphify MCP server starts for Claude, Codex, and opencode.** Alethe configured it as
+- **Graphify MCP server starts for Claude, Codex, and opencode.** Arcadia configured it as
   `graphify <repo> --mcp`, a flag Graphify does not have, so the agent timed out waiting for it;
   it now runs `graphify-mcp <repo>/graphify-out/graph.json`. Existing entries are rewritten the
   next time a session starts ([#206](https://github.com/Kc1t/alethe-agents/issues/206)).
-- **Graphify builds the code graph without an LLM API key.** Alethe generated a missing graph with
+- **Graphify builds the code graph without an LLM API key.** Arcadia generated a missing graph with
   Graphify's full extraction, which needs an API key for docs and images; without one it failed
   and the graph never appeared. It now runs `graphify update`, which builds the code graph in
   seconds and spends no LLM credits ([#211](https://github.com/Kc1t/alethe-agents/issues/211)).
@@ -929,14 +933,14 @@ Notable user-facing changes to **Alethe** are documented here. The format is bas
   ChatGPT Pro Lite, the weekly usage appeared as the 5-hour quota and the week read 0%. Windows are
   now placed by their length, and plans without a 5-hour limit show only the weekly one ([#187](https://github.com/Kc1t/alethe-agents/issues/187)).
 - Agent and 9router install and uninstall dialogs can now be cancelled while an installer runs, so
-  one stuck on a prompt no longer locks the dialog and every other install until Alethe restarts.
+  one stuck on a prompt no longer locks the dialog and every other install until Arcadia restarts.
 - npm installs now work on a fresh Windows, where the default PowerShell execution policy refused
   to run the `npm.ps1` shipped with Node.js; the relaxed policy only applies to the installer's own
   shell.
 - WinGet and Chocolatey installs no longer stop on a confirmation prompt the dialog could not
   answer, such as WinGet's source agreement on its first run.
 - Installing Node.js through WinGet, Scoop or Chocolatey is no longer cut short as soon as `npm`
-  appears on disk; Alethe now waits for the package manager to finish.
+  appears on disk; Arcadia now waits for the package manager to finish.
 - Renaming a project, group, or terminal now also updates its pinned/recent tab in the topbar. The
   tab strip snapshotted its label only once, when the tab was first created, so a later rename kept
   showing the old name there even though the workspace itself reflected the new one.
@@ -947,7 +951,7 @@ Notable user-facing changes to **Alethe** are documented here. The format is bas
 
 ## [1.7.0] — 2026-09-20
 
-The release where Alethe stops being one fixed app and becomes a platform. Features now load as
+The release where Arcadia stops being one fixed app and becomes a platform. Features now load as
 **plugins**, and a **plugin catalogue** inside Preferences installs and updates them in one click,
 pinned to a SHA-256 checksum so what runs is exactly what the listing was reviewed against. Around
 it: **orchestration v2** — a board where a lead agent delegates to Claude and Codex workers, asks
@@ -1000,7 +1004,7 @@ preferences; and three new agents — **Cursor CLI**, **Kiro CLI** and plain **W
   uploads them when onboarding finishes. It is entirely optional — skipping it keeps the app fully
   local, as before.
 
-- **Plugin system.** Alethe now loads features as plugins instead of hard-wiring every one of them
+- **Plugin system.** Arcadia now loads features as plugins instead of hard-wiring every one of them
   into the app. Official plugins ship inside the installer, are on by default, and can be switched
   off in Preferences → Plugins; turning one off removes its surfaces immediately, with no
   restart. Each plugin declares what it needs in its manifest, and the app refuses anything it did
@@ -1029,7 +1033,7 @@ preferences; and three new agents — **Cursor CLI**, **Kiro CLI** and plain **W
   Control", which reveals its panel on whichever side it is placed.
 
 - **Plugins are only loaded when you actually use them.** A plugin now announces its tabs and
-  commands in its manifest, so Alethe can draw them without running any of its code, and loads the
+  commands in its manifest, so Arcadia can draw them without running any of its code, and loads the
   plugin the first time you open one of them. An installed plugin you never touch costs one small
   file read at startup instead of running. Git Control is the first to work this way.
 
@@ -1053,8 +1057,8 @@ preferences; and three new agents — **Cursor CLI**, **Kiro CLI** and plain **W
   from the list while still counting towards the progress bar.
 
 - **A plugin catalogue in Preferences.** Plugins published by other people are now listed inside
-  Alethe, with what each one is allowed to do spelled out before you decide. *Get plugin* opens the
-  author's page in your browser — Alethe never downloads or installs anything for you, and the
+  Arcadia, with what each one is allowed to do spelled out before you decide. *Get plugin* opens the
+  author's page in your browser — Arcadia never downloads or installs anything for you, and the
   plugin still arrives switched off after you import it. The list is kept for six hours and is shown
   from your last copy when you are offline, marked as such.
 
@@ -1064,21 +1068,21 @@ preferences; and three new agents — **Cursor CLI**, **Kiro CLI** and plain **W
   removes what it stored.
 
 - **Plugins now have their own page in Preferences.** Every plugin is listed with its version, kind,
-  description, and whether it ships with Alethe or came from your disk, alongside a switch to turn it
+  description, and whether it ships with Arcadia or came from your disk, alongside a switch to turn it
   on or off and the reason when one fails to load. Each entry spells out what the plugin is allowed
   to do — add themes, add panes, add a sidebar tab, read and write Git state — in plain words instead
   of manifest tokens. Enabling a plugin from your own disk now asks first, naming those permissions
   and saying outright that nobody has reviewed it, and plugins installed that way can be uninstalled
   from the same page, which also links straight to the plugins folder.
 
-- Empty project and group workspaces now use a quiet launcher-style state with a large Alethe mark
+- Empty project and group workspaces now use a quiet launcher-style state with a large Arcadia mark
   and direct keyboard-labelled actions instead of boxed empty-state cards.
 
-- **9router integration.** Alethe can now install, run, and route agents through
+- **9router integration.** Arcadia can now install, run, and route agents through
   [9router](https://github.com/decolua/9router), a local proxy that spreads Claude Code, Codex, and
-  OpenCode traffic across multiple providers with automatic fallback. Alethe detects what you
+  OpenCode traffic across multiple providers with automatic fallback. Arcadia detects what you
   already have — whether Node.js is present, and whether a 9router is already on your PATH — and
-  lets you pick between running your own install or letting Alethe install a private,
+  lets you pick between running your own install or letting Arcadia install a private,
   version-pinned copy for you (your global npm packages are untouched). Missing Node.js can be
   installed from the same dialog. Preferences -> Integrations starts and stops the proxy, opens its
   dashboard, and holds the endpoint key and port. Routing is off by default, and the master toggle
@@ -1092,7 +1096,7 @@ preferences; and three new agents — **Cursor CLI**, **Kiro CLI** and plain **W
   changing the route means restarting it.
 
 - The new-terminal flow can now start an orchestration with the selected Claude Code or Codex agent
-  as its planner. Alethe keeps the planner above a ready canvas inside one dedicated pane group,
+  as its planner. Arcadia keeps the planner above a ready canvas inside one dedicated pane group,
   without replacing or rearranging the project's surrounding terminal layout.
 
 - A worker on the orchestration board whose report mentions an image it produced now gets its own
@@ -1177,10 +1181,10 @@ preferences; and three new agents — **Cursor CLI**, **Kiro CLI** and plain **W
   reloading.
 
 - Playwright MCP can now run its own dedicated browser, headed or headless, instead of always
-  attaching to the shared browser Alethe uses for Browser Panes. Pick the mode in Preferences →
+  attaching to the shared browser Arcadia uses for Browser Panes. Pick the mode in Preferences →
   Features, under the Playwright toggle.
 
-- Workers whose process died with Alethe are now shown as interrupted instead of quietly reading as
+- Workers whose process died with Arcadia are now shown as interrupted instead of quietly reading as
   running or failed. They appear with a dashed outline and a dashed amber edge on the board, get
   their own line in the summary rail and their own counter in the pane header, and the tooltip
   explains that the thread is still on disk so the work can be picked up again. A planner with
@@ -1205,18 +1209,18 @@ preferences; and three new agents — **Cursor CLI**, **Kiro CLI** and plain **W
   whether the text will steer the turn it is running now or become its next turn.
 
 - Agent orchestration, off by default under a new preference. When it is on, Claude Code terminals
-  get a set of Alethe tools for handing independent units of work to Codex workers that Alethe runs
+  get a set of Arcadia tools for handing independent units of work to Codex workers that Arcadia runs
   in parallel, up to a concurrency limit it enforces itself. The lead gets job ids back immediately
   and waits for every worker to settle before it can report, so it never claims an outcome it does
   not have. Each worker can optionally get its own detached git worktree, which is what makes it
   safe to run several of them over the same files, and each carries a time budget after which
-  Alethe stops it rather than letting it hold a slot forever. Alethe pins every worker to
+  Arcadia stops it rather than letting it hold a slot forever. Arcadia pins every worker to
   workspace-scoped writes, and can correct one while it is still running or cancel it outright
   without losing its context. Worker status, plan, elapsed time, token usage and unified diff are
   reported as they change. The same orchestrator also ships as a standalone MCP server, so the
-  tools can be used from any editor without Alethe running.
+  tools can be used from any editor without Arcadia running.
 
-- When an agent opens a page in the shared browser, Alethe asks where it should go. The browser
+- When an agent opens a page in the shared browser, Arcadia asks where it should go. The browser
   itself has no window, which is right most of the time — an agent reading a page needs no
   interface at all — so the question only comes up when a page actually appears. All three
   answers are spelled out: show it in a pane, open it in your own browser, or leave it running
@@ -1269,9 +1273,9 @@ preferences; and three new agents — **Cursor CLI**, **Kiro CLI** and plain **W
 - Duplicate in-app notifications (same title and body within 5 seconds) are now collapsed into
   one instead of stacking.
 
-- New projects can now be created directly from a GitHub URL — Alethe clones the repo and injects
+- New projects can now be created directly from a GitHub URL — Arcadia clones the repo and injects
   an AI context briefing into AGENTS.md/CLAUDE.md. Pointing a new project at a folder that already
-  has an exported Alethe config (`.alethe/project.json`) now offers to restore it instead of
+  has an exported Arcadia config (`.alethe/project.json`) now offers to restore it instead of
   starting from scratch.
 
 - Project configs can be exported to a file and re-imported as a new project from the sidebar's
@@ -1290,17 +1294,17 @@ preferences; and three new agents — **Cursor CLI**, **Kiro CLI** and plain **W
 
 - Cursor CLI (`cursor-agent`) as a first-class agent: pick it when creating a pane or a sub-tab,
   enable or disable it under Preferences → Terminal, point it at a custom binary, and install it
-  from inside Alethe when it is missing. Panes keep their conversation — Alethe opens a chat through
+  from inside Arcadia when it is missing. Panes keep their conversation — Arcadia opens a chat through
   the CLI and reattaches to it with `--resume` on every relaunch, including after a crash or a
   restart — and its models are read from the signed-in account instead of a hardcoded list. Cursor's
   `mcp.json` (global and per repository) also joins the MCP tab, so its servers can be listed,
   edited, and copied to and from the other agents.
 
-- Pull Request review and squash merge from the merge panel. Alethe locates an open GitHub Pull
+- Pull Request review and squash merge from the merge panel. Arcadia locates an open GitHub Pull
   Request for an agent worktree through the local GitHub CLI (`gh auth login` required), opens its
   metadata, and can start an AI review inside the same isolated worktree — the agent is instructed to
   only inspect the diff, never to commit, push, merge, or comment on GitHub. Merging stays an
-  explicit human action: before the squash merge Alethe re-fetches the PR, blocks it when the head
+  explicit human action: before the squash merge Arcadia re-fetches the PR, blocks it when the head
   SHA moved since the review, when the PR is a draft, or when GitHub reports conflicts, and passes
   the same SHA to GitHub as a concurrency guard. No GitHub token is stored; authentication is
   delegated to the local GitHub CLI.
@@ -1311,16 +1315,16 @@ preferences; and three new agents — **Cursor CLI**, **Kiro CLI** and plain **W
   transcribing (spinner), so a long transcription does not look like a freeze. Choose Toggle or Hold
   mode and pick a microphone; System default follows the OS input device. Mic capture uses the
   native audio stack (cpal/PipeWire), not WebKit getUserMedia, so AppImages still see microphones.
-  On Linux, Alethe also enables WebKitGTK media-stream as a fallback path for other features.
+  On Linux, Arcadia also enables WebKitGTK media-stream as a fallback path for other features.
 
 - Agent CLIs installed via nvm, bun, `npm --prefix`, pnpm or volta are now detected on Linux
-  even when Alethe is launched from the desktop menu — which inherits a minimal PATH — matching
+  even when Arcadia is launched from the desktop menu — which inherits a minimal PATH — matching
   the existing `~/.local/bin` and `~/.cargo/bin` fallbacks. Onboarding and agent tabs now see
   these installs instead of reporting them as missing.
 
 - A new "PRs" tab in the right sidebar lists every open GitHub Pull Request you're involved in as
   author or reviewer, across every repo you can see — a global `gh search prs --involves=@me`
-  through the local GitHub CLI, not limited to repos registered as Alethe projects. Each PR can be
+  through the local GitHub CLI, not limited to repos registered as Arcadia projects. Each PR can be
   sent to the TODO list with one click, creating a linked task (duplicate-safe) that carries a
   quick-open link back to the PR. A Pomodoro timer also lives in the TODO panel now: configurable
   focus/short-break/long-break durations (default 25/5/15), an optional "focus on" a task, a
@@ -1329,10 +1333,10 @@ preferences; and three new agents — **Cursor CLI**, **Kiro CLI** and plain **W
 
 ### Changed
 
-- **Open-source and brand terms clarified.** Alethe remains licensed under
-  AGPL-3.0-or-later so covered derivatives stay open source, while the Alethe name,
+- **Open-source and brand terms clarified.** Arcadia remains licensed under
+  AGPL-3.0-or-later so covered derivatives stay open source, while the Arcadia name,
   logo, application icon, and official branding are expressly reserved to Kauã Miguel.
-  Modified builds must use independent branding, and commercial use of the Alethe
+  Modified builds must use independent branding, and commercial use of the Arcadia
   brand requires prior written permission.
 
 - **Interactive Remote Control questions for Codex and Claude Code.** Structured agent questions now
@@ -1359,7 +1363,7 @@ preferences; and three new agents — **Cursor CLI**, **Kiro CLI** and plain **W
   usage widget shows you, instead of delegating blind. Ask it to send work to a side that is running
   out and it is told which side has more room, with the figures behind the call — and when both
   sides are running out it is told that too, rather than being pointed at an agent that is just as
-  close to its ceiling. It is still the one that chooses: Alethe reports, it never silently moves
+  close to its ceiling. It is still the one that chooses: Arcadia reports, it never silently moves
   work to another vendor.
 
 - **The board now shows why a worker ran where it ran.** When one agent is running out, the line
@@ -1446,15 +1450,15 @@ preferences; and three new agents — **Cursor CLI**, **Kiro CLI** and plain **W
 - The selected planner tab no longer sits on a tinted panel. Selection now reads through weight,
   contrast and its lit bottom edge.
 
-- Redesigned the Alethe Remote home list to match the desktop Project Sidebar: a folder icon tinted
+- Redesigned the Arcadia Remote home list to match the desktop Project Sidebar: a folder icon tinted
   by the project's own color replaces the old initials avatar, groups render as a plain label with a
   hairline rule instead of a boxed section, and chats sit indented under their project with the
   real Claude Code / Codex / OpenCode logos instead of letter badges. Projects with more than one
   chat collapse by default and expand on tap; searching always expands matches.
 
-- Alethe Remote now mirrors the selected desktop theme, app icon, motion preference, and language
+- Arcadia Remote now mirrors the selected desktop theme, app icon, motion preference, and language
   while it is open. Its splash, workspace, terminal view, connection feedback, empty states, and
-  recovery screens now use the same Alethe design tokens and official branding.
+  recovery screens now use the same Arcadia design tokens and official branding.
 
 - Notifications that ask something now read as one line rather than a block. The choices sit
   inline as chips after the message, separated by a hairline, with a single filled chip for the
@@ -1499,14 +1503,14 @@ preferences; and three new agents — **Cursor CLI**, **Kiro CLI** and plain **W
   the app. The most recent few are still kept so their work can be followed up on, and the rest are
   let go on their own.
 
-- Delegated work is no longer lost when Alethe closes. What each worker was asked, what it reported,
+- Delegated work is no longer lost when Arcadia closes. What each worker was asked, what it reported,
   which run and which agent session it belonged to, and the worktree it used are all kept, so the
   history is there on the next start. Work that was still in flight is shown as interrupted rather
   than as running, because its process did not survive — but the conversation did: sending more work
   to such a worker starts it again and it picks up with everything it had already read, instead of
   beginning from nothing.
 
-- Delegated work is now something you can watch. A pane shows every worker Alethe is running as a
+- Delegated work is now something you can watch. A pane shows every worker Arcadia is running as a
   card of its own — what it was asked to do, whether it is waiting for a slot, working or finished,
   how long it has taken, the plan it is following, what it reported back, how many tokens it spent,
   and whether it took an isolated worktree. It updates as the workers do, so a long-running one
@@ -1521,7 +1525,7 @@ preferences; and three new agents — **Cursor CLI**, **Kiro CLI** and plain **W
 
 - **Claude conversations stay with their grid panes.** Switching chats with `/new`, `/clear`, or `/resume` now updates the saved conversation even in inactive tabs and after reconnecting a terminal. Reopening the app uses the latest saved conversation, and activity in another pane no longer changes a pane's session assignment.
 
-- Remote Control no longer reopens automatically after restarting Alethe when it was left enabled
+- Remote Control no longer reopens automatically after restarting Arcadia when it was left enabled
   in saved preferences; it now requires an explicit enable action in each app session.
 
 - Claude and Codex session callbacks are now bound to their own terminal instance, preventing a late
@@ -1567,7 +1571,7 @@ preferences; and three new agents — **Cursor CLI**, **Kiro CLI** and plain **W
 
 - Putting a group or project on standby now tears all of its terminal and agent process trees down
   through one reliable batch operation. Per-instance PTY registries also prevent Claude, Codex,
-  shell, and MCP wrapper processes from surviving an app update or overlapping Alethe instance.
+  shell, and MCP wrapper processes from surviving an app update or overlapping Arcadia instance.
 
 - Codex handoffs on Windows now write escaped bridge-script paths to project `config.toml` files,
   preventing `\U` TOML parse errors from blocking the receiving session.
@@ -1587,12 +1591,12 @@ preferences; and three new agents — **Cursor CLI**, **Kiro CLI** and plain **W
   duplicate chip underneath it.
 
 - An interrupted worker can be messaged again. Sending it a message is exactly how it comes back:
-  Alethe re-queues it and resumes its thread with the message as its next turn, and the message box
+  Arcadia re-queues it and resumes its thread with the message as its next turn, and the message box
   now says so before you send.
 
 - The orchestration board now carries the real product logos. Claude Code, Codex, OpenCode,
-  Antigravity and every other CLI Alethe knows show their own mark on the worker cards, the planner
-  tabs, the summary rail and the message box, exactly like the rest of the app; a CLI Alethe does
+  Antigravity and every other CLI Arcadia knows show their own mark on the worker cards, the planner
+  tabs, the summary rail and the message box, exactly like the rest of the app; a CLI Arcadia does
   not recognise keeps a neutral glyph instead of borrowing someone else's logo.
 
 - A run now looks like the parent of its workers instead of another worker. The run node states
@@ -1632,7 +1636,7 @@ preferences; and three new agents — **Cursor CLI**, **Kiro CLI** and plain **W
   you can bring any one of them into view.
 
 - Worker and planner cards now show which CLI is behind them: a small vendor mark in that vendor's
-  colour on the tab of a planner and on the card of a worker. A vendor Alethe has no mark for keeps
+  colour on the tab of a planner and on the card of a worker. A vendor Arcadia has no mark for keeps
   the neutral glyph rather than being given an invented one.
 
 - The dot grid behind the orchestration board is fainter, so it reads as texture and no longer
@@ -1643,7 +1647,7 @@ preferences; and three new agents — **Cursor CLI**, **Kiro CLI** and plain **W
   workers — and every worker it started hangs off it to the right, joined by a drawn connector, so
   the delegation that fanned out into those workers is visible on screen. Each connector is tinted
   by what its worker is doing: green while it runs, red when it failed, dashed amber while it waits
-  for a slot, and plain once it is over. Workers do not depend on each other and Alethe does not
+  for a slot, and plain once it is over. Workers do not depend on each other and Arcadia does not
   pretend otherwise — the only links drawn are the ones that really exist. The canvas pans by
   dragging the empty background, zooms with Ctrl (or Cmd) and the scroll wheel or the corner
   control, and has a "fit" button that frames the whole run again; picking a worker in the summary
@@ -1660,17 +1664,17 @@ preferences; and three new agents — **Cursor CLI**, **Kiro CLI** and plain **W
   whole or refused whole, and anything already created is cleaned up.
 
 - Handing more work to a worker that was still busy took a second slot from the queue and never gave
-  it back, so the number of workers Alethe would run shrank over a session. It is now refused with a
+  it back, so the number of workers Arcadia would run shrank over a session. It is now refused with a
   reason. Stopped workers are also reaped instead of being left as zombie processes.
 
-- Agent tools served by Alethe over HTTP rejected the clients that use them. The token header was
+- Agent tools served by Arcadia over HTTP rejected the clients that use them. The token header was
   matched exactly as written, but header names are case-insensitive and clients normally send them
   lowercased, so the request came back unauthorized with an empty body — which the client reported
   as a parse error rather than a rejected credential. The header is now matched without regard to
   case.
 
-- Starting a second Alethe — a development build alongside an installed one — killed every terminal
-  running in the first, along with everything those terminals had launched. On startup Alethe clears
+- Starting a second Arcadia — a development build alongside an installed one — killed every terminal
+  running in the first, along with everything those terminals had launched. On startup Arcadia clears
   out terminal processes left behind by a session that ended badly, and the list it reads for that
   was kept in one fixed location shared by every build, so the starting instance found the other
   one's *live* terminals there and treated them as leftovers. The list now belongs to the instance
@@ -1744,7 +1748,7 @@ preferences; and three new agents — **Cursor CLI**, **Kiro CLI** and plain **W
   the one guarding app close — was rejected before it could be shown, and the action behind it was
   silently abandoned.
 
-- Two Alethe instances no longer redirect each other's agent events. The hook endpoint was written
+- Two Arcadia instances no longer redirect each other's agent events. The hook endpoint was written
   to a single shared file, so whichever started last captured the events of both.
 
 - Terminals are no longer killed behind your back under memory pressure. At critical pressure
@@ -1772,7 +1776,7 @@ preferences; and three new agents — **Cursor CLI**, **Kiro CLI** and plain **W
 
 - The automation browser is now shut down with the app and any copy left by a previous run is
   cleared on startup. Chromium deliberately detaches from the job object that ties every other
-  child process to Alethe, so it used to survive a crash and keep holding its profile.
+  child process to Arcadia, so it used to survive a crash and keep holding its profile.
 
 - Memory relief actually runs now. The resource manager raised one event per pressure level and
   nothing on the frontend listened to any of them, so every level was a no-op — and the most
@@ -1823,7 +1827,7 @@ preferences; and three new agents — **Cursor CLI**, **Kiro CLI** and plain **W
 - Windows updates no longer close the app without coming back. The update manifest pointed Windows
   at the MSI, but the installer nearly everyone actually has is the NSIS `setup.exe` the download
   page serves. An MSI applied over an NSIS install neither upgrades it nor restarts the app, so the
-  updater downloaded, closed Alethe, and left the old version behind. The generic Windows entry now
+  updater downloaded, closed Arcadia, and left the old version behind. The generic Windows entry now
   points at the NSIS installer; the `-msi` and `-nsis` entries are still published for anyone
   pinning one deliberately. Existing installs that ended up with both an MSI and an NSIS entry
   registered will settle onto NSIS after this update.
@@ -1832,7 +1836,7 @@ preferences; and three new agents — **Cursor CLI**, **Kiro CLI** and plain **W
   label with a colour token that does not exist anywhere in the app, so the text fell back to the
   inherited foreground and sat light-on-accent.
 
-- Installing a CLI from inside Alethe no longer ends in a dialog that spins forever. The install
+- Installing a CLI from inside Arcadia no longer ends in a dialog that spins forever. The install
   screen now watches for the CLI itself while the installer runs, instead of waiting only for the
   installer's shell to exit — some of them hand the prompt back or leave a progress bar behind and
   never exit — so the dialog closes on its own as soon as the CLI is really there. Detection also
@@ -1877,7 +1881,7 @@ preferences; and three new agents — **Cursor CLI**, **Kiro CLI** and plain **W
   one, right after the theme step.
 - Claude Code and Codex conversations can now be continued in the other agent from the terminal
   toolbar or Recent chats — so hitting a usage limit on one agent no longer ends the conversation,
-  you carry it into the other and keep working. Alethe builds an editable context packet, redacts
+  you carry it into the other and keep working. Arcadia builds an editable context packet, redacts
   anything that looks like a secret, token, password, API key or credential before it leaves the
   machine, opens the target agent in a new pane, keeps the source conversation available, and
   removes the temporary packet after the first target turn or when its pane is closed.
@@ -1903,7 +1907,7 @@ preferences; and three new agents — **Cursor CLI**, **Kiro CLI** and plain **W
   own docs use, or a search of the official MCP registry — which turns a published package into a
   ready-to-run command and pre-fills the variables it expects, marking the secret ones empty. The
   last successful search of each term is kept on disk so the list still opens when the registry is
-  unreachable, labelled with the date it was captured. Alethe translates a server to each target's
+  unreachable, labelled with the date it was captured. Arcadia translates a server to each target's
   format and refuses, rather than silently dropping, a field the target cannot express. A per-agent
   **Check** button asks the agent itself whether it can actually reach each server — the one thing no
   config file can answer. The first time the app opens with the feature on, a card shows what was
@@ -1930,10 +1934,10 @@ preferences; and three new agents — **Cursor CLI**, **Kiro CLI** and plain **W
   dialog. Empty cells also became drop targets: dragging a pane or a container onto one moves it
   there instead of swapping with a neighbour.
 - The project container header has a **+** button that creates a new terminal in that project.
-- Agents that are not installed can now be installed from inside Alethe. The onboarding agent step
+- Agents that are not installed can now be installed from inside Arcadia. The onboarding agent step
   and the "not found" overlay of a terminal both offer an **Install** button that runs the official
   installer in a real shell and streams its output, then confirms the CLI is reachable before
-  reporting success. Alethe probes the machine for Node, npm, WinGet, Scoop and Chocolatey and only
+  reporting success. Arcadia probes the machine for Node, npm, WinGet, Scoop and Chocolatey and only
   offers the methods that work there, preferring each vendor's official installer — which needs no
   Node — and listing the alternatives under **Other ways**.
 - A **Recent chats** button on the terminal toolbar, next to Open in VS Code, lists the Claude and
@@ -1946,7 +1950,7 @@ preferences; and three new agents — **Cursor CLI**, **Kiro CLI** and plain **W
   so instead of dead-ending on "no automatic installer". It offers a one-click Node.js install
   through WinGet, Scoop or Chocolatey when one of them is available, and a **Download Node.js**
   button otherwise. Once Node lands, the agent's own installer appears without reopening the card.
-- Freebuff and Mimo can now be installed from inside Alethe like the other agents, with their
+- Freebuff and Mimo can now be installed from inside Arcadia like the other agents, with their
   documentation links — until now they were the only agents with no installer at all.
 - Installed agents can be **uninstalled** from the onboarding agent step. Confirmation happens in a
   dialog that shows the exact command about to run, and the agent is only reported as removed once
@@ -1965,7 +1969,7 @@ preferences; and three new agents — **Cursor CLI**, **Kiro CLI** and plain **W
   revealing entries in File Explorer, renaming, and confirmed deletion. Git file rows can also open
   the working file in the grid or reveal it alongside the existing stage, discard, commit, and sync actions.
 - Browser panes now offer app-first, balanced, and keep-alive resource modes. App-first is the default,
-  and every mode releases hidden native webviews when Alethe detects memory pressure.
+  and every mode releases hidden native webviews when Arcadia detects memory pressure.
 - The layout organizer now includes adaptive presets and keeps the eight most recently saved layouts
   separately for each project, group, and workspace.
 - New **Ember** interface theme: cool charcoal surfaces, hairline dividers and a single ember-orange
@@ -2007,7 +2011,7 @@ preferences; and three new agents — **Cursor CLI**, **Kiro CLI** and plain **W
   or uninstall — so all rows line up regardless of what each agent offers. Above it there is a
   counter strip (enabled, up to date, with updates, installable), a search field that matches on name
   or path, and All / Detected / Installable filters. A **Scan again** link re-runs detection without
-  leaving the step, for when an agent was installed outside Alethe.
+  leaving the step, for when an agent was installed outside Arcadia.
 - GitHub Copilot is drawn with its official mark instead of the generic robot placeholder, so every
   agent in the app now carries its own logo.
 - Setting MCP up is no longer a step of first-run onboarding. It is offered once as its own card
@@ -2177,7 +2181,7 @@ preferences; and three new agents — **Cursor CLI**, **Kiro CLI** and plain **W
   the link unless a file extension is waiting on the other side, which is what a path with spaces
   actually looks like.
 - Invalid CLI overrides are rejected instead of being saved and launched. Existing invalid overrides
-  are cleared automatically, preventing the Antigravity desktop application from opening when Alethe
+  are cleared automatically, preventing the Antigravity desktop application from opening when Arcadia
   expects the `agy` command-line executable.
 - The agent update button in onboarding no longer fails silently. It decided success purely by
   checking whether the CLI binary was still on PATH, which is true even when the update itself
@@ -2210,7 +2214,7 @@ preferences; and three new agents — **Cursor CLI**, **Kiro CLI** and plain **W
 - Reopening a pane no longer replays its history line by line. The stored scrollback was fed to the
   terminal in 16 KB slices, one rendered frame each, so a large buffer visibly scrolled from the top
   down to the prompt and took seconds; it is now written in a single pass straight to the bottom.
-- Switching conversation from inside the CLI with `/new` or `/resume` now sticks. Alethe pinned the
+- Switching conversation from inside the CLI with `/new` or `/resume` now sticks. Arcadia pinned the
   session id given at launch and sent the old one back on the next restart, dragging the pane to the
   previous chat.
 - Ctrl+Tab did nothing after coming back to the app from another window. Returning left the webview
@@ -2233,7 +2237,7 @@ preferences; and three new agents — **Cursor CLI**, **Kiro CLI** and plain **W
   backend using `wl-paste` / `wl-copy` (Wayland) or `xclip` (X11) now handles screenshots, images
   copied from the web (`image/png`) and files copied in a file manager (`text/uri-list`). macOS is
   still unimplemented.
-- **Remote control is now off by default and stays off until you turn it on.** Alethe used to open a
+- **Remote control is now off by default and stays off until you turn it on.** Arcadia used to open a
   LAN listener on every launch, and the on/off switch was lost when the app restarted. The setting is
   now saved with your preferences and the listener only starts while it is enabled.
 - The remote pairing address and QR code are only shown while a pairing window is open, and the
@@ -2312,7 +2316,7 @@ preferences; and three new agents — **Cursor CLI**, **Kiro CLI** and plain **W
 - New GSD plugin instances clear stale synchronization markers left by crashed or closed processes.
 - Terminal hover and click coordinates are remeasured after app zoom changes, keeping xterm.js link
   detection aligned with the pointer.
-- Development builds on Linux now also apply the Alethe icon at runtime. Packaged builds remain the
+- Development builds on Linux now also apply the Arcadia icon at runtime. Packaged builds remain the
   reliable icon source for compositors that prefer desktop-file lookup.
 - Linux now sets `WEBKIT_DISABLE_DMABUF_RENDERER=1` before creating the webview, avoiding the known
   WebKitGTK DMA-BUF animation and fractional-scaling issues documented by Tauri.
@@ -2379,7 +2383,7 @@ preferences; and three new agents — **Cursor CLI**, **Kiro CLI** and plain **W
 
 - CLI detection during onboarding is time-boxed per provider so slow PATH entries cannot freeze setup.
 - New profiles reach onboarding cleanly, and parking terminals no longer blocks account switching.
-- The default profile image and generated app icons now use the dark Alethe artwork.
+- The default profile image and generated app icons now use the dark Arcadia artwork.
 - Agent Sandbox project creation entry points are hidden behind a build flag while the feature is
   archived.
 - The startup screen now shares the Home background and ASCII-art treatment.
@@ -2483,7 +2487,7 @@ memory controls, and Linux/macOS parity for Antigravity and OpenCode.
 - Stabilized the pane-area Zustand fallback to prevent React #185 during project hydration.
 - Disabled unstable xterm.js WebGL rendering in the Windows WebView to avoid teardown races.
 - Sidebar resize persistence no longer rebuilds `defaultSize` during the resize event.
-- GSD test briefings are scoped to the files changed in the current session and exclude Alethe-generated
+- GSD test briefings are scoped to the files changed in the current session and exclude Arcadia-generated
   `.opencode/`, `opencode.json`, and `.planning/` infrastructure.
 - Graphify and GSD setup commands now run on blocking worker threads instead of freezing Tauri IPC when
   spawning agents.
@@ -2507,7 +2511,7 @@ memory controls, and Linux/macOS parity for Antigravity and OpenCode.
 - Deleting a worktree agent also deletes its hidden GSD viewer terminal and PTY.
 - Repository-root discovery excludes GSD viewer panes and can resolve the shared Git root from any
   existing worktree.
-- GSD viewer panes trust Alethe-tracked child session IDs that OpenCode intentionally omits from normal
+- GSD viewer panes trust Arcadia-tracked child session IDs that OpenCode intentionally omits from normal
   session listings.
 - Merge Center **Accept** now performs the real analyze, prepare, resolve, validate, and fast-forward
   merge flow; **Reject** removes the worktree while preserving its branch.
@@ -2580,7 +2584,7 @@ the sidebar, and adds Antigravity support.
   development shells.
 - Redesigned Home with interactive ASCII artwork, smooth dashboard transitions, a mini-terminal quick
   launcher, a compact Spotify dock, clearer usage and focus panels, and real streak/activity data.
-- Rebuilt the loading screen with animated Alethe ASCII branding and dot-matrix progress.
+- Rebuilt the loading screen with animated Arcadia ASCII branding and dot-matrix progress.
 - Reorganized the Projects sidebar around a fixed active-project card, a flat project list, colored
   monograms, always-visible menus, activity indicators, and reduced metadata clutter.
 - Terminal links now exclude explanatory text, input failures recover the PTY, Codex restart preserves

@@ -1,6 +1,6 @@
 # Plugin System (RFC-012)
 
-Alethe loads features as plugins so the core does not have to own every one of them. Official
+Arcadia loads features as plugins so the core does not have to own every one of them. Official
 plugins ship inside the app, are enabled by default, and can be turned off. Turning one off removes
 its surfaces immediately — no restart.
 

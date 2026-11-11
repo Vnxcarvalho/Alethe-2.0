@@ -3,10 +3,10 @@
 <br />
 <div align="center">
   <a href="https://github.com/Vnxcarvalho/Alethe-2.0">
-    <img src="./src/assets/theme-icons/carvalho.png" alt="Alethe Logo" width="160">
+    <img src="./src/assets/theme-icons/carvalho.png" alt="Arcadia Logo" width="160">
   </a>
 
-  <h1 align="center">Alethe</h1>
+  <h1 align="center">Arcadia</h1>
 
   <p align="center">
     <b>多智能体编程工作区。</b>
@@ -17,7 +17,7 @@
   </p>
 
   <p align="center">
-    <a href="https://github.com/Vnxcarvalho/Alethe-2.0/releases/latest/download/Alethe-Setup.exe"><b>下载 Windows 版 Alethe</b></a>
+    <a href="https://github.com/Vnxcarvalho/Alethe-2.0/releases/latest/download/Alethe-Setup.exe"><b>下载 Windows 版 Arcadia</b></a>
   </p>
 
   <p align="center">
@@ -28,20 +28,20 @@
 </div>
 
 > [!IMPORTANT]
-> Alethe 目前仍是早期公开发布版本。桌面应用免费、开源，并且是**本地优先**（local-first），但并非完全离线：默认会进行更新检查与提供商用量轮询；其他网络功能多为可选，或由用户操作触发。手动的 GitHub Gist Sync 已经可用；官方托管同步或云备份可能会在之后单独提供。详见
+> Arcadia 目前仍是早期公开发布版本。桌面应用免费、开源，并且是**本地优先**（local-first），但并非完全离线：默认会进行更新检查与提供商用量轮询；其他网络功能多为可选，或由用户操作触发。手动的 GitHub Gist Sync 已经可用；官方托管同步或云备份可能会在之后单独提供。详见
 > [隐私与数据流说明](./docs/PRIVACY.md)。
 
 <div align="center">
-  <img src="./docs/assets/alethe-preview.gif" alt="Alethe 多智能体编程工作区预览" width="760">
+  <img src="./docs/assets/alethe-preview.gif" alt="Arcadia 多智能体编程工作区预览" width="760">
 </div>
 
 > 本文为社区中文说明，内容对应英文 [README.md](./README.md)。若中英文不一致，以英文版为准。
 
-## Alethe 是什么
+## Arcadia 是什么
 
 单个终端里跑一个智能体很容易。真正难的是：三个仓库、五个智能体同时干活——这时普通终端标签页就不够用了：会话容易丢、MCP 服务在智能体之间不同步，也没人清楚「谁在做什么、在哪里做」。
 
-**Alethe 就是为这种情况打造的桌面工作区。** 每个智能体都在真实的 PTY 里运行，嵌在持久化的项目布局中，各自保留会话与历史；你调整界面时它们也不会因此中断。在此之上，Alethe 还统一管理智能体共享的部分：CLI、MCP 服务器、Skills，以及你在智能体之间流转的对话。
+**Arcadia 就是为这种情况打造的桌面工作区。** 每个智能体都在真实的 PTY 里运行，嵌在持久化的项目布局中，各自保留会话与历史；你调整界面时它们也不会因此中断。在此之上，Arcadia 还统一管理智能体共享的部分：CLI、MCP 服务器、Skills，以及你在智能体之间流转的对话。
 
 跨平台（Windows、macOS、Linux），本地优先，基于 Tauri、Rust、React 与 `xterm.js` 构建。
 「本地优先」描述的是工作区持久化方式，并不保证完全无网络；当前的网络默认行为、凭据与保留策略见
@@ -57,13 +57,13 @@
   </tr>
   <tr>
     <td align="center">
-      <img src="./docs/screenshots/alethe-macos.png" alt="在 macOS 上运行的 Alethe" width="100%">
+      <img src="./docs/screenshots/alethe-macos.png" alt="在 macOS 上运行的 Arcadia" width="100%">
     </td>
     <td align="center">
-      <img src="./docs/screenshots/alethe-windows.png" alt="在 Windows 上运行的 Alethe" width="100%">
+      <img src="./docs/screenshots/alethe-windows.png" alt="在 Windows 上运行的 Arcadia" width="100%">
     </td>
     <td align="center">
-      <img src="./docs/screenshots/alethe-linux.png" alt="在 Linux 上运行的 Alethe" width="100%">
+      <img src="./docs/screenshots/alethe-linux.png" alt="在 Linux 上运行的 Arcadia" width="100%">
     </td>
   </tr>
   <tr>
@@ -89,9 +89,9 @@
 | <picture><source media="(prefers-color-scheme: dark)" srcset="./docs/assets/agents/shell-dark.svg"><img src="./docs/assets/agents/shell-light.svg" width="28" height="28" alt=""></picture> | **Shell** | pwsh / bash / zsh | 普通终端，同一套窗格模型 |
 | <picture><source media="(prefers-color-scheme: dark)" srcset="./docs/assets/agents/wsl-dark.svg"><img src="./docs/assets/agents/wsl-light.svg" width="28" height="28" alt=""></picture> | **WSL** | `wsl.exe` | 默认发行版，作为普通 Shell（Windows） |
 
-缺失的 CLI 可以在 Alethe 内安装、更新与卸载——它会探测本机的 Node、npm、WinGet、Scoop、Chocolatey，只提供真正可用的方式，并优先使用各厂商官方安装器。已安装的 CLI 会从 PATH、注册表、npm/pnpm/Volta/fnm/nvm/Bun/Cargo/Scoop/Chocolatey 等位置发现，也可手动指定自定义路径。插件还可以向此列表添加自有智能体。
+缺失的 CLI 可以在 Arcadia 内安装、更新与卸载——它会探测本机的 Node、npm、WinGet、Scoop、Chocolatey，只提供真正可用的方式，并优先使用各厂商官方安装器。已安装的 CLI 会从 PATH、注册表、npm/pnpm/Volta/fnm/nvm/Bun/Cargo/Scoop/Chocolatey 等位置发现，也可手动指定自定义路径。插件还可以向此列表添加自有智能体。
 
-智能体可选择经 [9router](https://github.com/decolua/9router) 路由——这是一个本地代理，可在多个提供商之间分发流量并自动回退。Alethe 会安装并运行一份私有、版本锁定的副本，不会改动你的全局 npm 包。路由默认关闭，且仅对开启后新打开的终端生效。
+智能体可选择经 [9router](https://github.com/decolua/9router) 路由——这是一个本地代理，可在多个提供商之间分发流量并自动回退。Arcadia 会安装并运行一份私有、版本锁定的副本，不会改动你的全局 npm 包。路由默认关闭，且仅对开启后新打开的终端生效。
 
 ## 它能做什么
 
@@ -119,7 +119,7 @@
 
 - 功能以 **插件** 形式加载，而不是写死在代码里。官方插件——待办列表、Git 控制、主题包——随安装包分发，可在「偏好设置 ▸ 插件」中关闭；对应界面会随之出现或消失，无需重启。
 - 插件可贡献工作区窗格、侧边栏标签、命令面板条目、完整主题，或新的智能体提供商。它在清单中声明所需能力，应用会拒绝未声明的请求。
-- **插件目录**：其他人发布的插件会在 Alethe 内列出并写明权限；带安装包的条目可一键安装与更新。目录会为每个包固定 SHA-256 校验和，确保运行内容与审阅时一致。已安装插件默认关闭，启用前会经过信任对话框。
+- **插件目录**：其他人发布的插件会在 Arcadia 内列出并写明权限；带安装包的条目可一键安装与更新。目录会为每个包固定 SHA-256 校验和，确保运行内容与审阅时一致。已安装插件默认关闭，启用前会经过信任对话框。
 
 **发布插件**
 
@@ -128,7 +128,7 @@
 1. **本地试用。** 把文件夹放到 `<profile>/plugins/<id>/`，或使用「偏好设置 ▸ 插件 ▸ *导入插件*」。导入后默认关闭——启用以信任对话框为准。
 2. **打包 zip。** 压缩插件文件夹，计算 SHA-256，并挂到发布页：  
    `zip -r my-plugin.zip my-plugin && sha256sum my-plugin.zip`。
-3. **申请上架。** 向本仓库提交 PR，在 [`plugins.json`](plugins.json) 增加一条，包含 `id`、`name`、`downloadUrl`，以及为了可从 Alethe 内安装所需的 `package.url` 与 `package.sha256`。zip 变更后请重新计算哈希。
+3. **申请上架。** 向本仓库提交 PR，在 [`plugins.json`](plugins.json) 增加一条，包含 `id`、`name`、`downloadUrl`，以及为了可从 Arcadia 内安装所需的 `package.url` 与 `package.sha256`。zip 变更后请重新计算哈希。
 4. 合并后，列表会在六小时内同步到所有人，或在点击 *刷新* 后立即更新。
 
 上架是人工阅读你的 PR，不是安全审计：插件仍会以禁用状态到达，仍需信任对话框。`docs/examples/notes-plugin/` 是一个无需构建步骤的纯 JavaScript 示例；完整约定见 [插件指南](docs/PLUGINS.md)。
@@ -140,7 +140,7 @@
 - **Pull Request 审阅**：合并面板通过本地 `gh` CLI 查找智能体 worktree 对应的 GitHub PR，打开其元数据，并可在同一隔离 worktree 中启动 AI 审阅——只读，不会提交、推送、合并或发表 GitHub 评论。Squash 合并仍需明确的人为操作；若 head SHA 已变、PR 为草稿，或 GitHub 报告冲突，则会阻止。不存储 GitHub token；身份验证交给 `gh`。
 - 终端旁的内容窗格：文件浏览器、Markdown、diff、图片、视频、内嵌浏览器。
 - 每项目待办与番茄钟、隔离配置档、本地备份导出/导入、界面与终端主题，支持 EN、pt-BR 与 zh-CN。
-- **编排看板**：一个主智能体把工作单元委派给 Claude 与 Codex 工作器，由 Alethe 并行运行——可选各自独立的 git worktree，卡片上汇报状态、费用、token 与 diff，离开沙箱前也可先征求你的同意。默认关闭。
+- **编排看板**：一个主智能体把工作单元委派给 Claude 与 Codex 工作器，由 Arcadia 并行运行——可选各自独立的 git worktree，卡片上汇报状态、费用、token 与 diff，离开沙箱前也可先征求你的同意。默认关闭。
 - **本地语音听写**（设备端模型）与通过 GitHub 登录的 **偏好云同步**——均为可选。
 - **远程控制**：经认证的局域网 Web 视图，通过二维码配对，可在手机上跟进并回复智能体。默认关闭，在局域网上使用未加密的 HTTP/WebSocket，因此请仅在可信网络启用。干净配置档默认为只读；回复智能体需要单独开启输入权限，Shell 输入还有额外开关。
 - Spotify 正在播放：在 **偏好设置 ▸ Spotify** 中填入你自己的 Spotify 应用凭据，回调 URI 为 `http://127.0.0.1:8888/callback`。当前版本会把这些凭据存在本地配置档中；导出或分享配置档前请阅读隐私说明。
@@ -168,7 +168,7 @@
 > Windows 构建**尚未代码签名**，因此 Defender 可能把 `alethe.exe` 标为
 > `Trojan:Win32/Bearfoos.A!ml` 并隔离。`!ml` 后缀表示机器学习启发式，而非发布者签名；像派生子进程、创建 PTY 这类终端复用行为也可能触发误报。请确认下载来自官方 Releases 页面；不要对其他来源的文件绕过警告。
 
-恢复方式：**Windows 安全中心 → 病毒和威胁防护 → 保护历史记录 → 操作 → 还原**，然后为 `%LOCALAPPDATA%\Alethe` 添加排除项（若从源码构建，也可排除 `src-tauri/target`）。误报可向
+恢复方式：**Windows 安全中心 → 病毒和威胁防护 → 保护历史记录 → 操作 → 还原**，然后为 `%LOCALAPPDATA%\Arcadia` 添加排除项（若从源码构建，也可排除 `src-tauri/target`）。误报可向
 [Microsoft Security Intelligence](https://www.microsoft.com/wdsi/filesubmission) 提交。macOS 构建也尚未公证——请右键应用并选择 **打开** 以绕过 Gatekeeper。签名与公证已在[路线图](#roadmap)中。
 
 ## 从源码运行
@@ -202,7 +202,7 @@ alethe                # 将当前文件夹作为项目打开
 alethe ~/some/project # 打开指定文件夹
 ```
 
-若该文件夹已是项目，会把它带入工作区而不是重复创建。若 Alethe 已在运行，会聚焦现有窗口。命令安装到 `~/.local/bin/alethe`（macOS/Linux）或 `%LOCALAPPDATA%\Alethe\bin\alethe.cmd`（Windows）——移动应用后请重新安装。
+若该文件夹已是项目，会把它带入工作区而不是重复创建。若 Arcadia 已在运行，会聚焦现有窗口。命令安装到 `~/.local/bin/alethe`（macOS/Linux）或 `%LOCALAPPDATA%\Alethe\bin\alethe.cmd`（Windows）——移动应用后请重新安装。
 
 ## 路线图
 
@@ -224,13 +224,13 @@ alethe ~/some/project # 打开指定文件夹
 
 较大改动请先开 issue 讨论方向。
 
-## 用 Alethe 构建的作品
+## 用 Arcadia 构建的作品
 
-以下是以 Alethe 为工作区构建的项目与产品——智能体并行运行、Shell 并肩协作、会话跨天恢复。
+以下是以 Arcadia 为工作区构建的项目与产品——智能体并行运行、Shell 并肩协作、会话跨天恢复。
 
 <!-- showcase:start -->
 
-_暂无条目。_ 用 Alethe 做出了什么？把它加到 [`SHOWCASE.md`](SHOWCASE.md)——只需一行和一个 PR，你也会进入贡献者列表。
+_暂无条目。_ 用 Arcadia 做出了什么？把它加到 [`SHOWCASE.md`](SHOWCASE.md)——只需一行和一个 PR，你也会进入贡献者列表。
 
 <!-- showcase:end -->
 
@@ -238,7 +238,7 @@ _暂无条目。_ 用 Alethe 做出了什么？把它加到 [`SHOWCASE.md`](SHOW
 
 ## 贡献者
 
-感谢每一位帮助塑造 Alethe 的人。
+感谢每一位帮助塑造 Arcadia 的人。
 
 <p align="center">
 
@@ -290,7 +290,7 @@ _暂无条目。_ 用 Alethe 做出了什么？把它加到 [`SHOWCASE.md`](SHOW
 
 源代码以 **AGPL-3.0-or-later** 分发。经修改的覆盖衍生作品若被分发，或通过网络向用户提供，必须在相同许可证下提供对应源代码。详见 [`LICENSE`](LICENSE) 与 [`NOTICE`](NOTICE)。
 
-官方托管服务（如同步、备份、计费或云功能）可能是专有的，并单独提供。代码许可证不授予 **Alethe** 名称、徽标、应用图标或官方品牌的权利。修改后的构建必须使用独立品牌；商业使用 Alethe 品牌需事先获得 Kauã Miguel 的书面许可。详见
+官方托管服务（如同步、备份、计费或云功能）可能是专有的，并单独提供。代码许可证不授予 **Arcadia** 名称、徽标、应用图标或官方品牌的权利。修改后的构建必须使用独立品牌；商业使用 Arcadia 品牌需事先获得 Kauã Miguel 的书面许可。详见
 [`TRADEMARK.md`](TRADEMARK.md)。
 
 ## 社区

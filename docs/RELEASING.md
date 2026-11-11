@@ -1,4 +1,4 @@
-# Releasing Alethe
+# Releasing Arcadia
 
 Two deliberate steps, never one. `npm run release` only stamps a version in git; publishing
 installers is a separate command. A pushed tag never builds anything on its own.
@@ -63,7 +63,7 @@ Two jobs run after the build:
   failing the release.
 - **Point windows-x86_64 at NSIS** rewrites `latest.json` so the generic Windows updater key serves
   the NSIS installer. This is not cosmetic: an MSI applied over an NSIS install neither upgrades it
-  nor restarts the app, so the updater would close Alethe and nothing would come back. The job then
+  nor restarts the app, so the updater would close Arcadia and nothing would come back. The job then
   verifies every platform is present and signed before it finishes.
 
 ## Release notes

@@ -7,7 +7,7 @@ expected.
 | # | Decision | Status |
 |---|---|---|
 | [003](003-worktree-manager.md) | Per-agent isolation with two worktree modes | Accepted |
-| [004](004-graphify-integration.md) | Graphify stays an external tool that Alethe manages | Accepted |
+| [004](004-graphify-integration.md) | Graphify stays an external tool that Arcadia manages | Accepted |
 | [006](006-merge-analyzer.md) | The app, not the agent, decides whether a merge conflicts | Accepted |
 | [007](007-conflict-resolution.md) | Conflicts are resolved in an ephemeral merge environment | Accepted |
 

@@ -2,7 +2,7 @@
 
 ## Supported versions
 
-Alethe does not currently publish a fixed version-support window. Security work is evaluated against
+Arcadia does not currently publish a fixed version-support window. Security work is evaluated against
 the current `main` branch and the latest published release. Before reporting, please check whether the
 behavior still exists in one of those versions and include the exact version or commit you tested.
 This wording is not a promise that every historical release will receive a fix.
@@ -15,7 +15,7 @@ maintainers at [contact@kc1t.com](mailto:contact@kc1t.com), the project contact 
 
 Include as much of the following as is safe to share:
 
-- the affected Alethe version or commit, operating system, and installation method;
+- the affected Arcadia version or commit, operating system, and installation method;
 - the affected feature and the security impact you believe is possible;
 - prerequisites, a minimal reproduction, and whether the behavior works with default settings;
 - relevant logs or screenshots after removing tokens, credentials, personal paths, repository
@@ -41,13 +41,13 @@ or other users.
 
 ## Scope and security boundaries
 
-Reports about Alethe's own code, packaging, update flow, local data handling, process execution,
+Reports about Arcadia's own code, packaging, update flow, local data handling, process execution,
 embedded web content, or integrations are in scope. Problems that exist only in a coding-agent CLI,
 MCP server, package manager, operating-system webview, or remote service should also be reported to
-that upstream vendor; please still contact Alethe privately if Alethe's integration makes the impact
+that upstream vendor; please still contact Arcadia privately if Arcadia's integration makes the impact
 materially worse.
 
-Alethe is a terminal and coding-agent workspace. It intentionally starts subprocesses, gives terminal
+Arcadia is a terminal and coding-agent workspace. It intentionally starts subprocesses, gives terminal
 sessions access to the selected working directory and inherited environment, and can connect to
 services described in the [privacy and data-flow guide](docs/PRIVACY.md). A process doing what the
 user explicitly asked is not by itself a vulnerability, but unintended privilege, origin, or data

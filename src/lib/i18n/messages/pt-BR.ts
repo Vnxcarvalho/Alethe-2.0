@@ -63,7 +63,7 @@ export const ptBR: Record<MessageKey, string> = {
   'onboarding.agentReady': 'pronto',
   'onboarding.usageTitle': 'Mostrar seus limites de uso?',
   'onboarding.usageSubtitle':
-    'O Alethe pode mostrar quanto de cada plano você já usou. Para ler isso, o Alethe usa as credenciais da CLI já instalada neste computador e contata o provedor. Tudo fica desligado até você ligar.',
+    'O Arcadia pode mostrar quanto de cada plano você já usou. Para ler isso, o Arcadia usa as credenciais da CLI já instalada neste computador e contata o provedor. Tudo fica desligado até você ligar.',
   'onboarding.usageFooter':
     'Nada é lido enquanto um provedor está desligado · altere depois em Preferências',
   'onboarding.featuresTitle': 'Escolha seus recursos',
@@ -161,7 +161,7 @@ export const ptBR: Record<MessageKey, string> = {
   'profiles.switchError': 'Não foi possível trocar de conta com segurança: {error}',
   'profiles.switchBusy': 'Estacionando terminais antes da troca…',
   'profiles.backupDialogTitle': 'Exportar backup da conta',
-  'profiles.backupFileType': 'Backup de conta Alethe',
+  'profiles.backupFileType': 'Backup de conta Arcadia',
   'profiles.exportBackup': 'Exportar backup antes de excluir',
   'profiles.backupDone': 'Backup exportado',
   'profiles.backupReady': 'Backup exportado. Agora você pode confirmar a exclusão.',
@@ -178,7 +178,7 @@ export const ptBR: Record<MessageKey, string> = {
   'menu.agentSandbox': 'Sandbox de Agents',
   'menu.remoteControl': 'Controle remoto',
   'menu.audit': 'Central de Auditoria',
-  'audit.title': 'Central de Auditoria e Diagnósticos do Alethe',
+  'audit.title': 'Central de Auditoria e Diagnósticos do Arcadia',
   'audit.searchPlaceholder': 'Pesquisar nos logs de auditoria (mensagem, categoria ou stack)…',
   'audit.filterAll': 'Todos ({count})',
   'audit.filterErrors': 'Erros ({count})',
@@ -210,7 +210,7 @@ export const ptBR: Record<MessageKey, string> = {
   'backup.embeddedImages': 'Imagens linkadas salvas dentro do backup: {count}.',
   'backup.linksKept':
     'Imagens linkadas que não puderam ser baixadas e continuam como link: {count}.',
-  'menu.backupFilter': 'Alethe backup',
+  'menu.backupFilter': 'Arcadia backup',
   'menu.confirmReset':
     'Apagar TODO o estado do app (projetos, scrollback, configs)? Não dá pra desfazer.',
   'menu.confirmFactoryReset':
@@ -227,12 +227,12 @@ export const ptBR: Record<MessageKey, string> = {
   'remote.tutorialStep4':
     'Pelo dispositivo pareado dá pra ver a saída ao vivo e, a menos que o modo somente-leitura esteja ligado, enviar uma mensagem por vez pra um terminal compartilhado.',
   'remote.tutorialStep5':
-    'Pra alcançar o Alethe fora do seu Wi-Fi, instale o Tailscale neste PC e no celular, depois mude o Alcance pra Tailscale abaixo — veja docs/REMOTE_CONTROL_TAILSCALE.md pro guia completo.',
+    'Pra alcançar o Arcadia fora do seu Wi-Fi, instale o Tailscale neste PC e no celular, depois mude o Alcance pra Tailscale abaixo — veja docs/REMOTE_CONTROL_TAILSCALE.md pro guia completo.',
   'remote.title': 'Controle remoto',
   'remote.enabled': 'Controle remoto disponível',
   'remote.disabled': 'Controle remoto desligado',
   'remote.description':
-    'Escaneie este QR code com um celular na mesma rede para abrir o Alethe Remote.',
+    'Escaneie este QR code com um celular na mesma rede para abrir o Arcadia Remote.',
   'remote.disabledDescription':
     'Nenhum celular pode se conectar enquanto esse recurso estiver desligado.',
   'remote.statusOn': 'Ligado',
@@ -240,9 +240,9 @@ export const ptBR: Record<MessageKey, string> = {
   'remote.enable': 'Ligar controle remoto',
   'remote.disable': 'Desligar controle remoto',
   'remote.confirmEnable':
-    'Ligar o Controle Remoto?\n\nO Alethe abrirá listeners HTTP e WebSocket na sua rede local. Dispositivos pareados poderão ver a saída dos terminais compartilhados. As sessões pareadas expiram após {expiry}.\n\n{access}',
+    'Ligar o Controle Remoto?\n\nO Arcadia abrirá listeners HTTP e WebSocket na sua rede local. Dispositivos pareados poderão ver a saída dos terminais compartilhados. As sessões pareadas expiram após {expiry}.\n\n{access}',
   'remote.confirmEnableTailscale':
-    'Ligar o Controle Remoto?\n\nO Alethe abrirá listeners HTTP e WebSocket na sua rede Tailscale. Dispositivos pareados poderão ver a saída dos terminais compartilhados. As sessões pareadas expiram após {expiry}.\n\n{access}',
+    'Ligar o Controle Remoto?\n\nO Arcadia abrirá listeners HTTP e WebSocket na sua rede Tailscale. Dispositivos pareados poderão ver a saída dos terminais compartilhados. As sessões pareadas expiram após {expiry}.\n\n{access}',
   'remote.confirmAccessReadOnly':
     'O acesso atual é somente leitura: mensagens para agentes e entrada de shell estão bloqueadas.',
   'remote.confirmAccessAgentInput':
@@ -251,13 +251,13 @@ export const ptBR: Record<MessageKey, string> = {
     'O acesso atual permite mensagens para agentes e entrada de shell.',
   'remote.sessionSeconds': '{seconds} segundos',
   'remote.enableFailedTitle': 'Não foi possível iniciar o controle remoto',
-  'remote.enableFailedBody': 'O Alethe manteve o controle remoto desligado. {error}',
+  'remote.enableFailedBody': 'O Arcadia manteve o controle remoto desligado. {error}',
   'remote.disableFailedTitle': 'Não foi possível desligar o controle remoto',
   'remote.disableFailedBody':
-    'O Alethe não conseguiu confirmar que o acesso remoto foi encerrado. Reinicie o Alethe antes de continuar. {error}',
+    'O Arcadia não conseguiu confirmar que o acesso remoto foi encerrado. Reinicie o Arcadia antes de continuar. {error}',
   'remote.rollbackFailedTitle': 'A reversão do controle remoto requer atenção',
   'remote.rollbackFailedBody':
-    'O Alethe não conseguiu salvar ou aplicar completamente o estado desligado. Reinicie o Alethe e confirme que o Controle Remoto está desligado. Erro de inicialização: {error}. Erro de reversão: {rollbackError}',
+    'O Arcadia não conseguiu salvar ou aplicar completamente o estado desligado. Reinicie o Arcadia e confirme que o Controle Remoto está desligado. Erro de inicialização: {error}. Erro de reversão: {rollbackError}',
   'remote.modalReachEyebrow': 'Passo 1 · Rede',
   'remote.modalPairEyebrow': 'Passo 2 · Parear dispositivo',
   'remote.connectedDevices': 'Dispositivos conectados',
@@ -283,7 +283,7 @@ export const ptBR: Record<MessageKey, string> = {
   'remote.openSettings': 'Abrir configurações do controle remoto',
   'remote.hiddenAddressPlaceholder':
     'http://192.168.x.x:9340 · Abra uma janela de pareamento para revelar o endereço',
-  'brand.remote': 'Alethe Remote',
+  'brand.remote': 'Arcadia Remote',
   'common.details': 'Detalhes técnicos',
   'common.reload': 'Tentar novamente',
   'common.terminal': 'Terminal',
@@ -299,7 +299,7 @@ export const ptBR: Record<MessageKey, string> = {
   'home.description':
     'Escolha um terminal compartilhado e continue seu trabalho neste dispositivo.',
   'home.emptyDescription':
-    'Abra um terminal no Alethe ou permita o acesso remoto a um terminal existente.',
+    'Abra um terminal no Arcadia ou permita o acesso remoto a um terminal existente.',
   'home.emptyTitle': 'Nenhuma conversa compartilhada',
   'home.noMatchesDescription': 'Busque pelo nome de um projeto, grupo, agente ou terminal.',
   'home.noMatchesTitle': 'Nenhuma conversa encontrada',
@@ -317,7 +317,7 @@ export const ptBR: Record<MessageKey, string> = {
   'home.startingAgent': 'Iniciando…',
   'home.startAgentError': 'Agente não iniciado: {message}',
   'home.startAgentTimeout':
-    'O computador não abriu o agente a tempo. Confira o Alethe no computador.',
+    'O computador não abriu o agente a tempo. Confira o Arcadia no computador.',
   'workers.title': 'Workers da orquestração',
   'workers.needsApproval': 'Precisa de aprovação',
   'workers.approveOnDesktop': 'Esperando sua aprovação. Aprove no computador.',
@@ -355,7 +355,7 @@ export const ptBR: Record<MessageKey, string> = {
   'question.multiple': 'Selecione uma ou mais opções.',
   'question.submit': 'Enviar resposta',
   'question.answered': 'Esta pergunta já foi respondida.',
-  'question.readOnly': 'Abra o Alethe no desktop para responder esta pergunta.',
+  'question.readOnly': 'Abra o Arcadia no desktop para responder esta pergunta.',
   'question.sendError': 'Resposta não enviada: {message}',
   'question.sendUncertain':
     'Não foi possível confirmar o envio. Confira a pergunta antes de tentar novamente.',
@@ -367,21 +367,21 @@ export const ptBR: Record<MessageKey, string> = {
   'chat.liveTerminal': 'Terminal ao vivo',
   'chat.messageHint': 'Enter envia · Shift + Enter adiciona uma linha',
   'chat.readOnly':
-    'Este dispositivo tem acesso somente leitura. O envio de mensagens está desativado no Alethe.',
+    'Este dispositivo tem acesso somente leitura. O envio de mensagens está desativado no Arcadia.',
   'chat.send': 'Enviar mensagem',
   'chat.sendError': 'Mensagem não enviada: {message}',
   'chat.sendPlaceholder': 'Enviar mensagem para este terminal…',
   'chat.sending': 'Enviando mensagem',
   'state.connectionDescription':
-    'Não foi possível alcançar o Alethe na rede local. Confira se o app desktop e este dispositivo continuam conectados à mesma rede.',
+    'Não foi possível alcançar o Arcadia na rede local. Confira se o app desktop e este dispositivo continuam conectados à mesma rede.',
   'state.connectionTitle': 'Conexão indisponível',
   'state.loadingDescription': 'Preparando seu workspace compartilhado…',
-  'state.loadingTitle': 'Conectando ao Alethe',
+  'state.loadingTitle': 'Conectando ao Arcadia',
   'state.pairingDescription':
-    'Abra o Controle remoto no Alethe e escaneie o QR code para conectar este dispositivo.',
+    'Abra o Controle remoto no Arcadia e escaneie o QR code para conectar este dispositivo.',
   'state.pairingTitle': 'Conecte este dispositivo',
   'state.sessionDescription':
-    'Este dispositivo não está mais pareado. Abra o Controle remoto no Alethe e escaneie um novo QR code.',
+    'Este dispositivo não está mais pareado. Abra o Controle remoto no Arcadia e escaneie um novo QR code.',
   'state.sessionTitle': 'Sessão remota encerrada',
   'state.terminalError': 'Não foi possível carregar a saída do terminal.',
   'ui.terminal.hideFromRemote': 'Ocultar de dispositivos remotos',
@@ -410,7 +410,7 @@ export const ptBR: Record<MessageKey, string> = {
     '{agent} foi reinstalado, mas {path} continua sendo a versão no PATH.',
   'agentInstall.uninstallTitle': 'Desinstalar o {agent}',
   'agentInstall.uninstallConfirm':
-    'Isto remove o {agent} desta máquina. O Alethe vai rodar o comando abaixo num shell:',
+    'Isto remove o {agent} desta máquina. O Arcadia vai rodar o comando abaixo num shell:',
   'agentInstall.uninstallConfirmAction': 'Sim, desinstalar',
   'agentInstall.cancel': 'Cancelar',
   'onboarding.agentUpdate': 'Atualizar para {version}',
@@ -458,7 +458,7 @@ export const ptBR: Record<MessageKey, string> = {
   'handoff.size': '{current} / {max} bytes',
   'handoff.unrestricted': 'Iniciar o {agent} em modo irrestrito',
   'handoff.privacy':
-    'O pacote fica no seu perfil local do Alethe e é apagado após o primeiro turno concluído pelo agente de destino.',
+    'O pacote fica no seu perfil local do Arcadia e é apagado após o primeiro turno concluído pelo agente de destino.',
   'handoff.lossPrivate':
     'Raciocínio privado e estado específico do provedor não podem ser transferidos.',
   'handoff.fallbackNewest':
@@ -474,12 +474,12 @@ export const ptBR: Record<MessageKey, string> = {
   'remote.openAgentToastTitle': '{device} iniciou um agente',
   'remote.autoDisabledToastTitle': 'O controle remoto se desligou sozinho',
   'remote.autoDisabledToastBody':
-    'Nenhum dispositivo conectou por um bom tempo, então o Alethe fechou o listener automaticamente.',
+    'Nenhum dispositivo conectou por um bom tempo, então o Arcadia fechou o listener automaticamente.',
   'remote.startFailedToastTitle': 'O controle remoto não conseguiu iniciar',
   'remote.startFailedToastBody':
-    'O Alethe não conseguiu abrir o listener — confira o reach mode selecionado e tente de novo.',
+    'O Arcadia não conseguiu abrir o listener — confira o reach mode selecionado e tente de novo.',
   'remote.startupNote':
-    'O controle remoto nunca liga sozinho. O Alethe só abre o listener LAN enquanto esta opção estiver ativa.',
+    'O controle remoto nunca liga sozinho. O Arcadia só abre o listener LAN enquanto esta opção estiver ativa.',
   'remote.reachTitle': 'Alcance',
   'remote.reachDesc': 'Escolha de qual rede os dispositivos pareados podem alcançar este listener.',
   'remote.reachLan': 'Rede local',
@@ -515,7 +515,7 @@ export const ptBR: Record<MessageKey, string> = {
   'remote.deviceOffline': 'Ocioso',
   'remote.deviceExpiresAt': 'expira às {time}',
   'remote.settingsStatusTitle': 'Serviço remoto',
-  'remote.settingsStatusDesc': 'Controle se o Alethe aceita conexões remotas na rede local.',
+  'remote.settingsStatusDesc': 'Controle se o Arcadia aceita conexões remotas na rede local.',
   'remote.settingsSecurityTitle': 'Política de segurança',
   'remote.settingsSecurityDesc': 'Defina limites conservadores para sessões remotas autenticadas.',
   'remote.settingsSecurityNote':
@@ -538,7 +538,7 @@ export const ptBR: Record<MessageKey, string> = {
   /* ---- preferences ---- */
   'prefs.title': 'Preferências',
   'prefs.categoryAccount': 'Conta',
-  'prefs.categoryAccountDesc': 'Gerencie seu perfil local, idioma e contas do Alethe.',
+  'prefs.categoryAccountDesc': 'Gerencie seu perfil local, idioma e contas do Arcadia.',
   'prefs.categoryOrganization': 'Organização',
   'prefs.categoryOrganizationDesc': 'Gerencie grupos arquivados sem perder os projetos.',
   'prefs.archivedGroupsTitle': 'Grupos arquivados',
@@ -566,9 +566,9 @@ export const ptBR: Record<MessageKey, string> = {
   'prefs.categoryTerminalDesc': 'Configure a aparência do terminal e os agentes disponíveis.',
   'prefs.categoryIntegrations': 'Integrações',
   'prefs.categoryIntegrationsDesc':
-    'Conecte serviços externos e controle o que o Alethe compartilha.',
+    'Conecte serviços externos e controle o que o Arcadia compartilha.',
   'prefs.categoryUpdates': 'Atualizações',
-  'prefs.categoryUpdatesDesc': 'Consulte a versão instalada e procure atualizações do Alethe.',
+  'prefs.categoryUpdatesDesc': 'Consulte a versão instalada e procure atualizações do Arcadia.',
   'prefs.shortcutsTitle': 'Atalhos de teclado',
   'prefs.shortcutsDesc':
     'Personalize ações globais. Navegação, zoom e números de projeto continuam reservados.',
@@ -611,7 +611,7 @@ export const ptBR: Record<MessageKey, string> = {
   'prefs.localAccounts': 'Contas locais',
   'prefs.localAccountsDesc': 'Alterne entre perfis com projetos e preferências independentes.',
   'prefs.uiTheme': 'Tema da UI',
-  'prefs.uiThemeDesc': 'Escolha a paleta usada em toda a interface do Alethe.',
+  'prefs.uiThemeDesc': 'Escolha a paleta usada em toda a interface do Arcadia.',
   'prefs.appIconTheme': 'Ícone do app',
   'prefs.appIconThemeDesc':
     'Ícone exibido na barra de tarefas e na janela, independente do tema da interface.',
@@ -632,7 +632,7 @@ export const ptBR: Record<MessageKey, string> = {
   'prefs.uiZoom': 'Zoom da interface',
   'prefs.uiZoomDesc': 'Aumente ou reduza o tamanho de toda a interface.',
   'prefs.windowOpacity': 'Opacidade da janela',
-  'prefs.windowOpacityDesc': 'Deixe o desktop aparecer através de toda a janela do Alethe.',
+  'prefs.windowOpacityDesc': 'Deixe o desktop aparecer através de toda a janela do Arcadia.',
   'prefs.windowOpacityHint':
     'Experimental · Opacidade baixa pode reduzir a legibilidade dos textos.',
   'prefs.opacityReset': 'Restaurar opacidade',
@@ -651,7 +651,7 @@ export const ptBR: Record<MessageKey, string> = {
   'prefs.viewPlacementLeft': 'Sidebar esquerda',
   'prefs.viewPlacementRight': 'Sidebar direita',
   'prefs.features': 'Recursos',
-  'prefs.featuresDesc': 'Escolha quais módulos opcionais ficam visíveis no Alethe.',
+  'prefs.featuresDesc': 'Escolha quais módulos opcionais ficam visíveis no Arcadia.',
   'prefs.featureEnabled': 'Ativado',
   'prefs.featureDisabled': 'Desativado',
 
@@ -681,25 +681,25 @@ export const ptBR: Record<MessageKey, string> = {
     'Nenhum navegador baseado em Chromium foi encontrado, ou ele não abriu a porta de depuração. O Playwright vai subir o próprio.',
   'features.playwright.title': 'Navegador Playwright',
   'features.playwright.description':
-    'Aponta o servidor MCP do Playwright para um navegador — compartilhado com o Alethe ou um dedicado só dele, escolhido abaixo.',
+    'Aponta o servidor MCP do Playwright para um navegador — compartilhado com o Arcadia ou um dedicado só dele, escolhido abaixo.',
   'features.playwright.browserMode.label': 'Navegador',
   'features.playwright.browserMode.shared': 'Compartilhado',
   'features.playwright.browserMode.dedicated': 'Dedicado',
   'features.playwright.browserMode.sharedHint':
-    'Conecta no navegador que o Alethe já controla (headless, visível só dentro de um Browser Pane). Compartilhado com qualquer outro agente usando ele ao mesmo tempo.',
+    'Conecta no navegador que o Arcadia já controla (headless, visível só dentro de um Browser Pane). Compartilhado com qualquer outro agente usando ele ao mesmo tempo.',
   'features.playwright.browserMode.dedicatedHint':
-    'Sobe um navegador próprio, separado, fora do Alethe, independente do compartilhado e de qualquer outro agente.',
+    'Sobe um navegador próprio, separado, fora do Arcadia, independente do compartilhado e de qualquer outro agente.',
   'features.playwright.headless.label': 'Rodar o navegador dedicado headless (sem janela visível)',
   'features.orchestrator.title': 'Orquestração de agentes',
   'features.orchestrator.description':
-    'Dá ao Claude Code um conjunto de ferramentas do Alethe para repassar trabalho a workers Codex que rodam em paralelo. O Alethe é dono do sandbox, do limite de concorrência e dos workers, e consegue corrigir ou cancelar um deles no meio da execução.',
+    'Dá ao Claude Code um conjunto de ferramentas do Arcadia para repassar trabalho a workers Codex que rodam em paralelo. O Arcadia é dono do sandbox, do limite de concorrência e dos workers, e consegue corrigir ou cancelar um deles no meio da execução.',
   'features.prs.title': 'PRs abertos',
   'features.prs.description':
     'Mostra os Pull Requests do GitHub em que você está envolvido como autor ou revisor, em todos os repositórios, com um jeito rápido de enviar um pra sua lista de TODO.',
   'features.prs.keywords': 'pull request pr github revisao todo',
   'features.agentTeams.title': 'Times de agentes',
   'features.agentTeams.description':
-    'Faz os times de agentes do Claude Code abrirem um terminal por integrante no projeto, com o líder à esquerda e o time à direita. O Alethe dá um tmux próprio aos terminais do Claude Code e aos shells comuns. Os terminais do Antigravity ganham um comando alethe-team, para você pedir que abram um time; Codex, OpenCode e os outros agentes não são afetados. Vale para terminais abertos depois de ligar. Fechar o líder fecha o time.',
+    'Faz os times de agentes do Claude Code abrirem um terminal por integrante no projeto, com o líder à esquerda e o time à direita. O Arcadia dá um tmux próprio aos terminais do Claude Code e aos shells comuns. Os terminais do Antigravity ganham um comando alethe-team, para você pedir que abram um time; Codex, OpenCode e os outros agentes não são afetados. Vale para terminais abertos depois de ligar. Fechar o líder fecha o time.',
   'features.agentTeams.keywords':
     'times de agentes claude code teammates tmux paineis swarm paralelo',
   'features.wsl.title': 'Integração com o WSL',
@@ -720,16 +720,16 @@ export const ptBR: Record<MessageKey, string> = {
     'Instale o servidor ai-memory para os agentes compartilharem memória de longo prazo. Os agentes iniciam normalmente sem ele.',
   // ai-memory's sub-panel, under its switch in Features.
   'aiMemory.panelCaptures':
-    'Todo prompt e toda chamada de ferramenta dos agentes que o Alethe inicia são registrados, como markdown num repositório git mais um índice de busca — os dois nesta máquina, os dois legíveis sem o Alethe.',
+    'Todo prompt e toda chamada de ferramenta dos agentes que o Arcadia inicia são registrados, como markdown num repositório git mais um índice de busca — os dois nesta máquina, os dois legíveis sem o Arcadia.',
   'aiMemory.checking': 'Verificando…',
   'aiMemory.install': 'Instalar o ai-memory',
   'aiMemory.installing': 'Instalando…',
-  'aiMemory.installedManaged': 'Instalado pelo Alethe',
+  'aiMemory.installedManaged': 'Instalado pelo Arcadia',
   'aiMemory.installedExternal': 'Usando a cópia que você instalou',
   'aiMemory.at': 'em {path}',
   'aiMemory.missing': 'Ainda não instalado — instale e os agentes já podem usar.',
   'aiMemory.unsupported':
-    'O ai-memory ainda não publica build para esta plataforma, então o Alethe não consegue instalar aqui.',
+    'O ai-memory ainda não publica build para esta plataforma, então o Arcadia não consegue instalar aqui.',
   'aiMemory.openRepo': 'Abrir o projeto',
   'aiMemory.start': 'Iniciar',
   'aiMemory.starting': 'Iniciando…',
@@ -738,7 +738,7 @@ export const ptBR: Record<MessageKey, string> = {
   'aiMemory.running': 'Respondendo em {endpoint}',
   'aiMemory.stopped': 'Parado',
   'aiMemory.portBusy':
-    'Algo já responde em {endpoint} e não foi o Alethe que iniciou — provavelmente a sua própria cópia. O Alethe não vai mexer nela.',
+    'Algo já responde em {endpoint} e não foi o Arcadia que iniciou — provavelmente a sua própria cópia. O Arcadia não vai mexer nela.',
   'aiMemory.counts': '{pages} páginas · {sessions} sessões · {observations} observações',
   'aiMemory.installError': 'Não foi possível instalar o ai-memory.',
   'aiMemory.startError': 'Não foi possível iniciar o ai-memory.',
@@ -822,7 +822,7 @@ export const ptBR: Record<MessageKey, string> = {
   'prefs.resourcePolicySmartHint':
     'Runtimes visíveis, focados, recém-abertos ou trabalhando são sempre protegidos. Agentes estacionados retomam pela sessão salva.',
   'prefs.resourcePolicyManualHint':
-    'O Alethe apenas mede o consumo. Ele nunca fecha abas, estaciona runtimes nem pausa novos processos automaticamente.',
+    'O Arcadia apenas mede o consumo. Ele nunca fecha abas, estaciona runtimes nem pausa novos processos automaticamente.',
   'prefs.spawnConcurrency': 'Spawns em paralelo',
   'prefs.spawnConcurrencyDesc':
     'Quantos terminais sobem de uma vez. Diminua se abrir grupos grandes travar o app; aumente pra subir mais rápido.',
@@ -853,7 +853,7 @@ export const ptBR: Record<MessageKey, string> = {
   'prefs.orchestrationSkillBackend': 'Backend preferido',
   'prefs.orchestrationSkillBackend.auto': 'Automático',
   'prefs.orchestrationSkillBackend.skill': 'Somente skill local',
-  'prefs.orchestrationSkillBackend.mcp': 'MCP do Alethe quando disponível',
+  'prefs.orchestrationSkillBackend.mcp': 'MCP do Arcadia quando disponível',
   'prefs.orchestrationSkillStrategy': 'Estratégia padrão',
   'prefs.orchestrationSkillStrategy.auto': 'Automática',
   'prefs.orchestrationSkillStrategy.economy': 'Economia',
@@ -871,7 +871,7 @@ export const ptBR: Record<MessageKey, string> = {
   'prefs.orchestrationSkillProviderNone': 'Nenhum',
   'prefs.orchestrationSkillProviderAuto': 'Ordem automática',
   'prefs.orchestrationSkillHint':
-    'O Alethe exporta estas escolhas para o arquivo local de política da skill incluída. O runner lê esse arquivo diretamente e não precisa de MCP. Uma instrução explícita no prompt atual sempre vence.',
+    'O Arcadia exporta estas escolhas para o arquivo local de política da skill incluída. O runner lê esse arquivo diretamente e não precisa de MCP. Uma instrução explícita no prompt atual sempre vence.',
   'prefs.strategyDiagramTitle': 'Arquitetura da estratégia',
   'prefs.strategyDiagramPlanner': 'Planejador',
   'prefs.strategyDiagramTask': 'Sua tarefa',
@@ -944,9 +944,9 @@ export const ptBR: Record<MessageKey, string> = {
   'prefs.orchestrationCodexOnly': 'Só para workers Codex',
   'prefs.orchestrationRouting': 'Roteamento',
   'prefs.orchestrationRoutingDesc':
-    'Com qual papel uma chamada delegada roda quando o planner deixa a escolha para o Alethe.',
+    'Com qual papel uma chamada delegada roda quando o planner deixa a escolha para o Arcadia.',
   'prefs.orchestrationRoutingIntro':
-    'O planner classifica cada tarefa delegada por tipo e esforço; o Alethe percorre as regras em ordem e a primeira regra ativa que combina escolhe o papel. Um papel ou modelo nomeado na chamada sempre vence.',
+    'O planner classifica cada tarefa delegada por tipo e esforço; o Arcadia percorre as regras em ordem e a primeira regra ativa que combina escolhe o papel. Um papel ou modelo nomeado na chamada sempre vence.',
   'prefs.routingPresetEconomy': 'Economia',
   'prefs.routingPresetEconomyDesc':
     'Papéis mais baratos primeiro: um scout Haiku, um Codex somente leitura e um builder Codex para o resto.',
@@ -1058,11 +1058,11 @@ export const ptBR: Record<MessageKey, string> = {
   'prefs.shortcutNewName': 'Novo atalho',
   'prefs.shortcutPlaceholders': 'Disponíveis: {jobId}, {agent}, {branch}, {worktree}, {project}.',
   'prefs.shortcutsEmpty':
-    'Você não tem atalhos. Restaure os padrões para trazer os do Alethe de volta.',
+    'Você não tem atalhos. Restaure os padrões para trazer os do Arcadia de volta.',
   'prefs.shortcutsRestoreDefaults': 'Restaurar padrões',
   'prefs.workerRules': 'Regras para o trabalho delegado',
   'prefs.workerRulesDesc':
-    'O que o Alethe diz aos agentes para quem delega trabalho. O conjunto geral vale para toda tarefa; o agente líder escolhe o conjunto que combina com o trabalho. As convenções do próprio repositório sempre prevalecem sobre estas.',
+    'O que o Arcadia diz aos agentes para quem delega trabalho. O conjunto geral vale para toda tarefa; o agente líder escolhe o conjunto que combina com o trabalho. As convenções do próprio repositório sempre prevalecem sobre estas.',
   'prefs.ruleSetName': 'Nome do conjunto',
   'prefs.ruleSetText': 'Regras',
   'prefs.ruleSetSize': '{count} caracteres, enviados a cada tarefa deste conjunto',
@@ -1072,17 +1072,17 @@ export const ptBR: Record<MessageKey, string> = {
   'prefs.ruleSetAdd': 'Adicionar conjunto',
   'prefs.ruleSetNewName': 'Novo conjunto',
   'prefs.ruleSetsEmpty': 'Nenhuma regra é enviada com o trabalho delegado.',
-  'prefs.ruleSetsLoading': 'Carregando as regras do Alethe…',
+  'prefs.ruleSetsLoading': 'Carregando as regras do Arcadia…',
   'prefs.ruleSetsUnavailable':
-    'Não foi possível carregar os conjuntos de regras do Alethe, então eles não podem ser editados agora. As regras que os agentes recebem continuam as mesmas.',
+    'Não foi possível carregar os conjuntos de regras do Arcadia, então eles não podem ser editados agora. As regras que os agentes recebem continuam as mesmas.',
   'prefs.ruleSetsRetry': 'Tentar de novo',
-  'prefs.ruleSetsRestoreAll': 'Restaurar os conjuntos do Alethe',
+  'prefs.ruleSetsRestoreAll': 'Restaurar os conjuntos do Arcadia',
   /* ---- plugins ---- */
   'prefs.categoryPlugins': 'Plugins',
   'prefs.categoryPluginsDesc': 'Extensões que adicionam temas, painéis, abas e comandos.',
   'prefs.pluginsInstalledTitle': 'Instalados',
   'prefs.pluginsInstalledDesc':
-    'Tudo o que o Alethe carregou. Desligar um plugin remove na hora o que ele adiciona.',
+    'Tudo o que o Arcadia carregou. Desligar um plugin remove na hora o que ele adiciona.',
   'prefs.pluginsEmpty': 'Nenhum plugin instalado ainda.',
   'prefs.pluginsVersion': 'v{version}',
   'prefs.pluginsSourceBundled': 'Integrado',
@@ -1136,7 +1136,7 @@ export const ptBR: Record<MessageKey, string> = {
   'market.sortUpdated': 'Atualizações primeiro',
   'market.filterCapabilities': 'Pode fazer',
   'market.filterSource': 'Origem',
-  'market.sourceBundled': 'Vem com o Alethe',
+  'market.sourceBundled': 'Vem com o Arcadia',
   'market.sourceLocal': 'Instalado aqui',
   'market.filterState': 'Estado',
   'market.stateEnabled': 'Habilitado',
@@ -1163,9 +1163,9 @@ export const ptBR: Record<MessageKey, string> = {
   'market.detailCapabilities': 'O que ele pode fazer',
   'market.detailRepo': 'Código',
   'market.notInstallable':
-    'Esta entrada aponta para uma página em vez de publicar um pacote, então o Alethe não consegue instalar por você.',
+    'Esta entrada aponta para uma página em vez de publicar um pacote, então o Arcadia não consegue instalar por você.',
   'market.fullPower':
-    'Um plugin roda com o mesmo poder do próprio Alethe. As capacidades são uma declaração, não uma jaula — instale o que você tem motivo para confiar.',
+    'Um plugin roda com o mesmo poder do próprio Arcadia. As capacidades são uma declaração, não uma jaula — instale o que você tem motivo para confiar.',
   'market.uninstallWarning': 'Desinstalar remove o plugin e os dados que ele guardou.',
   'market.installDone': '{name} instalado',
   'market.installDoneBody':
@@ -1198,7 +1198,7 @@ export const ptBR: Record<MessageKey, string> = {
   'prefs.pluginsUninstallError': 'Falha ao desinstalar plugin: {error}',
   'prefs.pluginsTrustTitle': 'Ativar {name}?',
   'prefs.pluginsTrustBody':
-    'Este plugin veio do seu próprio disco. Ninguém revisou ele, e ele roda com o mesmo acesso do próprio Alethe — trate como qualquer outro programa que você escolhe rodar.',
+    'Este plugin veio do seu próprio disco. Ninguém revisou ele, e ele roda com o mesmo acesso do próprio Arcadia — trate como qualquer outro programa que você escolhe rodar.',
   'prefs.pluginsTrustCapabilities': 'Ele está pedindo para:',
   'prefs.pluginsTrustConfirm': 'Ativar plugin',
   'prefs.pluginsInstallTitle': 'Instalar de uma pasta',
@@ -1225,7 +1225,7 @@ export const ptBR: Record<MessageKey, string> = {
   'prefs.agentsDesc': 'Escolha quais agentes podem ser usados ao criar terminais e sub-tabs.',
   'prefs.shell': 'Shell',
   'prefs.shellDesc':
-    'O Alethe escolhe o shell sozinho (PowerShell 7 quando disponível, senão o Windows PowerShell; $SHELL nos demais sistemas). Aponte outro binário para sobrescrever — vale para abas Shell, não para abas de agente.',
+    'O Arcadia escolhe o shell sozinho (PowerShell 7 quando disponível, senão o Windows PowerShell; $SHELL nos demais sistemas). Aponte outro binário para sobrescrever — vale para abas Shell, não para abas de agente.',
   'prefs.shellPathPick': 'Selecione o executável do shell',
   'prefs.terminalFont': 'Fonte do terminal',
   'prefs.terminalFontDesc':
@@ -1233,7 +1233,7 @@ export const ptBR: Record<MessageKey, string> = {
   'prefs.terminalFontFamily': 'Família da fonte',
   'prefs.cliPaths': 'Caminhos dos CLIs',
   'prefs.cliPathsDesc':
-    'O Alethe encontra o CLI de cada agente sozinho. Só defina um caminho se o CLI estiver num lugar fora do comum — e aponte para a ferramenta de linha de comando, não para o aplicativo gráfico. Esses caminhos são do Windows: terminais cuja pasta está dentro do WSL os ignoram e resolvem o CLI dentro da distro.',
+    'O Arcadia encontra o CLI de cada agente sozinho. Só defina um caminho se o CLI estiver num lugar fora do comum — e aponte para a ferramenta de linha de comando, não para o aplicativo gráfico. Esses caminhos são do Windows: terminais cuja pasta está dentro do WSL os ignoram e resolvem o CLI dentro da distro.',
   'prefs.cliPathAuto': 'Detectado automaticamente',
   'prefs.cliPathSet': 'Definir caminho',
   'prefs.cliPathReset': 'Limpar',
@@ -1309,7 +1309,7 @@ export const ptBR: Record<MessageKey, string> = {
   'prefs.cliUninstall': 'Remover',
   'prefs.cliInstalledAt': 'Instalado em {path}',
   'prefs.cliStale':
-    'O comando instalado aponta pra uma cópia antiga do Alethe. Reinstale pra atualizar o caminho.',
+    'O comando instalado aponta pra uma cópia antiga do Arcadia. Reinstale pra atualizar o caminho.',
   'prefs.cliNotOnPath':
     '{dir} não está no seu PATH. Adicione no perfil do shell: export PATH="{dir}:$PATH"',
   'prefs.cliUnsupported': 'O comando de terminal não está disponível nesta plataforma.',
@@ -1318,7 +1318,7 @@ export const ptBR: Record<MessageKey, string> = {
   'prefs.discordPresence': 'Rich Presence do Discord',
   'prefs.discordPresenceEnabled': 'Ativado',
   'prefs.discordPresenceDisabled': 'Desativado',
-  'prefs.discordPresenceHint': 'Mostra que você está usando o Alethe sem expor nomes de projetos.',
+  'prefs.discordPresenceHint': 'Mostra que você está usando o Arcadia sem expor nomes de projetos.',
   'prefs.namePlaceholder': 'Nome',
   'prefs.photoPlaceholder': 'Link da foto',
   'prefs.zoomDecrease': 'Diminuir zoom (Ctrl+-)',
@@ -1328,11 +1328,11 @@ export const ptBR: Record<MessageKey, string> = {
     'Cadastre {redirect} como Redirect URI no Spotify Developer Dashboard. Em dev, {idEnv} e {secretEnv} ainda funcionam como fallback.',
   'prefs.checkUpdates': 'Atualizações do software',
   'prefs.checkUpdatesDesc':
-    'Verifique se uma versão mais recente do Alethe está disponível para baixar.',
+    'Verifique se uma versão mais recente do Arcadia está disponível para baixar.',
   'prefs.installedVersion': 'Versão instalada',
   'prefs.checkNow': 'Procurar atualizações',
   'prefs.checkingUpdates': 'Procurando…',
-  'prefs.upToDate': 'O Alethe está atualizado.',
+  'prefs.upToDate': 'O Arcadia está atualizado.',
   'prefs.updateAvailable': 'A versão {version} está disponível.',
   'prefs.updateCheckFailed':
     'Não foi possível procurar atualizações. Verifique sua conexão e tente novamente.',
@@ -1390,8 +1390,8 @@ export const ptBR: Record<MessageKey, string> = {
   'todo.editTags': 'Editar tags',
   'todo.tagsPrompt': 'Tags separadas por vírgula',
   'todo.defaultLabel': 'Lista de referência',
-  'todo.resetDefault': 'Resetar para Todo padrão do Alethe',
-  'todo.resetDefaultConfirm': 'Substituir sua lista atual pelo Todo padrão do Alethe?',
+  'todo.resetDefault': 'Resetar para Todo padrão do Arcadia',
+  'todo.resetDefaultConfirm': 'Substituir sua lista atual pelo Todo padrão do Arcadia?',
   'todo.openPr': 'Abrir PR #{number} no GitHub',
   'pomodoro.title': 'Pomodoro',
   'pomodoro.phaseWork': 'Foco',
@@ -1422,7 +1422,7 @@ export const ptBR: Record<MessageKey, string> = {
   'pluginsTab.status.disabled': 'Desativados',
   'pluginsTab.status.updates': 'Com atualização',
   'pluginsTab.source.all': 'Todas as origens',
-  'pluginsTab.source.bundled': 'Incluídos na Alethe',
+  'pluginsTab.source.bundled': 'Incluídos na Arcadia',
   'pluginsTab.source.local': 'Instalados localmente',
   'pluginsTab.source.catalog': 'Apenas no catálogo',
   'pluginsTab.sort.relevance': 'Mais relevantes',
@@ -1434,7 +1434,7 @@ export const ptBR: Record<MessageKey, string> = {
   'pluginPane.actionFailed': 'Não foi possível alterar o status do plugin',
   'pluginPane.removing': 'Desinstalando…',
   'pluginPane.bundledHint':
-    'Este plugin faz parte da Alethe. Você pode desativá-lo, mas não desinstalá-lo.',
+    'Este plugin faz parte da Arcadia. Você pode desativá-lo, mas não desinstalá-lo.',
   'pluginsTab.title': 'Plugins',
   'pluginsTab.searchPlaceholder': 'Pesquisar nome, autor, descrição ou permissões',
   'pluginsTab.refresh': 'Atualizar a lista de plugins',
@@ -1475,7 +1475,7 @@ export const ptBR: Record<MessageKey, string> = {
   'rightSidebar.dropMarkdown': 'Solte arquivos Markdown para abri-los aqui',
   'whatsNew.button': 'Novidades',
   'whatsNew.title': 'Novidades da v{version}',
-  'whatsNew.subtitle': 'A Alethe está ficando cada vez melhor.',
+  'whatsNew.subtitle': 'A Arcadia está ficando cada vez melhor.',
   'whatsNew.body': 'Estas são as melhorias mais recentes do app.',
   'whatsNew.pendingTitle': 'Uma versão nova está disponível',
   'whatsNew.pendingBody': 'A versão {version} está disponível, mas ainda não foi baixada.',
@@ -1483,9 +1483,9 @@ export const ptBR: Record<MessageKey, string> = {
   'whatsNew.update': 'Ver atualização',
   'whatsNew.releaseHeading': 'v{version} — {date}',
   'whatsNew.v176.note1':
-    'Versão de manutenção sem mudanças visíveis, publicada para verificar que a atualização pelo próprio app termina e reabre o Alethe sozinho.',
+    'Versão de manutenção sem mudanças visíveis, publicada para verificar que a atualização pelo próprio app termina e reabre o Arcadia sozinho.',
   'whatsNew.v175.note1':
-    'Corrigidas as atualizações pelo app no Windows: o instalador não é mais encerrado quando o app fecha, então a atualização termina e o Alethe reabre sozinho. Se você está na 1.7.4 ou anterior, instale esta versão uma vez pelo instalador.',
+    'Corrigidas as atualizações pelo app no Windows: o instalador não é mais encerrado quando o app fecha, então a atualização termina e o Arcadia reabre sozinho. Se você está na 1.7.4 ou anterior, instale esta versão uma vez pelo instalador.',
   'whatsNew.v174.note1':
     'Versão de manutenção sem mudanças visíveis, publicada para verificar que a atualização pelo próprio app funciona.',
   'whatsNew.v173.note1':
@@ -1518,7 +1518,7 @@ export const ptBR: Record<MessageKey, string> = {
   'whatsNew.v160.note2':
     'Conversas do Claude Code e do Codex podem ser continuadas no outro agente a partir do terminal.',
   'whatsNew.v160.note3':
-    'Agentes podem ser instalados, atualizados e desinstalados de dentro do Alethe, e o GitHub Copilot CLI entra como novo agente.',
+    'Agentes podem ser instalados, atualizados e desinstalados de dentro do Arcadia, e o GitHub Copilot CLI entra como novo agente.',
   'whatsNew.v160.note4':
     'Nova aba MCP na barra lateral direita com todos os servidores MCP configurados e as skills instaladas para cada agente.',
   'whatsNew.v160.note5':
@@ -1579,7 +1579,7 @@ export const ptBR: Record<MessageKey, string> = {
     'Sidebar de projetos reorganizada: card fixo do projeto ativo, monogramas coloridos e indicador de atividade ao vivo.',
   'whatsNew.v130.note7': 'O modo YOLO virou um controle de um clique no modal de adicionar IA.',
   'whatsNew.v130.note8':
-    'Controle experimental de opacidade da janela, para enxergar o desktop através do Alethe.',
+    'Controle experimental de opacidade da janela, para enxergar o desktop através do Arcadia.',
   'rightSidebar.backToTodo': 'Voltar para Todo',
   'rightSidebar.markdownError': 'Não foi possível carregar o Markdown',
   'rightSidebar.navigation': 'Navegação da sidebar direita',
@@ -1786,7 +1786,7 @@ export const ptBR: Record<MessageKey, string> = {
   'crud.create': 'Criar',
   'crud.createProjectOnly': 'Criar só o projeto',
   'crud.createProjectAndOpenTerminal': 'Criar projeto e abrir terminal',
-  'crud.detectedConfigFound': 'Configuração Alethe existente detectada para "{name}"',
+  'crud.detectedConfigFound': 'Configuração Arcadia existente detectada para "{name}"',
   'crud.detectedConfigRestore': 'Restaurar',
   'crud.cloningRepoTitle': 'Clonando Repositório',
   'crud.cloningRepoBody': 'Iniciando clone de {url} e gerando briefing de contexto de IA…',
@@ -1894,7 +1894,7 @@ export const ptBR: Record<MessageKey, string> = {
   'term.wslPick': 'WSL',
   'term.wslPickTitle': 'Abrir uma pasta dentro de uma distro WSL',
   'term.wslPickFailed': 'Não foi possível acessar o WSL',
-  'term.wslPickFailedBody': 'O Alethe não conseguiu ler a pasta home da distro {distro}.',
+  'term.wslPickFailedBody': 'O Arcadia não conseguiu ler a pasta home da distro {distro}.',
   'term.openAgent': 'Abrir {agent}',
   'term.team.toggle': 'Abrir como time',
   'term.team.toggleDesc':
@@ -1954,7 +1954,7 @@ export const ptBR: Record<MessageKey, string> = {
   'browser.javascriptDescription':
     'A maioria dos apps precisa disso. Desative para uma página mais restrita e somente leitura.',
   'browser.resourceMode': 'Prioridade de recursos',
-  'browser.resourceModeAppFirst': 'Priorizar o Alethe',
+  'browser.resourceModeAppFirst': 'Priorizar o Arcadia',
   'browser.resourceModeBalanced': 'Equilibrado',
   'browser.resourceModeKeepAlive': 'Manter página ativa',
   'browser.resourceModeDescription.app-first':
@@ -1962,15 +1962,15 @@ export const ptBR: Record<MessageKey, string> = {
   'browser.resourceModeDescription.balanced':
     'Mantém páginas ocultas ativas por 30 segundos antes de liberar a webview nativa.',
   'browser.resourceModeDescription.keep-alive':
-    'Mantém páginas ocultas carregadas, mas ainda as libera se o Alethe detectar pressão de memória.',
+    'Mantém páginas ocultas carregadas, mas ainda as libera se o Arcadia detectar pressão de memória.',
   'browser.addToGrid': 'Adicionar ao grid',
   'browser.privateTitle': 'Sessão privada sempre ativa',
   'browser.privateDescription':
-    'O Alethe abre este pane em uma webview nativa anônima. Cookies, logins, cache, preenchimento automático e dados dos sites não são mantidos depois que o pane é fechado.',
+    'O Arcadia abre este pane em uma webview nativa anônima. Cookies, logins, cache, preenchimento automático e dados dos sites não são mantidos depois que o pane é fechado.',
   'browser.privateBadge': 'Privado',
   'browser.destination': 'Este browser será adicionado a {project}.',
   'browser.embedHint':
-    'Abre dentro do Alethe. Alguns sites podem bloquear a visualização incorporada.',
+    'Abre dentro do Arcadia. Alguns sites podem bloquear a visualização incorporada.',
   'term.suspendGroupTitle': 'Suspender grupo',
   'term.suspend': 'Suspender',
   'term.suspendConfirmBefore': 'Tem certeza que deseja suspender o grupo',
@@ -2027,13 +2027,13 @@ export const ptBR: Record<MessageKey, string> = {
   'mod.memoryAnalyticsTitle': 'Analytics de memória',
   'mod.health.normal.title': 'A memória está saudável',
   'mod.health.normal.body':
-    'O Windows tem {available} disponíveis de {total}. O Alethe não fechará abas automaticamente.',
+    'O Windows tem {available} disponíveis de {total}. O Arcadia não fechará abas automaticamente.',
   'mod.health.warning.title': 'A memória disponível está ficando baixa',
   'mod.health.warning.body':
     'O Windows tem {available} disponíveis de {total}. Confira abaixo o runtime mais pesado antes de abrir muitos outros.',
   'mod.health.critical.title': 'A memória do Windows está criticamente baixa',
   'mod.health.critical.body':
-    'O Windows tem apenas {available} disponíveis de {total}. O Alethe avisará, mas qualquer encerramento de sessão continuará sendo sua decisão.',
+    'O Windows tem apenas {available} disponíveis de {total}. O Arcadia avisará, mas qualquer encerramento de sessão continuará sendo sua decisão.',
   'mod.clearHistory': 'Limpar histórico',
   'mod.now': 'Agora',
   'mod.peak': 'Pico',
@@ -2128,11 +2128,11 @@ export const ptBR: Record<MessageKey, string> = {
     'Todos os itens de uso estão ocultos. Reative-os no painel de detalhes de uso de IA.',
   'prefs.usageAccess': 'Leitura de uso de IA',
   'prefs.usageAccessDesc':
-    'Escolha de quais provedores o Alethe lê o seu uso. Ligar um deles usa as credenciais da CLI já instalada neste computador e contata esse provedor. Enquanto estiver desligado, o Alethe nunca lê essas credenciais nem contata o provedor.',
+    'Escolha de quais provedores o Arcadia lê o seu uso. Ligar um deles usa as credenciais da CLI já instalada neste computador e contata esse provedor. Enquanto estiver desligado, o Arcadia nunca lê essas credenciais nem contata o provedor.',
   'usageAccess.providerHint': 'Usa o login do {provider} neste computador e contata a {vendor}.',
   'usageAccess.orchestratorToastTitle': 'Leitura de uso ligada',
   'usageAccess.orchestratorToastBody':
-    'O orquestrador usa a cota para avisar você e escolher os papéis, então o Alethe agora lê o uso de {providers} com as credenciais da CLI instalada. Você pode desligar em Preferências > Integrações.',
+    'O orquestrador usa a cota para avisar você e escolher os papéis, então o Arcadia agora lê o uso de {providers} com as credenciais da CLI instalada. Você pode desligar em Preferências > Integrações.',
   'ui.titlebar.itemClaude': 'Uso do Claude Code',
   'ui.titlebar.itemCodex': 'Uso do Codex',
   'ui.titlebar.itemAntigravity': 'Status do Antigravity',
@@ -2172,12 +2172,12 @@ export const ptBR: Record<MessageKey, string> = {
   'ui.titlebar.minimize': 'Minimizar',
   'ui.titlebar.maximize': 'Maximizar',
   'ui.titlebar.close': 'Fechar',
-  'appClose.title': 'Fechar o Alethe?',
+  'appClose.title': 'Fechar o Arcadia?',
   'appClose.message':
-    'Agentes e terminais abertos serão encerrados. As conversas salvas poderão ser retomadas quando você abrir o Alethe novamente.',
-  'appClose.confirm': 'Fechar o Alethe',
+    'Agentes e terminais abertos serão encerrados. As conversas salvas poderão ser retomadas quando você abrir o Arcadia novamente.',
+  'appClose.confirm': 'Fechar o Arcadia',
   'appClose.cancel': 'Cancelar',
-  'appClose.failedTitle': 'Não foi possível fechar o Alethe',
+  'appClose.failedTitle': 'Não foi possível fechar o Arcadia',
   'appClose.failedBody':
     'O pedido de fechamento falhou. Tente novamente ou abra os logs para ver os detalhes.',
   'ui.workspace.openIndividually': 'Abrir individualmente',
@@ -2379,7 +2379,7 @@ export const ptBR: Record<MessageKey, string> = {
   'ui.sidebar.importProjectConfigTitle': 'Importar configuração de projeto',
   'ui.sidebar.importProjectConfigDone': 'Projeto importado como um novo projeto',
   'ui.sidebar.importProjectConfigFailed': 'Não foi possível importar este arquivo',
-  'ui.sidebar.projectConfigFilter': 'Configuração de projeto Alethe',
+  'ui.sidebar.projectConfigFilter': 'Configuração de projeto Arcadia',
   'ui.sidebar.quickRename': 'Renomear rápido',
   'ui.sidebar.newNamePrompt': 'Novo nome:',
   'ui.sidebar.newTerminalHere': 'Novo terminal aqui',
@@ -2496,10 +2496,10 @@ export const ptBR: Record<MessageKey, string> = {
   'ws.installAgent': 'Instalar agent',
   'ws.installAgentName': 'Instalar {name}',
   'ws.confirmOverwriteForeignAgent':
-    'Já existe um agent "{name}" neste projeto que NÃO foi criado pelo Alethe. Sobrescrever?',
+    'Já existe um agent "{name}" neste projeto que NÃO foi criado pelo Arcadia. Sobrescrever?',
   'ws.confirmRemoveAgent': 'Remover o agent "{name}" do projeto?',
   'ws.confirmRemoveForeignAgent':
-    'O agent "{name}" NÃO foi criado pelo Alethe. Remover mesmo assim?',
+    'O agent "{name}" NÃO foi criado pelo Arcadia. Remover mesmo assim?',
   'ws.moreToolCalls': '+{count} tool calls — clique pra ver tudo',
   'ws.back': 'voltar',
   'ws.agentCanvasPoc': 'agent canvas — poc',
@@ -2594,7 +2594,7 @@ export const ptBR: Record<MessageKey, string> = {
   'orchestrator.limit': 'limite {count}',
   'orchestrator.emptyTitle': 'Nenhum worker ainda.',
   'orchestrator.emptyBody':
-    'Peça a um agente para delegar, e cada worker que a Alethe iniciar aparece aqui enquanto roda.',
+    'Peça a um agente para delegar, e cada worker que a Arcadia iniciar aparece aqui enquanto roda.',
   'orchestrator.tokensTitle': 'Tokens que este worker consumiu',
   'orchestrator.costTitle': 'Custo da sessão informado por este worker',
   'orchestrator.noPrice': 'sem preço',
@@ -2900,7 +2900,7 @@ export const ptBR: Record<MessageKey, string> = {
   'hud.agentsRunning': '{count} agentes',
 
   /* ---- crash watch ---- */
-  'crash.uncleanTitle': 'O Alethe fechou sozinho',
+  'crash.uncleanTitle': 'O Arcadia fechou sozinho',
   'crash.uncleanBody': 'Última leitura antes de cair: {total} MB · {procs} processos · {time}',
   'crash.uncleanBodyWithOrphans':
     'Última leitura antes de cair: {total} MB · {procs} processos · {time}. Limpamos {orphans} processo(s) órfão(s) que ficaram rodando.',
@@ -2916,15 +2916,15 @@ export const ptBR: Record<MessageKey, string> = {
   'update.error': 'Falha ao atualizar: {error}',
   'update.checkFailedTitle': 'Não foi possível buscar atualizações',
   'update.checkFailedBody':
-    'O Alethe não conseguiu acessar o serviço de atualização. Verifique sua conexão e tente novamente.',
+    'O Arcadia não conseguiu acessar o serviço de atualização. Verifique sua conexão e tente novamente.',
   'update.checkingAgain': 'Verificando novamente…',
   'update.retryCheck': 'Tentar novamente',
   'update.currentVersionTitle': 'Versão instalada — clique para atualizações',
 
   'prefs.categoryTutorials': 'Tutoriais',
-  'prefs.categoryTutorialsDesc': 'Vídeos que mostram a Alethe em uso real',
+  'prefs.categoryTutorialsDesc': 'Vídeos que mostram a Arcadia em uso real',
   'tutorials.videosTitle': 'Vídeos',
-  'tutorials.videosDesc': 'Veja como orquestrar agentes com a Alethe, aqui mesmo nas Preferências.',
+  'tutorials.videosDesc': 'Veja como orquestrar agentes com a Arcadia, aqui mesmo nas Preferências.',
   'tutorials.play': 'Reproduzir {title}',
   'tutorials.openYoutube': 'Abrir no YouTube',
   'tutorials.channel': 'Mais no canal do YouTube',
@@ -2936,24 +2936,24 @@ export const ptBR: Record<MessageKey, string> = {
   'tutorials.summarySkill':
     'Um tutorial de como orquestrar agentes de código com a skill gratuita Alethe Orchestrate.',
   'tutorials.summaryDevlog':
-    'Um dia real de desenvolvimento com a Alethe no fluxo de trabalho do dia a dia.',
+    'Um dia real de desenvolvimento com a Arcadia no fluxo de trabalho do dia a dia.',
   'prefs.categoryAbout': 'Sobre & atualizações',
-  'prefs.categoryAboutDesc': 'Versão, atualizações, versões anteriores e quem faz o Alethe.',
+  'prefs.categoryAboutDesc': 'Versão, atualizações, versões anteriores e quem faz o Arcadia.',
   'prefs.aboutVersionTitle': 'Versão',
-  'prefs.aboutVersionDesc': 'A build do Alethe instalada no momento.',
+  'prefs.aboutVersionDesc': 'A build do Arcadia instalada no momento.',
   'prefs.aboutUpdatesTitle': 'Atualizações',
-  'prefs.aboutUpdatesDesc': 'Verifique e instale novas versões do Alethe.',
+  'prefs.aboutUpdatesDesc': 'Verifique e instale novas versões do Arcadia.',
   'prefs.aboutCheckUpdates': 'Verificar atualizações',
   'prefs.aboutChecking': 'Verificando…',
   'prefs.aboutUpToDate': 'Você está na versão mais recente (v{version}).',
   'prefs.aboutUpdateAvailable': 'A versão {version} está disponível — você está na {current}.',
   'prefs.aboutWhatsNew': 'Novidades',
   'prefs.aboutCreatorTitle': 'Feito por',
-  'prefs.aboutCreatorDesc': 'O Alethe é desenhado, construído e mantido por um desenvolvedor.',
+  'prefs.aboutCreatorDesc': 'O Arcadia é desenhado, construído e mantido por um desenvolvedor.',
   'prefs.aboutCreatorPhotoAlt': 'Kauã Miguel',
   'prefs.aboutCreatorRole': 'Criador e mantenedor',
   'prefs.aboutCreatorBio':
-    'Constrói o Alethe em público. Acompanhe para ver as novas versões e vídeos sobre agentes de código.',
+    'Constrói o Arcadia em público. Acompanhe para ver as novas versões e vídeos sobre agentes de código.',
   'prefs.aboutOlderTitle': 'Versões anteriores',
   'prefs.aboutOlderDesc': 'Volte para uma versão anterior se uma mais nova atrapalhar.',
   'prefs.aboutOlderShow': 'Mostrar versões anteriores',
@@ -2965,7 +2965,7 @@ export const ptBR: Record<MessageKey, string> = {
   'prefs.aboutOlderManualHint':
     'Esta versão é anterior à instalação pelo app. Baixe o instalador no GitHub.',
   'prefs.aboutOlderConfirm':
-    'O Alethe vai fechar, instalar a v{version} e abrir de novo. Uma versão anterior pode não ler tudo o que uma mais nova salvou, então exporte um backup antes.',
+    'O Arcadia vai fechar, instalar a v{version} e abrir de novo. Uma versão anterior pode não ler tudo o que uma mais nova salvou, então exporte um backup antes.',
   'prefs.aboutOlderBackup': 'Exportar backup',
   'prefs.aboutOlderBackupDone': 'Backup salvo',
   'prefs.aboutOlderBackupError': 'Não foi possível exportar o backup: {error}',
@@ -2977,21 +2977,21 @@ export const ptBR: Record<MessageKey, string> = {
   'prefs.aboutOlderAll': 'Todas as versões no GitHub',
   'prefs.aboutContributeTitle': 'Contribuir',
   'prefs.aboutContributeDesc':
-    'O Alethe é open source sob AGPL-3.0. Relate o que quebrou, sugira o que falta ou envie uma mudança.',
+    'O Arcadia é open source sob AGPL-3.0. Relate o que quebrou, sugira o que falta ou envie uma mudança.',
   'prefs.aboutReportBug': 'Relatar um bug',
   'prefs.aboutRequestFeature': 'Sugerir um recurso',
   'prefs.aboutOpenPullRequest': 'Abrir um pull request',
   'prefs.aboutContributingGuide': 'Guia de contribuição',
   'prefs.aboutInfoTitle': 'Informações',
-  'prefs.aboutInfoDesc': 'Licença, privacidade, código-fonte e onde o Alethe guarda seus arquivos.',
+  'prefs.aboutInfoDesc': 'Licença, privacidade, código-fonte e onde o Arcadia guarda seus arquivos.',
   'prefs.aboutLicense': 'Licença',
   'prefs.aboutPrivacy': 'Privacidade',
-  'prefs.aboutPrivacyAction': 'Como o Alethe trata seus dados',
+  'prefs.aboutPrivacyAction': 'Como o Arcadia trata seus dados',
   'prefs.aboutSource': 'Código-fonte',
   'prefs.aboutDataFolder': 'Pasta de dados',
   'prefs.aboutLogsFolder': 'Logs',
   'prefs.aboutOpenFolder': 'Abrir pasta',
-  'update.checkSuccessTitle': 'O Alethe está atualizado',
+  'update.checkSuccessTitle': 'O Arcadia está atualizado',
   'update.checkSuccessBody': 'Nenhuma versão mais recente está disponível agora.',
   'update.technicalDetails': 'Detalhes técnicos',
 
@@ -3008,8 +3008,8 @@ export const ptBR: Record<MessageKey, string> = {
     'Baixar substitui seus projetos e estatísticas locais pela cópia do Gist. Continuar?',
   'sync.legacy.title': 'GitHub Gist (legado)',
   'sync.legacy.desc':
-    'O sync por Gist está sendo aposentado. Baixe seus dados uma vez e passe a usar o Alethe Cloud.',
-  'sync.cloud.title': 'Alethe Cloud',
+    'O sync por Gist está sendo aposentado. Baixe seus dados uma vez e passe a usar o Arcadia Cloud.',
+  'sync.cloud.title': 'Arcadia Cloud',
   'sync.cloud.freeDesc':
     'Entre com o GitHub para sincronizar preferências, plugins, configurações de projetos e servidores MCP e skills entre suas máquinas. Grátis.',
   'sync.cloud.signIn': 'Entrar com GitHub',
@@ -3042,13 +3042,13 @@ export const ptBR: Record<MessageKey, string> = {
   'sync.toast.failed': 'Falha na sincronização',
   'sync.supporter.title': 'Seja Apoiador',
   'sync.supporter.desc':
-    'Sincronização automática em segundo plano e 30 dias de histórico de versões. Seu apoio mantém o Alethe grátis e open source.',
+    'Sincronização automática em segundo plano e 30 dias de histórico de versões. Seu apoio mantém o Arcadia grátis e open source.',
   'sync.supporter.yearly': 'Apoiar anualmente',
   'sync.supporter.monthly': 'Apoiar mensalmente',
   'sync.supporter.waiting':
     'Conclua o pagamento no navegador. Seu plano atualiza quando você voltar.',
   'sync.supporter.refresh': 'Verificar plano',
-  'sync.supporter.thanks': 'Obrigado por apoiar o Alethe.',
+  'sync.supporter.thanks': 'Obrigado por apoiar o Arcadia.',
   'sync.supporter.renews': 'Renova em {when}.',
   'sync.supporter.ends': 'Ativo até {when}.',
   'sync.supporter.manage': 'Gerenciar assinatura',
@@ -3090,7 +3090,7 @@ export const ptBR: Record<MessageKey, string> = {
   'sync.account.exportDone': 'Dados da nuvem salvos.',
   'sync.account.delete': 'Excluir conta',
   'sync.account.confirmDelete':
-    'Excluir sua conta do Alethe Cloud e tudo o que está guardado nela? Os dados locais desta máquina continuam. Uma assinatura ativa é cancelada.',
+    'Excluir sua conta do Arcadia Cloud e tudo o que está guardado nela? Os dados locais desta máquina continuam. Uma assinatura ativa é cancelada.',
   'sync.account.deleted': 'Conta excluída.',
   'sync.account.signOut': 'Sair',
   'sync.file.title': 'Arquivo',
@@ -3098,7 +3098,7 @@ export const ptBR: Record<MessageKey, string> = {
     'Leve preferências, configurações de projetos e MCP num arquivo .alethe. Não precisa de conta, e segredos nunca vão junto.',
   'sync.file.export': 'Exportar',
   'sync.file.import': 'Importar',
-  'sync.file.filter': 'Exportação do Alethe',
+  'sync.file.filter': 'Exportação do Arcadia',
   'sync.file.exportDone': 'Exportação salva.',
   'sync.file.previewTitle': 'Importar este arquivo vai adicionar ou alterar:',
   'sync.file.previewNothing': 'Este arquivo é igual ao que você já tem.',
@@ -3122,10 +3122,10 @@ export const ptBR: Record<MessageKey, string> = {
     'Dados demais para o seu plano. Ícones de projeto embutidos e grandes costumam ser a causa.',
   'sync.error.rate_limited': 'Sincronizações demais na última hora. Tente mais tarde.',
   'sync.error.client_outdated':
-    'Estes dados foram sincronizados por um Alethe mais novo. Atualize este app primeiro.',
+    'Estes dados foram sincronizados por um Arcadia mais novo. Atualize este app primeiro.',
   'sync.error.billing_unavailable': 'Assinaturas ainda não estão disponíveis.',
   'sync.error.no_customer': 'Nenhuma assinatura encontrada para esta conta.',
-  'sync.error.invalid_bundle': 'Este não é um arquivo de exportação do Alethe.',
+  'sync.error.invalid_bundle': 'Este não é um arquivo de exportação do Arcadia.',
   'sync.error.conflict_retry_exhausted':
     'Outros dispositivos continuaram alterando os dados. Tente de novo.',
   'sync.error.profile_limit': 'Seu plano sincroniza um perfil.',
@@ -3155,7 +3155,7 @@ export const ptBR: Record<MessageKey, string> = {
   'tooling.statusInstalled': 'Instalado',
   'tooling.statusMissing': 'Faltando',
   'tooling.statusUnavailable': 'Não está nesta máquina',
-  'tooling.skillUnavailableHint': 'Só skills que vêm com a Alethe instalam automaticamente',
+  'tooling.skillUnavailableHint': 'Só skills que vêm com a Arcadia instalam automaticamente',
   'tooling.secretsHint':
     'Esses valores não foram sincronizados. Preencha para instalar o servidor nesta máquina.',
   'tooling.secretHeader': 'Header {key}',
@@ -3183,10 +3183,10 @@ export const ptBR: Record<MessageKey, string> = {
   /* ---- supervisor de recursos ---- */
   'resource.warning.title': 'O uso de memória está subindo',
   'resource.warning.body':
-    'O Alethe está usando cerca de {total} MB. Runtimes ocultos e ociosos podem ser estacionados.',
+    'O Arcadia está usando cerca de {total} MB. Runtimes ocultos e ociosos podem ser estacionados.',
   'resource.critical.title': 'Limite de memória atingido',
   'resource.critical.body':
-    'O Alethe está usando cerca de {total} MB. Novos runtimes ficarão pausados até a memória baixar.',
+    'O Arcadia está usando cerca de {total} MB. Novos runtimes ficarão pausados até a memória baixar.',
   'resource.normal.title': 'Pressão de memória normalizada',
   'resource.normal.body': 'Novos runtimes podem iniciar normalmente de novo.',
   'resource.suspended.title': 'Runtime estacionado para proteger o sistema',
@@ -3201,11 +3201,11 @@ export const ptBR: Record<MessageKey, string> = {
   'menu.openLogs': 'Abrir logs',
   'menu.exportLogs': 'Exportar logs…',
   'menu.exportLogsTitle': 'Exportar logs',
-  'menu.logsFilter': 'Alethe logs',
+  'menu.logsFilter': 'Arcadia logs',
   'sandbox.eyebrow': 'Orquestração experimental',
   'sandbox.title': 'Sandbox de Agents',
   'sandbox.subtitle':
-    'Um POC real planner-to-worker: Claude Code planeja, Codex implementa e o Alethe faz o relay.',
+    'Um POC real planner-to-worker: Claude Code planeja, Codex implementa e o Arcadia faz o relay.',
   'sandbox.close': 'Voltar ao workspace',
   'sandbox.start': 'Reiniciar sandbox',
   'sandbox.startDemo': 'Rodar sessão demo',
@@ -3321,7 +3321,7 @@ export const ptBR: Record<MessageKey, string> = {
   'merge.postActionHint':
     '"Manter chat" reabre o painel na branch nova com uma conversa zerada. "Manter sessão" tentaria retomar exatamente a mesma conversa lá.',
   'merge.postActionRelocateSessionDisabledHint':
-    'Desativado por enquanto — retomar uma sessão a partir de outro diretório trava indefinidamente em todo CLI de agente já testado (confirmado com o OpenCode; a causa raiz é upstream, fora do controle da Alethe). Selecionar essa opção hoje cai silenciosamente numa conversa nova, até que uma correção upstream apareça.',
+    'Desativado por enquanto — retomar uma sessão a partir de outro diretório trava indefinidamente em todo CLI de agente já testado (confirmado com o OpenCode; a causa raiz é upstream, fora do controle da Arcadia). Selecionar essa opção hoje cai silenciosamente numa conversa nova, até que uma correção upstream apareça.',
   'merge.commitConfirmTitle': 'Commitar trabalho pendente — {branch}',
   'merge.commitConfirmDescription':
     'Esta worktree tem mudanças que nunca foram commitadas. O merge só move commits — revise o que vai ser commitado e escreva uma descrição antes de integrar.',
@@ -3557,7 +3557,7 @@ export const ptBR: Record<MessageKey, string> = {
   'mcp.errNoDisable': 'Esse agente não tem flag de desativar — remova o servidor.',
   'mcp.errNoScope': 'Esse agente não tem config no escopo selecionado.',
   'mcp.errUnsupportedFields': 'Esse agente não consegue expressar todos os campos do servidor.',
-  'mcp.errJsonc': 'O Alethe não escreve em opencode.jsonc, para não apagar seus comentários.',
+  'mcp.errJsonc': 'O Arcadia não escreve em opencode.jsonc, para não apagar seus comentários.',
   'mcp.errSelfCheck': 'O arquivo gerado não validou, então nada foi escrito.',
   'mcp.errUnreadable': 'Não deu para ler o arquivo de config.',
   'mcp.errWrite': 'Não deu para escrever o arquivo de config.',
@@ -3578,7 +3578,7 @@ export const ptBR: Record<MessageKey, string> = {
   'mcp.runSetup': 'Revisar meus servidores MCP',
   'onboarding.mcpTitle': 'Servidores MCP',
   'onboarding.mcpSubtitle':
-    'O Alethe lê os servidores MCP que cada agente já tem e copia um para os outros, então uma ferramenta configurada no Claude também funciona no Codex.',
+    'O Arcadia lê os servidores MCP que cada agente já tem e copia um para os outros, então uma ferramenta configurada no Claude também funciona no Codex.',
   'onboarding.mcpScanning': 'Lendo as configs dos agentes…',
   'onboarding.mcpStatServers': 'servidores',
   'onboarding.mcpStatAgents': 'agentes com servidor',
@@ -3613,7 +3613,7 @@ export const ptBR: Record<MessageKey, string> = {
   'mcp.registryReviewVersion': 'Versão publicada',
   'mcp.registryReviewRepository': 'Repositório',
   'mcp.registryAcknowledgement':
-    'Entendo que este é um software de terceiros que pode executar código local ou acessar serviços remotos quando um agente iniciar, e que aparecer no registry não significa um endosso da Alethe.',
+    'Entendo que este é um software de terceiros que pode executar código local ou acessar serviços remotos quando um agente iniciar, e que aparecer no registry não significa um endosso da Arcadia.',
   'mcp.addWritten': '{count} servidor(es) adicionado(s) em {agents}',
   'mcp.fieldName': 'Nome',
   'mcp.fieldTransport': 'Transporte',
@@ -3653,7 +3653,7 @@ export const ptBR: Record<MessageKey, string> = {
   'skills.loading': 'Lendo as pastas de skills…',
   'skills.emptyTitle': 'Nenhuma skill instalada',
   'skills.emptyDescription':
-    'O Alethe procura na pasta de skills de cada agente e no store compartilhado.',
+    'O Arcadia procura na pasta de skills de cada agente e no store compartilhado.',
   'skills.selectOne': 'Escolha uma skill para inspecionar',
   'skills.sharedStore': 'Store compartilhado',
   'skills.lockSource': 'origem',
@@ -3672,7 +3672,7 @@ export const ptBR: Record<MessageKey, string> = {
   'skills.removed': '{name} removida',
   'skills.removedLinkOnly': 'A cópia compartilhada foi mantida em {path}',
   'skills.removeFailed': 'Não deu para remover a skill',
-  'skills.errBundled': 'Essa skill vem com o agente e não pode ser removida pelo Alethe.',
+  'skills.errBundled': 'Essa skill vem com o agente e não pode ser removida pelo Arcadia.',
   'skills.official': 'Skills oficiais',
   'skills.badgeOfficial': 'oficial',
   'skills.versionLabel': 'v{version}',
@@ -3685,7 +3685,7 @@ export const ptBR: Record<MessageKey, string> = {
   'skills.projectInstalled': '{name} instalada neste projeto',
   'skills.projectRemoved': '{name} removida deste projeto',
   'skills.installedSection': 'Instaladas',
-  'skills.badgeAlethe': 'Alethe',
+  'skills.badgeAlethe': 'Arcadia',
   'skills.installAction': 'Instalar',
   'skills.updateAction': 'Atualizar',
   'skills.availableFor': 'Disponível para',
@@ -3694,7 +3694,7 @@ export const ptBR: Record<MessageKey, string> = {
   'skills.stateUpdate': 'atualização disponível',
   'skills.stateConflict': 'nome já em uso',
   'skills.conflictNote':
-    'Já existe ali outra skill com esse nome que não foi instalada pelo Alethe. Remova ou renomeie para instalar esta.',
+    'Já existe ali outra skill com esse nome que não foi instalada pelo Arcadia. Remova ou renomeie para instalar esta.',
   'skills.installed': '{name} instalada',
   'skills.installFailed': 'Não deu para instalar a skill',
 
@@ -3706,42 +3706,42 @@ export const ptBR: Record<MessageKey, string> = {
   'router9.stateReady': 'Pronto, não está rodando',
   'router9.stateRunning': 'Roteando por {url}',
   'router9.setupIntro':
-    'Nada instalado ainda. O Alethe pode instalar uma cópia privada com versão fixa pra você, ou usar um 9router que você já tenha no PATH.',
+    'Nada instalado ainda. O Arcadia pode instalar uma cópia privada com versão fixa pra você, ou usar um 9router que você já tenha no PATH.',
   'router9.sourceLabel': 'Qual instalação rodar',
   'router9.probing': 'Vendo o que você já tem…',
-  'router9.nodeFound': 'Node {version} detectado — o Alethe pode instalar o 9router pra você.',
+  'router9.nodeFound': 'Node {version} detectado — o Arcadia pode instalar o 9router pra você.',
   'router9.nodeMissing':
     'Node.js não encontrado. Ele é necessário para instalar ou rodar o 9router.',
   'router9.needsNodeToInstall':
     'Instale o Node.js primeiro e depois volte para instalar o 9router.',
-  'router9.sourceManaged': 'Instalado pelo Alethe',
+  'router9.sourceManaged': 'Instalado pelo Arcadia',
   'router9.sourceExternal': 'A minha instalação',
-  'router9.managedInstalled': 'Pronto · {version}, na pasta de perfil do Alethe',
-  'router9.managedMissing': 'Ainda não instalado — o Alethe pode instalar pra você',
+  'router9.managedInstalled': 'Pronto · {version}, na pasta de perfil do Arcadia',
+  'router9.managedMissing': 'Ainda não instalado — o Arcadia pode instalar pra você',
   'router9.externalInstalled': 'Encontrado · {version} em {path}',
   'router9.externalMissing': 'Nenhum 9router encontrado no seu PATH',
   'router9.externalDetected':
     'Você já tem um 9router no PATH. Escolha "A minha instalação" para usar ele em vez de uma segunda cópia.',
-  'router9.fallbackManaged': 'A sua instalação sumiu, então a cópia instalada pelo Alethe é usada.',
+  'router9.fallbackManaged': 'A sua instalação sumiu, então a cópia instalada pelo Arcadia é usada.',
   'router9.fallbackExternal':
-    'A cópia instalada pelo Alethe sumiu, então a sua instalação é usada.',
+    'A cópia instalada pelo Arcadia sumiu, então a sua instalação é usada.',
   'router9.installForMe': 'Instalar pra mim',
-  'router9.uninstallManaged': 'Remover a cópia do Alethe',
+  'router9.uninstallManaged': 'Remover a cópia do Arcadia',
   'router9.install': 'Instalar',
   'router9.reinstall': 'Reinstalar',
   'router9.update': 'Atualizar para {version}',
   'router9.installDone': 'O 9router está instalado e pronto para rotear.',
   'router9.installFailed': 'O 9router não foi instalado. A saída do instalador está abaixo.',
-  'router9.uninstallDone': 'O 9router foi removido da pasta do Alethe.',
+  'router9.uninstallDone': 'O 9router foi removido da pasta do Arcadia.',
   'router9.uninstallFailed': 'O 9router continua instalado. A saída está abaixo.',
   'router9.retry': 'Tentar de novo',
   'router9.installTitle': 'Instalar o 9router',
   'router9.uninstallTitle': 'Remover o 9router',
   'router9.installIntro':
-    'Instalado numa pasta privada gerenciada pelo Alethe, numa versão fixa. Seus pacotes npm globais não são tocados.',
-  'router9.uninstallIntro': 'O proxy é parado e o pacote é removido da pasta do Alethe.',
+    'Instalado numa pasta privada gerenciada pelo Arcadia, numa versão fixa. Seus pacotes npm globais não são tocados.',
+  'router9.uninstallIntro': 'O proxy é parado e o pacote é removido da pasta do Arcadia.',
   'router9.securityNote':
-    'O 9router tem vulnerabilidades públicas conhecidas. O Alethe nunca instala nem atualiza sozinho, só roteia por loopback e nunca liga o compartilhamento remoto dele. Leia os avisos antes de rotear credenciais de verdade.',
+    'O 9router tem vulnerabilidades públicas conhecidas. O Arcadia nunca instala nem atualiza sozinho, só roteia por loopback e nunca liga o compartilhamento remoto dele. Leia os avisos antes de rotear credenciais de verdade.',
   'router9.securityAdvisories': 'Ler os avisos de segurança',
   'router9.statusInstalled': 'Instalado · {version}',
   'router9.statusNotInstalled': 'Não instalado',
@@ -3754,7 +3754,7 @@ export const ptBR: Record<MessageKey, string> = {
   'router9.enabled': 'Roteamento',
   'router9.enabledOn': 'Ligado',
   'router9.enabledOff': 'Desligado',
-  'router9.autoStart': 'Iniciar junto com o Alethe',
+  'router9.autoStart': 'Iniciar junto com o Arcadia',
   'router9.autoStartOn': 'Sim',
   'router9.autoStartOff': 'Não',
   'router9.port': 'Porta',
@@ -3766,7 +3766,7 @@ export const ptBR: Record<MessageKey, string> = {
   'router9.portInUse':
     'A porta {port} já está ocupada por outro processo. Pare ele ou escolha outra porta.',
   'router9.pinnedMismatch':
-    'A versão instalada é diferente da que o Alethe fixa. Use Atualizar para ir pra versão fixada.',
+    'A versão instalada é diferente da que o Arcadia fixa. Use Atualizar para ir pra versão fixada.',
   'router9.runningTerminalsHint':
     'Desligar o roteamento só vale pros terminais abertos depois. Agentes já rodando mantêm o endereço com que subiram — reinicie eles pra trocar de rota.',
   'router9.routeToggle': 'Rotear pelo 9router',
@@ -3960,8 +3960,8 @@ export const ptBR: Record<MessageKey, string> = {
   'playbooks.readOnlyNo':
     'não: o runner não consegue forçar somente leitura aqui, então os batedores pulam este',
   'playbooks.factUsage': 'Uso',
-  'playbooks.usageRead': 'lido pelo Alethe: {windows}',
-  'playbooks.usageNotRead': 'ainda não lido pelo Alethe; o planejador pergunta a você',
+  'playbooks.usageRead': 'lido pelo Arcadia: {windows}',
+  'playbooks.usageNotRead': 'ainda não lido pelo Arcadia; o planejador pergunta a você',
   'playbooks.factTraffic': 'Tráfego',
   'playbooks.trafficDirect': 'direto',
   'playbooks.factChecked': 'Verificado',
@@ -3972,7 +3972,7 @@ export const ptBR: Record<MessageKey, string> = {
   'playbooks.later': 'Depois',
   'playbooks.routeTitle': 'Rota',
   'playbooks.routeGatewayHint':
-    'O Alethe aponta esta CLI para o gateway local; os nomes de modelo passam a ir para o que o gateway mapear.',
+    'O Arcadia aponta esta CLI para o gateway local; os nomes de modelo passam a ir para o que o gateway mapear.',
   'playbooks.modelsFound': 'Modelos que o planejador encontrou para esta CLI.',
   'playbooks.modelsNone':
     'Nenhuma lista de modelos foi registrada; a CLI usa o padrão dela, a menos que você indique um.',
@@ -3981,7 +3981,7 @@ export const ptBR: Record<MessageKey, string> = {
   'playbooks.tierEffortFor': 'Esforço do tier {tier}',
   'playbooks.kindRoute': 'Rota',
   'playbooks.routePanelHint':
-    'Um gateway local no caminho do tráfego dos modelos, não um worker. O Alethe inicia o gateway e aponta uma CLI para ele; o planejador nunca o inicia, instala ou reconfigura.',
+    'Um gateway local no caminho do tráfego dos modelos, não um worker. O Arcadia inicia o gateway e aponta uma CLI para ele; o planejador nunca o inicia, instala ou reconfigura.',
   'playbooks.factPort': 'Porta',
   'playbooks.factStatus': 'Status',
   'playbooks.statusRunning': 'rodando',
@@ -4025,8 +4025,8 @@ export const ptBR: Record<MessageKey, string> = {
     'O planejador encontrou {providers} provedores e montou {profiles} perfis; você aprovou em {date}.',
   'playbooks.usageTitle': 'Uso',
   'playbooks.usagePillTitle': '{provider}: {detail}',
-  'playbooks.usageSimulatedTitle': '{provider}: {detail}. O Alethe ainda não lê isto; simulado',
-  'playbooks.unreadNote': 'O Alethe ainda não lê este uso; os valores abaixo são uma simulação.',
+  'playbooks.usageSimulatedTitle': '{provider}: {detail}. O Arcadia ainda não lê isto; simulado',
+  'playbooks.unreadNote': 'O Arcadia ainda não lê este uso; os valores abaixo são uma simulação.',
   'playbooks.stateLow': 'baixo',
   'playbooks.stateSpare': 'sobrando',
   'playbooks.resets': 'reinicia',

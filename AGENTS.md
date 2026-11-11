@@ -1,4 +1,4 @@
-# Alethe — working guide (AI)
+# Arcadia — working guide (AI)
 
 > Identical in content to [`CLAUDE.md`](CLAUDE.md) in this directory. Keep both in sync.
 > Contributing from outside? Start with [`CONTRIBUTING.md`](CONTRIBUTING.md) — setup, project
@@ -6,7 +6,7 @@
 
 ## 1. What it is
 
-**Alethe** is a cross-platform, **Windows-first** desktop app that organizes, operates, and resumes multiple coding
+**Arcadia** is a cross-platform, **Windows-first** desktop app that organizes, operates, and resumes multiple coding
 agents (Claude Code, Codex, Copilot CLI, Cursor, OpenCode, and more — full list in
 [`README.md`](README.md)) and shells in parallel, inside a persistent workspace with
 real terminals (PTYs), layouts, themes, history, and RAM control.

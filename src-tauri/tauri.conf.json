@@ -12,7 +12,7 @@
   "app": {
     "windows": [
       {
-        "title": "Alethe",
+        "title": "Arcadia",
         "width": 1280,
         "height": 800,
         "minWidth": 800,
@@ -66,7 +66,7 @@
     "targets": "all",
     "publisher": "Kauã Miguel",
     "shortDescription": "Terminal multiplexer GUI",
-    "longDescription": "Alethe is a Windows-first terminal multiplexer GUI: projects on the left, split-pane terminals on the right, with sub-tabs per pane.",
+    "longDescription": "Arcadia is a Windows-first terminal multiplexer GUI: projects on the left, split-pane terminals on the right, with sub-tabs per pane.",
     "icon": [
       "icons/32x32.png",
       "icons/128x128.png",

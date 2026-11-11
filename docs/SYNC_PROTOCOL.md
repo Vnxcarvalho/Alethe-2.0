@@ -1,6 +1,6 @@
-# Alethe Cloud sync protocol
+# Arcadia Cloud sync protocol
 
-The contract between the Alethe apps (Windows/Linux in this repo, macOS in Swift) and the Alethe Cloud
+The contract between the Arcadia apps (Windows/Linux in this repo, macOS in Swift) and the Arcadia Cloud
 server. The server is hosted and closed source; everything a client needs is here. Payload changes are
 `contract` entries in [`MAC_PORT.md`](MAC_PORT.md).
 
@@ -16,7 +16,7 @@ machine id).
 
 ## Sign-in and devices
 
-1. GitHub device flow with the Alethe OAuth App (`client_id` `Ov23liE8HEZvJ3LGIbIp`), no scopes.
+1. GitHub device flow with the Arcadia OAuth App (`client_id` `Ov23liE8HEZvJ3LGIbIp`), no scopes.
 2. `POST /v1/auth/github` with
    `{ "access_token": "<github token>", "device": { "name", "platform", "appVersion" } }`.
    The response is `{ token, deviceId, user: { login, name, avatarUrl }, plan }`. Discard the GitHub
@@ -71,7 +71,7 @@ update (`client_outdated`); it must never write over it.
 
 // projects: key = project id, machines keyed by machine id
 { "format": 3,
-  "projects": { "p1": { "id": "p1", "name": "Alethe",
+  "projects": { "p1": { "id": "p1", "name": "Arcadia",
                         "githubUrl": "https://github.com/Kc1t/alethe", "color": "...", ...,
                         "machines": {
                           "V1StGXR8_Z5jdHi6B-myT": { "name": "DESKTOP-1", "path": "~/code/alethe" },

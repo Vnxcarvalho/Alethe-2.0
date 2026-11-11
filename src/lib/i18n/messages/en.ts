@@ -60,7 +60,7 @@ export const en = {
   'onboarding.agentReady': 'ready',
   'onboarding.usageTitle': 'Show your usage limits?',
   'onboarding.usageSubtitle':
-    'Alethe can show how much of each plan you have used. To read it, Alethe uses the credentials of the CLI already installed on this computer and contacts the provider. Everything is off until you turn it on.',
+    'Arcadia can show how much of each plan you have used. To read it, Arcadia uses the credentials of the CLI already installed on this computer and contacts the provider. Everything is off until you turn it on.',
   'onboarding.usageFooter': 'Nothing is read while a provider is off · change later in Preferences',
   'onboarding.featuresTitle': 'Choose your features',
   'onboarding.featuresSubtitle':
@@ -157,7 +157,7 @@ export const en = {
   'profiles.switchError': 'Could not safely switch accounts: {error}',
   'profiles.switchBusy': 'Parking terminals before switching…',
   'profiles.backupDialogTitle': 'Export account backup',
-  'profiles.backupFileType': 'Alethe account backup',
+  'profiles.backupFileType': 'Arcadia account backup',
   'profiles.exportBackup': 'Export backup before deleting',
   'profiles.backupDone': 'Backup exported',
   'profiles.backupReady': 'Backup exported. You can now confirm deletion.',
@@ -174,7 +174,7 @@ export const en = {
   'menu.agentSandbox': 'Agent Sandbox',
   'menu.remoteControl': 'Remote control',
   'menu.audit': 'Audit Center',
-  'audit.title': 'Alethe Audit & Diagnostics Center',
+  'audit.title': 'Arcadia Audit & Diagnostics Center',
   'audit.searchPlaceholder': 'Search audit logs (message, category, or stack)…',
   'audit.filterAll': 'All ({count})',
   'audit.filterErrors': 'Errors ({count})',
@@ -205,7 +205,7 @@ export const en = {
   'backup.skipped': 'Files in use that were left out ({count}): {files}.',
   'backup.embeddedImages': 'Linked images saved inside the backup: {count}.',
   'backup.linksKept': 'Linked images that could not be downloaded and stay as links: {count}.',
-  'menu.backupFilter': 'Alethe backup',
+  'menu.backupFilter': 'Arcadia backup',
   'menu.confirmReset':
     'Erase ALL app state (projects, scrollback, settings)? This cannot be undone.',
   'menu.confirmFactoryReset':
@@ -223,33 +223,33 @@ export const en = {
   'remote.tutorialStep4':
     'From the paired device you can view live output and, unless Read-only is on, send one message at a time to a shared terminal.',
   'remote.tutorialStep5':
-    'To reach Alethe from outside your Wi-Fi, install Tailscale on this PC and your phone, then set Reach to Tailscale below — see docs/REMOTE_CONTROL_TAILSCALE.md for the full guide.',
+    'To reach Arcadia from outside your Wi-Fi, install Tailscale on this PC and your phone, then set Reach to Tailscale below — see docs/REMOTE_CONTROL_TAILSCALE.md for the full guide.',
   'remote.title': 'Remote control',
   'remote.enabled': 'Remote control is available',
   'remote.disabled': 'Remote control is turned off',
-  'remote.description': 'Scan this QR code from a phone on the same network to open Alethe Remote.',
+  'remote.description': 'Scan this QR code from a phone on the same network to open Arcadia Remote.',
   'remote.disabledDescription': 'No phone can connect while this feature is turned off.',
   'remote.statusOn': 'On',
   'remote.statusOff': 'Off',
   'remote.enable': 'Enable remote control',
   'remote.disable': 'Turn off remote control',
   'remote.confirmEnable':
-    'Enable Remote Control?\n\nAlethe will open HTTP and WebSocket listeners on your local network. Paired devices can view shared terminal output. Paired sessions expire after {expiry}.\n\n{access}',
+    'Enable Remote Control?\n\nArcadia will open HTTP and WebSocket listeners on your local network. Paired devices can view shared terminal output. Paired sessions expire after {expiry}.\n\n{access}',
   'remote.confirmEnableTailscale':
-    'Enable Remote Control?\n\nAlethe will open HTTP and WebSocket listeners on your Tailscale network. Paired devices can view shared terminal output. Paired sessions expire after {expiry}.\n\n{access}',
+    'Enable Remote Control?\n\nArcadia will open HTTP and WebSocket listeners on your Tailscale network. Paired devices can view shared terminal output. Paired sessions expire after {expiry}.\n\n{access}',
   'remote.confirmAccessReadOnly':
     'Current access is read-only: agent messages and shell input are blocked.',
   'remote.confirmAccessAgentInput': 'Current access allows agent messages; shell input is blocked.',
   'remote.confirmAccessShellInput': 'Current access allows agent messages and shell input.',
   'remote.sessionSeconds': '{seconds} seconds',
   'remote.enableFailedTitle': 'Remote control could not start',
-  'remote.enableFailedBody': 'Alethe kept remote control off. {error}',
+  'remote.enableFailedBody': 'Arcadia kept remote control off. {error}',
   'remote.disableFailedTitle': 'Remote control could not stop',
   'remote.disableFailedBody':
-    'Alethe could not confirm that remote access stopped. Restart Alethe before continuing. {error}',
+    'Arcadia could not confirm that remote access stopped. Restart Arcadia before continuing. {error}',
   'remote.rollbackFailedTitle': 'Remote control rollback needs attention',
   'remote.rollbackFailedBody':
-    'Alethe could not fully save or enforce the disabled state. Restart Alethe and verify Remote Control is off. Startup error: {error}. Rollback error: {rollbackError}',
+    'Arcadia could not fully save or enforce the disabled state. Restart Arcadia and verify Remote Control is off. Startup error: {error}. Rollback error: {rollbackError}',
   'remote.modalReachEyebrow': 'Step 1 · Network',
   'remote.modalPairEyebrow': 'Step 2 · Pair a device',
   'remote.connectedDevices': 'Connected devices',
@@ -275,7 +275,7 @@ export const en = {
   'remote.openSettings': 'Open Remote Control settings',
   'remote.hiddenAddressPlaceholder':
     'http://192.168.x.x:9340 · Open a pairing window to reveal the address',
-  'brand.remote': 'Alethe Remote',
+  'brand.remote': 'Arcadia Remote',
   'common.details': 'Technical details',
   'common.reload': 'Try again',
   'common.terminal': 'Terminal',
@@ -289,7 +289,7 @@ export const en = {
   'home.chatCount': '{count} chat',
   'home.chatCountPlural': '{count} chats',
   'home.description': 'Choose a shared terminal and continue your work from this device.',
-  'home.emptyDescription': 'Open a terminal in Alethe or allow remote access to an existing one.',
+  'home.emptyDescription': 'Open a terminal in Arcadia or allow remote access to an existing one.',
   'home.emptyTitle': 'No shared chats yet',
   'home.noMatchesDescription': 'Try a project, group, agent, or terminal name.',
   'home.noMatchesTitle': 'No matching chats',
@@ -307,7 +307,7 @@ export const en = {
   'home.startingAgent': 'Starting…',
   'home.startAgentError': 'Agent not started: {message}',
   'home.startAgentTimeout':
-    'The desktop did not open the agent in time. Check Alethe on the computer.',
+    'The desktop did not open the agent in time. Check Arcadia on the computer.',
   'workers.title': 'Orchestration workers',
   'workers.needsApproval': 'Needs approval',
   'workers.approveOnDesktop': 'Waiting for your approval. Approve it on the desktop.',
@@ -345,7 +345,7 @@ export const en = {
   'question.multiple': 'Select one or more options.',
   'question.submit': 'Send answer',
   'question.answered': 'This question has already been answered.',
-  'question.readOnly': 'Open Alethe on the desktop to answer this question.',
+  'question.readOnly': 'Open Arcadia on the desktop to answer this question.',
   'question.sendError': 'Answer not sent: {message}',
   'question.sendUncertain': 'Delivery could not be confirmed. Check the question before retrying.',
   'question.other': 'Another answer',
@@ -355,21 +355,21 @@ export const en = {
   'chat.jumpLatest': 'Jump to latest',
   'chat.liveTerminal': 'Live terminal',
   'chat.messageHint': 'Enter sends · Shift + Enter adds a line',
-  'chat.readOnly': 'This device has read-only access. Sending messages is disabled in Alethe.',
+  'chat.readOnly': 'This device has read-only access. Sending messages is disabled in Arcadia.',
   'chat.send': 'Send message',
   'chat.sendError': 'Message not sent: {message}',
   'chat.sendPlaceholder': 'Message this terminal…',
   'chat.sending': 'Sending message',
   'state.connectionDescription':
-    'Alethe could not be reached on the local network. Check that the desktop app and this device are still connected to the same network.',
+    'Arcadia could not be reached on the local network. Check that the desktop app and this device are still connected to the same network.',
   'state.connectionTitle': 'Connection unavailable',
   'state.loadingDescription': 'Preparing your shared workspace…',
-  'state.loadingTitle': 'Connecting to Alethe',
+  'state.loadingTitle': 'Connecting to Arcadia',
   'state.pairingDescription':
-    'Open Remote control in Alethe and scan the QR code to connect this device.',
+    'Open Remote control in Arcadia and scan the QR code to connect this device.',
   'state.pairingTitle': 'Pair this device',
   'state.sessionDescription':
-    'This device is no longer paired. Open Remote control in Alethe and scan a new QR code.',
+    'This device is no longer paired. Open Remote control in Arcadia and scan a new QR code.',
   'state.sessionTitle': 'Remote session ended',
   'state.terminalError': 'Unable to load terminal output.',
   'ui.terminal.hideFromRemote': 'Hide from remote devices',
@@ -398,7 +398,7 @@ export const en = {
     '{agent} was reinstalled, but {path} is still the version on PATH.',
   'agentInstall.uninstallTitle': 'Uninstall {agent}',
   'agentInstall.uninstallConfirm':
-    'This removes {agent} from this machine. Alethe will run the command below in a shell:',
+    'This removes {agent} from this machine. Arcadia will run the command below in a shell:',
   'agentInstall.uninstallConfirmAction': 'Yes, uninstall',
   'agentInstall.cancel': 'Cancel',
   'onboarding.agentUpdate': 'Update to {version}',
@@ -446,7 +446,7 @@ export const en = {
   'handoff.size': '{current} / {max} bytes',
   'handoff.unrestricted': 'Start {agent} in unrestricted mode',
   'handoff.privacy':
-    'The packet stays in your local Alethe profile and is deleted after the destination agent completes its first turn.',
+    'The packet stays in your local Arcadia profile and is deleted after the destination agent completes its first turn.',
   'handoff.lossPrivate':
     'Private reasoning and provider-specific session state cannot be transferred.',
   'handoff.fallbackNewest':
@@ -462,12 +462,12 @@ export const en = {
   'remote.openAgentToastTitle': '{device} started an agent',
   'remote.autoDisabledToastTitle': 'Remote control turned itself off',
   'remote.autoDisabledToastBody':
-    'No device connected for a while, so Alethe closed the listener automatically.',
+    'No device connected for a while, so Arcadia closed the listener automatically.',
   'remote.startFailedToastTitle': "Remote control couldn't start",
   'remote.startFailedToastBody':
-    'Alethe was unable to open the listener — check the selected reach mode and try again.',
+    'Arcadia was unable to open the listener — check the selected reach mode and try again.',
   'remote.startupNote':
-    'Remote control never starts on its own. Alethe only opens the LAN listener while this setting is on.',
+    'Remote control never starts on its own. Arcadia only opens the LAN listener while this setting is on.',
   'remote.reachTitle': 'Reach',
   'remote.reachDesc': 'Choose which network paired devices can reach this listener from.',
   'remote.reachLan': 'Local network',
@@ -504,7 +504,7 @@ export const en = {
   'remote.deviceExpiresAt': 'expires at {time}',
   'remote.settingsStatusTitle': 'Remote service',
   'remote.settingsStatusDesc':
-    'Control whether Alethe accepts remote connections on the local network.',
+    'Control whether Arcadia accepts remote connections on the local network.',
   'remote.settingsSecurityTitle': 'Security policy',
   'remote.settingsSecurityDesc': 'Set conservative limits for authenticated remote sessions.',
   'remote.settingsSecurityNote':
@@ -527,7 +527,7 @@ export const en = {
   /* ---- preferences ---- */
   'prefs.title': 'Preferences',
   'prefs.categoryAccount': 'Account',
-  'prefs.categoryAccountDesc': 'Manage your local profile, language, and Alethe accounts.',
+  'prefs.categoryAccountDesc': 'Manage your local profile, language, and Arcadia accounts.',
   'prefs.categoryOrganization': 'Organization',
   'prefs.categoryOrganizationDesc': 'Manage archived groups without losing their projects.',
   'prefs.archivedGroupsTitle': 'Archived groups',
@@ -553,9 +553,9 @@ export const en = {
   'prefs.categoryTerminal': 'Terminal and agents',
   'prefs.categoryTerminalDesc': 'Configure terminal appearance and available agents.',
   'prefs.categoryIntegrations': 'Integrations',
-  'prefs.categoryIntegrationsDesc': 'Connect external services and control what Alethe shares.',
+  'prefs.categoryIntegrationsDesc': 'Connect external services and control what Arcadia shares.',
   'prefs.categoryUpdates': 'Updates',
-  'prefs.categoryUpdatesDesc': 'Check your installed version and look for Alethe updates.',
+  'prefs.categoryUpdatesDesc': 'Check your installed version and look for Arcadia updates.',
   'prefs.shortcutsTitle': 'Keyboard shortcuts',
   'prefs.shortcutsDesc':
     'Customize global actions. Navigation, zoom, and project number keys remain reserved.',
@@ -598,7 +598,7 @@ export const en = {
   'prefs.localAccounts': 'Local accounts',
   'prefs.localAccountsDesc': 'Switch between profiles with independent projects and preferences.',
   'prefs.uiTheme': 'UI theme',
-  'prefs.uiThemeDesc': 'Choose the palette used throughout the Alethe interface.',
+  'prefs.uiThemeDesc': 'Choose the palette used throughout the Arcadia interface.',
   'prefs.appIconTheme': 'App icon',
   'prefs.appIconThemeDesc':
     'Icon shown in the taskbar and window, independent from the interface theme.',
@@ -618,7 +618,7 @@ export const en = {
   'prefs.uiZoom': 'Interface zoom',
   'prefs.uiZoomDesc': 'Increase or decrease the size of the entire interface.',
   'prefs.windowOpacity': 'Window opacity',
-  'prefs.windowOpacityDesc': 'Let the desktop show through the entire Alethe window.',
+  'prefs.windowOpacityDesc': 'Let the desktop show through the entire Arcadia window.',
   'prefs.windowOpacityHint': 'Experimental · Lower opacity can reduce text readability.',
   'prefs.opacityReset': 'Reset opacity',
   'prefs.topbarStyle': 'Topbar style',
@@ -636,7 +636,7 @@ export const en = {
   'prefs.viewPlacementLeft': 'Left sidebar',
   'prefs.viewPlacementRight': 'Right sidebar',
   'prefs.features': 'Features',
-  'prefs.featuresDesc': 'Choose which optional modules are visible in Alethe.',
+  'prefs.featuresDesc': 'Choose which optional modules are visible in Arcadia.',
   'prefs.featureEnabled': 'Enabled',
   'prefs.featureDisabled': 'Disabled',
 
@@ -666,25 +666,25 @@ export const en = {
     'No Chromium-based browser was found, or it did not expose its debugging port. Playwright will fall back to launching its own.',
   'features.playwright.title': 'Playwright browser',
   'features.playwright.description':
-    'Points the Playwright MCP server at a browser — shared with Alethe or a dedicated one of its own, picked below.',
+    'Points the Playwright MCP server at a browser — shared with Arcadia or a dedicated one of its own, picked below.',
   'features.playwright.browserMode.label': 'Browser',
   'features.playwright.browserMode.shared': 'Shared',
   'features.playwright.browserMode.dedicated': 'Dedicated',
   'features.playwright.browserMode.sharedHint':
-    'Attaches to the browser Alethe already owns (headless, visible only inside a Browser Pane). Shared with every other agent using it at the same time.',
+    'Attaches to the browser Arcadia already owns (headless, visible only inside a Browser Pane). Shared with every other agent using it at the same time.',
   'features.playwright.browserMode.dedicatedHint':
-    'Launches its own separate browser, outside Alethe, independent of the shared one and of any other agent.',
+    'Launches its own separate browser, outside Arcadia, independent of the shared one and of any other agent.',
   'features.playwright.headless.label': 'Run the dedicated browser headless (no visible window)',
   'features.orchestrator.title': 'Agent orchestration',
   'features.orchestrator.description':
-    'Gives Claude Code a set of Alethe tools for handing work to Codex workers that run in parallel. Alethe owns the sandbox, the concurrency limit and the workers themselves, and can steer or cancel one mid-run.',
+    'Gives Claude Code a set of Arcadia tools for handing work to Codex workers that run in parallel. Arcadia owns the sandbox, the concurrency limit and the workers themselves, and can steer or cancel one mid-run.',
   'features.prs.title': 'Open PRs',
   'features.prs.description':
     'Shows GitHub pull requests you are involved in as author or reviewer, across every repo, with a one-click way to send one to your TODO list.',
   'features.prs.keywords': 'pull request pr github review todo',
   'features.agentTeams.title': 'Agent teams',
   'features.agentTeams.description':
-    'Lets Claude Code agent teams open one terminal per teammate in the project, with the leader on the left and the team on the right. Alethe gives Claude Code terminals and plain shells its own tmux. Antigravity terminals get an alethe-team command instead, so you can ask them to open a team; Codex, OpenCode and the other agents are left untouched. It takes effect in terminals opened after you turn it on. Closing the leader closes its team.',
+    'Lets Claude Code agent teams open one terminal per teammate in the project, with the leader on the left and the team on the right. Arcadia gives Claude Code terminals and plain shells its own tmux. Antigravity terminals get an alethe-team command instead, so you can ask them to open a team; Codex, OpenCode and the other agents are left untouched. It takes effect in terminals opened after you turn it on. Closing the leader closes its team.',
   'features.agentTeams.keywords': 'agent teams claude code teammates tmux panes swarm parallel',
   'features.wsl.title': 'WSL integration',
   'features.wsl.description':
@@ -704,16 +704,16 @@ export const en = {
     'Install the ai-memory server so agents can share long-term memory. Agents will start normally without it.',
   // ai-memory's sub-panel, under its switch in Features.
   'aiMemory.panelCaptures':
-    'Every prompt and tool call from agents Alethe launches is recorded, as markdown in a git repository plus a search index — both on this machine, both readable without Alethe.',
+    'Every prompt and tool call from agents Arcadia launches is recorded, as markdown in a git repository plus a search index — both on this machine, both readable without Arcadia.',
   'aiMemory.checking': 'Checking…',
   'aiMemory.install': 'Install ai-memory',
   'aiMemory.installing': 'Installing…',
-  'aiMemory.installedManaged': 'Installed by Alethe',
+  'aiMemory.installedManaged': 'Installed by Arcadia',
   'aiMemory.installedExternal': 'Using the copy you installed',
   'aiMemory.at': 'at {path}',
   'aiMemory.missing': 'Not installed yet — install it and the agents can start using it.',
   'aiMemory.unsupported':
-    'ai-memory publishes no build for this platform yet, so Alethe cannot install it here.',
+    'ai-memory publishes no build for this platform yet, so Arcadia cannot install it here.',
   'aiMemory.openRepo': 'Open the project',
   'aiMemory.start': 'Start',
   'aiMemory.starting': 'Starting…',
@@ -722,7 +722,7 @@ export const en = {
   'aiMemory.running': 'Answering on {endpoint}',
   'aiMemory.stopped': 'Not running',
   'aiMemory.portBusy':
-    'Something already answers on {endpoint} and Alethe did not start it — most likely your own copy. Alethe will leave it alone.',
+    'Something already answers on {endpoint} and Arcadia did not start it — most likely your own copy. Arcadia will leave it alone.',
   'aiMemory.counts': '{pages} pages · {sessions} sessions · {observations} observations',
   'aiMemory.installError': 'ai-memory could not be installed.',
   'aiMemory.startError': 'ai-memory could not be started.',
@@ -805,7 +805,7 @@ export const en = {
   'prefs.resourcePolicySmartHint':
     'Visible, focused, recently spawned and working runtimes are always protected. Parked agents resume from their saved session.',
   'prefs.resourcePolicyManualHint':
-    'Alethe only measures usage. It never closes tabs, parks runtimes or pauses new spawns automatically.',
+    'Arcadia only measures usage. It never closes tabs, parks runtimes or pauses new spawns automatically.',
   'prefs.spawnConcurrency': 'Parallel spawns',
   'prefs.spawnConcurrencyDesc':
     'How many terminals start at once. Lower if opening big groups freezes the app; higher to start faster.',
@@ -836,7 +836,7 @@ export const en = {
   'prefs.orchestrationSkillBackend': 'Preferred backend',
   'prefs.orchestrationSkillBackend.auto': 'Automatic',
   'prefs.orchestrationSkillBackend.skill': 'Local skill only',
-  'prefs.orchestrationSkillBackend.mcp': 'Alethe MCP when available',
+  'prefs.orchestrationSkillBackend.mcp': 'Arcadia MCP when available',
   'prefs.orchestrationSkillStrategy': 'Default strategy',
   'prefs.orchestrationSkillStrategy.auto': 'Automatic',
   'prefs.orchestrationSkillStrategy.economy': 'Economy',
@@ -854,7 +854,7 @@ export const en = {
   'prefs.orchestrationSkillProviderNone': 'None',
   'prefs.orchestrationSkillProviderAuto': 'Automatic order',
   'prefs.orchestrationSkillHint':
-    'Alethe exports these choices to the bundled skill’s local policy file. The skill runner reads it directly and does not require MCP. An explicit instruction in the current prompt always wins.',
+    'Arcadia exports these choices to the bundled skill’s local policy file. The skill runner reads it directly and does not require MCP. An explicit instruction in the current prompt always wins.',
   'prefs.strategyDiagramTitle': 'Strategy architecture',
   'prefs.strategyDiagramPlanner': 'Planner',
   'prefs.strategyDiagramTask': 'Your task',
@@ -927,9 +927,9 @@ export const en = {
   'prefs.orchestrationCodexOnly': 'Codex workers only',
   'prefs.orchestrationRouting': 'Routing',
   'prefs.orchestrationRoutingDesc':
-    'Which role a delegated call runs as when the planner leaves the choice to Alethe.',
+    'Which role a delegated call runs as when the planner leaves the choice to Arcadia.',
   'prefs.orchestrationRoutingIntro':
-    'The planner classifies each delegated task by kind and effort; Alethe walks the rules in order and the first enabled match picks the role. A role or model named in the call always wins.',
+    'The planner classifies each delegated task by kind and effort; Arcadia walks the rules in order and the first enabled match picks the role. A role or model named in the call always wins.',
   'prefs.routingPresetEconomy': 'Economy',
   'prefs.routingPresetEconomyDesc':
     'Cheapest roles first: a Haiku scout, a read-only Codex, and a Codex builder for the rest.',
@@ -1035,11 +1035,11 @@ export const en = {
   'prefs.shortcutAdd': 'Add shortcut',
   'prefs.shortcutNewName': 'New shortcut',
   'prefs.shortcutPlaceholders': 'Available: {jobId}, {agent}, {branch}, {worktree}, {project}.',
-  'prefs.shortcutsEmpty': 'You have no shortcuts. Restore defaults to bring Alethe’s back.',
+  'prefs.shortcutsEmpty': 'You have no shortcuts. Restore defaults to bring Arcadia’s back.',
   'prefs.shortcutsRestoreDefaults': 'Restore defaults',
   'prefs.workerRules': 'Rules for delegated work',
   'prefs.workerRulesDesc':
-    'What Alethe tells the agents it delegates to. The general set goes with every task; the lead agent names the set that matches the work. A repository’s own conventions always win over these.',
+    'What Arcadia tells the agents it delegates to. The general set goes with every task; the lead agent names the set that matches the work. A repository’s own conventions always win over these.',
   'prefs.ruleSetName': 'Set name',
   'prefs.ruleSetText': 'Rules',
   'prefs.ruleSetSize': '{count} characters, sent with every task of this set',
@@ -1049,17 +1049,17 @@ export const en = {
   'prefs.ruleSetAdd': 'Add set',
   'prefs.ruleSetNewName': 'New set',
   'prefs.ruleSetsEmpty': 'No rules are sent with delegated work.',
-  'prefs.ruleSetsLoading': 'Loading Alethe’s rules…',
+  'prefs.ruleSetsLoading': 'Loading Arcadia’s rules…',
   'prefs.ruleSetsUnavailable':
-    'Alethe’s rule sets could not be loaded, so they cannot be edited right now. The rules the agents receive are unchanged.',
+    'Arcadia’s rule sets could not be loaded, so they cannot be edited right now. The rules the agents receive are unchanged.',
   'prefs.ruleSetsRetry': 'Try again',
-  'prefs.ruleSetsRestoreAll': 'Restore Alethe’s sets',
+  'prefs.ruleSetsRestoreAll': 'Restore Arcadia’s sets',
   /* ---- plugins ---- */
   'prefs.categoryPlugins': 'Plugins',
   'prefs.categoryPluginsDesc': 'Extensions that add themes, panes, sidebar tabs and commands.',
   'prefs.pluginsInstalledTitle': 'Installed',
   'prefs.pluginsInstalledDesc':
-    'Everything Alethe has loaded. Turning one off removes what it contributes right away.',
+    'Everything Arcadia has loaded. Turning one off removes what it contributes right away.',
   'prefs.pluginsEmpty': 'No plugins installed yet.',
   'prefs.pluginsVersion': 'v{version}',
   'prefs.pluginsSourceBundled': 'Bundled',
@@ -1113,7 +1113,7 @@ export const en = {
   'market.sortUpdated': 'Updates first',
   'market.filterCapabilities': 'Can do',
   'market.filterSource': 'Source',
-  'market.sourceBundled': 'Ships with Alethe',
+  'market.sourceBundled': 'Ships with Arcadia',
   'market.sourceLocal': 'Installed here',
   'market.filterState': 'State',
   'market.stateEnabled': 'Enabled',
@@ -1140,9 +1140,9 @@ export const en = {
   'market.detailCapabilities': 'What it can do',
   'market.detailRepo': 'Source',
   'market.notInstallable':
-    'This listing points at a page rather than publishing a package, so Alethe cannot install it for you.',
+    'This listing points at a page rather than publishing a package, so Arcadia cannot install it for you.',
   'market.fullPower':
-    'A plugin runs with the same power as Alethe itself. Capabilities are a disclosure, not a cage — install what you have reason to trust.',
+    'A plugin runs with the same power as Arcadia itself. Capabilities are a disclosure, not a cage — install what you have reason to trust.',
   'market.uninstallWarning': 'Uninstalling removes the plugin and the data it stored.',
   'market.installDone': '{name} installed',
   'market.installDoneBody': 'It is disabled until you enable it and accept what it can do.',
@@ -1174,7 +1174,7 @@ export const en = {
   'prefs.pluginsUninstallError': 'Failed to uninstall plugin: {error}',
   'prefs.pluginsTrustTitle': 'Enable {name}?',
   'prefs.pluginsTrustBody':
-    'This plugin came from your own disk. Nobody has reviewed it, and it runs with the same access as Alethe itself — treat it like any other program you choose to run.',
+    'This plugin came from your own disk. Nobody has reviewed it, and it runs with the same access as Arcadia itself — treat it like any other program you choose to run.',
   'prefs.pluginsTrustCapabilities': 'It is asking to:',
   'prefs.pluginsTrustConfirm': 'Enable plugin',
   'prefs.pluginsInstallTitle': 'Install from a folder',
@@ -1201,7 +1201,7 @@ export const en = {
   'prefs.agentsDesc': 'Choose which agents are available when creating terminals and sub-tabs.',
   'prefs.shell': 'Shell',
   'prefs.shellDesc':
-    'Alethe picks the shell on its own (PowerShell 7 when available, then Windows PowerShell; $SHELL elsewhere). Point it at another binary to override that — it applies to Shell tabs, not to agent tabs.',
+    'Arcadia picks the shell on its own (PowerShell 7 when available, then Windows PowerShell; $SHELL elsewhere). Point it at another binary to override that — it applies to Shell tabs, not to agent tabs.',
   'prefs.shellPathPick': 'Select the shell executable',
   'prefs.terminalFont': 'Terminal font',
   'prefs.terminalFontDesc':
@@ -1209,7 +1209,7 @@ export const en = {
   'prefs.terminalFontFamily': 'Font family',
   'prefs.cliPaths': 'Agent CLI paths',
   'prefs.cliPathsDesc':
-    'Alethe finds each agent CLI on its own. Override it only when the CLI lives somewhere unusual — and point it at the command-line tool, not at a desktop app. These are Windows paths: terminals whose folder is inside WSL ignore them and resolve the CLI inside the distro.',
+    'Arcadia finds each agent CLI on its own. Override it only when the CLI lives somewhere unusual — and point it at the command-line tool, not at a desktop app. These are Windows paths: terminals whose folder is inside WSL ignore them and resolve the CLI inside the distro.',
   'prefs.cliPathAuto': 'Detected automatically',
   'prefs.cliPathSet': 'Set path',
   'prefs.cliPathReset': 'Reset',
@@ -1284,7 +1284,7 @@ export const en = {
   'prefs.cliUninstall': 'Remove',
   'prefs.cliInstalledAt': 'Installed at {path}',
   'prefs.cliStale':
-    'The installed command points to an older copy of Alethe. Reinstall it to update the path.',
+    'The installed command points to an older copy of Arcadia. Reinstall it to update the path.',
   'prefs.cliNotOnPath':
     '{dir} is not in your PATH. Add it to your shell profile: export PATH="{dir}:$PATH"',
   'prefs.cliUnsupported': 'The terminal command is not available on this platform.',
@@ -1293,7 +1293,7 @@ export const en = {
   'prefs.discordPresence': 'Discord Rich Presence',
   'prefs.discordPresenceEnabled': 'Enabled',
   'prefs.discordPresenceDisabled': 'Disabled',
-  'prefs.discordPresenceHint': 'Shows that you are using Alethe without exposing project names.',
+  'prefs.discordPresenceHint': 'Shows that you are using Arcadia without exposing project names.',
   'prefs.namePlaceholder': 'Name',
   'prefs.photoPlaceholder': 'Photo link',
   'prefs.zoomDecrease': 'Decrease zoom (Ctrl+-)',
@@ -1302,11 +1302,11 @@ export const en = {
   'prefs.spotifyHint':
     'Register {redirect} as a Redirect URI in the Spotify Developer Dashboard. In dev, {idEnv} and {secretEnv} still work as a fallback.',
   'prefs.checkUpdates': 'Software updates',
-  'prefs.checkUpdatesDesc': 'Check whether a newer version of Alethe is available to download.',
+  'prefs.checkUpdatesDesc': 'Check whether a newer version of Arcadia is available to download.',
   'prefs.installedVersion': 'Installed version',
   'prefs.checkNow': 'Check for updates',
   'prefs.checkingUpdates': 'Checking…',
-  'prefs.upToDate': 'Alethe is up to date.',
+  'prefs.upToDate': 'Arcadia is up to date.',
   'prefs.updateAvailable': 'Version {version} is available.',
   'prefs.updateCheckFailed': 'Could not check for updates. Check your connection and try again.',
   'prefs.viewUpdate': 'View update',
@@ -1362,8 +1362,8 @@ export const en = {
   'todo.editTags': 'Edit tags',
   'todo.tagsPrompt': 'Tags separated by comma',
   'todo.defaultLabel': 'Reference list',
-  'todo.resetDefault': 'Reset to Alethe default Todo',
-  'todo.resetDefaultConfirm': 'Replace your current Todo list with the Alethe default list?',
+  'todo.resetDefault': 'Reset to Arcadia default Todo',
+  'todo.resetDefaultConfirm': 'Replace your current Todo list with the Arcadia default list?',
   'todo.openPr': 'Open PR #{number} on GitHub',
   'pomodoro.title': 'Pomodoro',
   'pomodoro.phaseWork': 'Focus',
@@ -1394,7 +1394,7 @@ export const en = {
   'pluginsTab.status.disabled': 'Disabled',
   'pluginsTab.status.updates': 'Updates available',
   'pluginsTab.source.all': 'All sources',
-  'pluginsTab.source.bundled': 'Built into Alethe',
+  'pluginsTab.source.bundled': 'Built into Arcadia',
   'pluginsTab.source.local': 'Installed locally',
   'pluginsTab.source.catalog': 'Catalogue only',
   'pluginsTab.sort.relevance': 'Best match',
@@ -1406,7 +1406,7 @@ export const en = {
   'pluginPane.actionFailed': 'Could not change plugin status',
   'pluginPane.removing': 'Uninstalling…',
   'pluginPane.bundledHint':
-    'This plugin is built into Alethe. You can disable it, but it cannot be uninstalled.',
+    'This plugin is built into Arcadia. You can disable it, but it cannot be uninstalled.',
   'pluginsTab.title': 'Plugins',
   'pluginsTab.searchPlaceholder': 'Search name, author, description or permissions',
   'pluginsTab.refresh': 'Refresh the plugin list',
@@ -1447,7 +1447,7 @@ export const en = {
   'rightSidebar.dropMarkdown': 'Drop Markdown files to open them here',
   'whatsNew.button': "What's new",
   'whatsNew.title': "What's new in v{version}",
-  'whatsNew.subtitle': 'Alethe keeps getting sharper.',
+  'whatsNew.subtitle': 'Arcadia keeps getting sharper.',
   'whatsNew.body': 'Here are the latest improvements in the app.',
   'whatsNew.pendingTitle': 'A newer version is ready',
   'whatsNew.pendingBody': 'Version {version} is available, but it has not been downloaded yet.',
@@ -1455,9 +1455,9 @@ export const en = {
   'whatsNew.update': 'View update',
   'whatsNew.releaseHeading': 'v{version} — {date}',
   'whatsNew.v176.note1':
-    'Maintenance release with no visible changes, published to verify that updating from inside the app finishes and reopens Alethe by itself.',
+    'Maintenance release with no visible changes, published to verify that updating from inside the app finishes and reopens Arcadia by itself.',
   'whatsNew.v175.note1':
-    'Fixed in-app updates on Windows: the installer is no longer killed when the app closes, so the update finishes and Alethe reopens by itself. If you are on 1.7.4 or earlier, install this version once from the installer.',
+    'Fixed in-app updates on Windows: the installer is no longer killed when the app closes, so the update finishes and Arcadia reopens by itself. If you are on 1.7.4 or earlier, install this version once from the installer.',
   'whatsNew.v174.note1':
     'Maintenance release with no visible changes, published to verify that updating from inside the app works.',
   'whatsNew.v173.note1':
@@ -1489,7 +1489,7 @@ export const en = {
   'whatsNew.v160.note2':
     'Claude Code and Codex conversations can be continued in the other agent from the terminal.',
   'whatsNew.v160.note3':
-    'Agents can be installed, updated and uninstalled from inside Alethe, and GitHub Copilot CLI joins as a new agent.',
+    'Agents can be installed, updated and uninstalled from inside Arcadia, and GitHub Copilot CLI joins as a new agent.',
   'whatsNew.v160.note4':
     'New MCP tab in the right sidebar with every configured MCP server and the skills installed for each agent.',
   'whatsNew.v160.note5':
@@ -1550,7 +1550,7 @@ export const en = {
   'whatsNew.v130.note6':
     'Projects sidebar reorganized: pinned active project card, colored monograms, and a live activity indicator.',
   'whatsNew.v130.note7': 'YOLO mode became a one-click control in the Add AI modal.',
-  'whatsNew.v130.note8': 'Experimental window opacity control, to see the desktop through Alethe.',
+  'whatsNew.v130.note8': 'Experimental window opacity control, to see the desktop through Arcadia.',
   'rightSidebar.backToTodo': 'Back to Todo',
   'rightSidebar.markdownError': 'Could not load Markdown',
   'rightSidebar.navigation': 'Right sidebar navigation',
@@ -1757,7 +1757,7 @@ export const en = {
   'crud.create': 'Create',
   'crud.createProjectOnly': 'Create project only',
   'crud.createProjectAndOpenTerminal': 'Create project and open terminal',
-  'crud.detectedConfigFound': 'Existing Alethe config detected for "{name}"',
+  'crud.detectedConfigFound': 'Existing Arcadia config detected for "{name}"',
   'crud.detectedConfigRestore': 'Restore',
   'crud.cloningRepoTitle': 'Cloning repository',
   'crud.cloningRepoBody': 'Starting the clone of {url} and generating the AI context briefing…',
@@ -1864,7 +1864,7 @@ export const en = {
   'term.wslPick': 'WSL',
   'term.wslPickTitle': 'Open a folder inside a WSL distro',
   'term.wslPickFailed': 'Could not reach WSL',
-  'term.wslPickFailedBody': 'Alethe could not read the home directory of {distro}.',
+  'term.wslPickFailedBody': 'Arcadia could not read the home directory of {distro}.',
   'term.openAgent': 'Open {agent}',
   'term.team.toggle': 'Open as a team',
   'term.team.toggleDesc':
@@ -1923,7 +1923,7 @@ export const en = {
   'browser.javascript': 'Enable JavaScript',
   'browser.javascriptDescription': 'Most apps need this. Disable it for a stricter read-only page.',
   'browser.resourceMode': 'Resource priority',
-  'browser.resourceModeAppFirst': 'Prioritize Alethe',
+  'browser.resourceModeAppFirst': 'Prioritize Arcadia',
   'browser.resourceModeBalanced': 'Balanced',
   'browser.resourceModeKeepAlive': 'Keep page alive',
   'browser.resourceModeDescription.app-first':
@@ -1931,14 +1931,14 @@ export const en = {
   'browser.resourceModeDescription.balanced':
     'Keeps hidden pages alive for 30 seconds before releasing their native webview.',
   'browser.resourceModeDescription.keep-alive':
-    'Keeps hidden pages loaded, but still releases them if Alethe detects memory pressure.',
+    'Keeps hidden pages loaded, but still releases them if Arcadia detects memory pressure.',
   'browser.addToGrid': 'Add to grid',
   'browser.privateTitle': 'Private session is always on',
   'browser.privateDescription':
-    'Alethe opens this pane in a native incognito webview. Cookies, logins, cache, autofill, and site storage are not kept after the pane closes.',
+    'Arcadia opens this pane in a native incognito webview. Cookies, logins, cache, autofill, and site storage are not kept after the pane closes.',
   'browser.privateBadge': 'Private',
   'browser.destination': 'This browser will be added to {project}.',
-  'browser.embedHint': 'Opens inside Alethe. Some sites may block embedded viewing.',
+  'browser.embedHint': 'Opens inside Arcadia. Some sites may block embedded viewing.',
   'term.suspendGroupTitle': 'Suspend group',
   'term.suspend': 'Suspend',
   'term.suspendConfirmBefore': 'Are you sure you want to suspend the group',
@@ -1994,13 +1994,13 @@ export const en = {
   'mod.memoryAnalyticsTitle': 'Memory analytics',
   'mod.health.normal.title': 'Memory is healthy',
   'mod.health.normal.body':
-    'Windows has {available} available out of {total}. Alethe will not close tabs automatically.',
+    'Windows has {available} available out of {total}. Arcadia will not close tabs automatically.',
   'mod.health.warning.title': 'Available memory is getting low',
   'mod.health.warning.body':
     'Windows has {available} available out of {total}. Review the largest runtime below before opening many more.',
   'mod.health.critical.title': 'Windows memory is critically low',
   'mod.health.critical.body':
-    'Windows has only {available} available out of {total}. Alethe will warn, but any session closure remains your decision.',
+    'Windows has only {available} available out of {total}. Arcadia will warn, but any session closure remains your decision.',
   'mod.clearHistory': 'Clear history',
   'mod.now': 'Now',
   'mod.peak': 'Peak',
@@ -2094,11 +2094,11 @@ export const en = {
     'All usage items are hidden. Re-enable them in the AI usage details panel.',
   'prefs.usageAccess': 'AI usage reading',
   'prefs.usageAccessDesc':
-    'Choose which providers Alethe reads your usage from. Turning one on uses the credentials of the CLI already installed on this computer and contacts that provider. While it is off, Alethe never reads those credentials or contacts the provider.',
+    'Choose which providers Arcadia reads your usage from. Turning one on uses the credentials of the CLI already installed on this computer and contacts that provider. While it is off, Arcadia never reads those credentials or contacts the provider.',
   'usageAccess.providerHint': 'Uses the {provider} sign-in on this computer and contacts {vendor}.',
   'usageAccess.orchestratorToastTitle': 'Usage reading turned on',
   'usageAccess.orchestratorToastBody':
-    'The orchestrator uses quota to warn you and to pick roles, so Alethe now reads usage for {providers} with the installed CLI credentials. You can turn it off in Preferences > Integrations.',
+    'The orchestrator uses quota to warn you and to pick roles, so Arcadia now reads usage for {providers} with the installed CLI credentials. You can turn it off in Preferences > Integrations.',
   'ui.titlebar.itemClaude': 'Claude Code usage',
   'ui.titlebar.itemCodex': 'Codex usage',
   'ui.titlebar.itemAntigravity': 'Antigravity status',
@@ -2137,12 +2137,12 @@ export const en = {
   'ui.titlebar.minimize': 'Minimize',
   'ui.titlebar.maximize': 'Maximize',
   'ui.titlebar.close': 'Close',
-  'appClose.title': 'Close Alethe?',
+  'appClose.title': 'Close Arcadia?',
   'appClose.message':
-    'Open agents and terminals will be stopped. Saved conversations can be resumed the next time you open Alethe.',
-  'appClose.confirm': 'Close Alethe',
+    'Open agents and terminals will be stopped. Saved conversations can be resumed the next time you open Arcadia.',
+  'appClose.confirm': 'Close Arcadia',
   'appClose.cancel': 'Cancel',
-  'appClose.failedTitle': 'Alethe could not close',
+  'appClose.failedTitle': 'Arcadia could not close',
   'appClose.failedBody': 'The close request failed. Try again or open the logs for details.',
   'ui.workspace.openIndividually': 'Open individually',
   'ui.workspace.addToCurrent': 'Add to current view',
@@ -2342,7 +2342,7 @@ export const en = {
   'ui.sidebar.importProjectConfigTitle': 'Import project config',
   'ui.sidebar.importProjectConfigDone': 'Project imported as a new project',
   'ui.sidebar.importProjectConfigFailed': 'Could not import this file',
-  'ui.sidebar.projectConfigFilter': 'Alethe project config',
+  'ui.sidebar.projectConfigFilter': 'Arcadia project config',
   'ui.sidebar.quickRename': 'Quick rename',
   'ui.sidebar.newNamePrompt': 'New name:',
   'ui.sidebar.newTerminalHere': 'New terminal here',
@@ -2459,9 +2459,9 @@ export const en = {
   'ws.installAgent': 'Install agent',
   'ws.installAgentName': 'Install {name}',
   'ws.confirmOverwriteForeignAgent':
-    'An agent "{name}" that was NOT created by Alethe already exists in this project. Overwrite?',
+    'An agent "{name}" that was NOT created by Arcadia already exists in this project. Overwrite?',
   'ws.confirmRemoveAgent': 'Remove the agent "{name}" from the project?',
-  'ws.confirmRemoveForeignAgent': 'The agent "{name}" was NOT created by Alethe. Remove it anyway?',
+  'ws.confirmRemoveForeignAgent': 'The agent "{name}" was NOT created by Arcadia. Remove it anyway?',
   'ws.moreToolCalls': '+{count} tool calls — click to see all',
   'ws.back': 'back',
   'ws.agentCanvasPoc': 'agent canvas — poc',
@@ -2558,7 +2558,7 @@ export const en = {
   'orchestrator.limit': 'limit {count}',
   'orchestrator.emptyTitle': 'No workers yet.',
   'orchestrator.emptyBody':
-    'Ask an agent to delegate, and every worker Alethe starts shows up here as it runs.',
+    'Ask an agent to delegate, and every worker Arcadia starts shows up here as it runs.',
   'orchestrator.tokensTitle': 'Tokens this worker has used',
   'orchestrator.costTitle': 'Session cost reported by this worker',
   'orchestrator.noPrice': 'no price',
@@ -2866,7 +2866,7 @@ export const en = {
   'hud.agentsRunning': '{count} agents',
 
   /* ---- crash watch ---- */
-  'crash.uncleanTitle': 'Alethe closed unexpectedly',
+  'crash.uncleanTitle': 'Arcadia closed unexpectedly',
   'crash.uncleanBody': 'Last reading before it died: {total} MB · {procs} processes · {time}',
   'crash.uncleanBodyWithOrphans':
     'Last reading before it died: {total} MB · {procs} processes · {time}. Cleaned up {orphans} leftover orphaned process(es).',
@@ -2882,16 +2882,16 @@ export const en = {
   'update.error': 'Update failed: {error}',
   'update.checkFailedTitle': 'Could not check for updates',
   'update.checkFailedBody':
-    'Alethe could not reach the update service. Check your connection and try again.',
+    'Arcadia could not reach the update service. Check your connection and try again.',
   'update.checkingAgain': 'Checking again…',
   'update.retryCheck': 'Try again',
   'update.currentVersionTitle': 'Installed version — click for updates',
 
   /* ---- about & updates (preferences) ---- */
   'prefs.categoryTutorials': 'Tutorials',
-  'prefs.categoryTutorialsDesc': 'Videos that show Alethe in real work',
+  'prefs.categoryTutorialsDesc': 'Videos that show Arcadia in real work',
   'tutorials.videosTitle': 'Videos',
-  'tutorials.videosDesc': 'Watch how to orchestrate agents with Alethe, right here in Settings.',
+  'tutorials.videosDesc': 'Watch how to orchestrate agents with Arcadia, right here in Settings.',
   'tutorials.play': 'Play {title}',
   'tutorials.openYoutube': 'Open on YouTube',
   'tutorials.channel': 'More on the YouTube channel',
@@ -2903,24 +2903,24 @@ export const en = {
   'tutorials.summarySkill':
     'A tutorial on orchestrating coding agents with the free Alethe Orchestrate skill.',
   'tutorials.summaryDevlog':
-    'A real developer day with Alethe as part of the everyday coding workflow.',
+    'A real developer day with Arcadia as part of the everyday coding workflow.',
   'prefs.categoryAbout': 'About & updates',
-  'prefs.categoryAboutDesc': 'Version, updates, older releases, and who makes Alethe.',
+  'prefs.categoryAboutDesc': 'Version, updates, older releases, and who makes Arcadia.',
   'prefs.aboutVersionTitle': 'Version',
-  'prefs.aboutVersionDesc': 'The Alethe build currently installed.',
+  'prefs.aboutVersionDesc': 'The Arcadia build currently installed.',
   'prefs.aboutUpdatesTitle': 'Updates',
-  'prefs.aboutUpdatesDesc': 'Check for and install new versions of Alethe.',
+  'prefs.aboutUpdatesDesc': 'Check for and install new versions of Arcadia.',
   'prefs.aboutCheckUpdates': 'Check for updates',
   'prefs.aboutChecking': 'Checking…',
   'prefs.aboutUpToDate': "You're on the latest version (v{version}).",
   'prefs.aboutUpdateAvailable': "Version {version} is available — you're on {current}.",
   'prefs.aboutWhatsNew': "What's new",
   'prefs.aboutCreatorTitle': 'Made by',
-  'prefs.aboutCreatorDesc': 'Alethe is designed, built, and maintained by one developer.',
+  'prefs.aboutCreatorDesc': 'Arcadia is designed, built, and maintained by one developer.',
   'prefs.aboutCreatorPhotoAlt': 'Kauã Miguel',
   'prefs.aboutCreatorRole': 'Creator and maintainer',
   'prefs.aboutCreatorBio':
-    'Builds Alethe in the open. Follow along for new releases and videos about coding agents.',
+    'Builds Arcadia in the open. Follow along for new releases and videos about coding agents.',
   'prefs.aboutOlderTitle': 'Older versions',
   'prefs.aboutOlderDesc': 'Go back to an earlier release if a newer one gets in your way.',
   'prefs.aboutOlderShow': 'Show older versions',
@@ -2932,7 +2932,7 @@ export const en = {
   'prefs.aboutOlderManualHint':
     'This release predates in-app installs. Download its installer from GitHub.',
   'prefs.aboutOlderConfirm':
-    'Alethe will close, install v{version}, and open again. An older version may not read everything a newer one saved, so export a backup first.',
+    'Arcadia will close, install v{version}, and open again. An older version may not read everything a newer one saved, so export a backup first.',
   'prefs.aboutOlderBackup': 'Export backup',
   'prefs.aboutOlderBackupDone': 'Backup saved',
   'prefs.aboutOlderBackupError': "Couldn't export the backup: {error}",
@@ -2944,21 +2944,21 @@ export const en = {
   'prefs.aboutOlderAll': 'All releases on GitHub',
   'prefs.aboutContributeTitle': 'Contribute',
   'prefs.aboutContributeDesc':
-    'Alethe is open source under AGPL-3.0. Report what broke, suggest what is missing, or send a change.',
+    'Arcadia is open source under AGPL-3.0. Report what broke, suggest what is missing, or send a change.',
   'prefs.aboutReportBug': 'Report a bug',
   'prefs.aboutRequestFeature': 'Request a feature',
   'prefs.aboutOpenPullRequest': 'Open a pull request',
   'prefs.aboutContributingGuide': 'Contributing guide',
   'prefs.aboutInfoTitle': 'Information',
-  'prefs.aboutInfoDesc': 'License, privacy, source code, and where Alethe keeps its files.',
+  'prefs.aboutInfoDesc': 'License, privacy, source code, and where Arcadia keeps its files.',
   'prefs.aboutLicense': 'License',
   'prefs.aboutPrivacy': 'Privacy',
-  'prefs.aboutPrivacyAction': 'How Alethe handles your data',
+  'prefs.aboutPrivacyAction': 'How Arcadia handles your data',
   'prefs.aboutSource': 'Source code',
   'prefs.aboutDataFolder': 'Data folder',
   'prefs.aboutLogsFolder': 'Logs',
   'prefs.aboutOpenFolder': 'Open folder',
-  'update.checkSuccessTitle': 'Alethe is up to date',
+  'update.checkSuccessTitle': 'Arcadia is up to date',
   'update.checkSuccessBody': 'No newer version is available right now.',
   'update.technicalDetails': 'Technical details',
 
@@ -2974,8 +2974,8 @@ export const en = {
   'sync.github.confirmPull':
     'Downloading replaces your local projects and stats with the Gist copy. Continue?',
   'sync.legacy.title': 'GitHub Gist (legacy)',
-  'sync.legacy.desc': 'Gist sync is being retired. Download your data once, then use Alethe Cloud.',
-  'sync.cloud.title': 'Alethe Cloud',
+  'sync.legacy.desc': 'Gist sync is being retired. Download your data once, then use Arcadia Cloud.',
+  'sync.cloud.title': 'Arcadia Cloud',
   'sync.cloud.freeDesc':
     'Sign in with GitHub to sync preferences, plugins, project settings, and MCP servers and skills across your machines. Free.',
   'sync.cloud.signIn': 'Sign in with GitHub',
@@ -3007,13 +3007,13 @@ export const en = {
   'sync.toast.failed': 'Sync failed',
   'sync.supporter.title': 'Become a Supporter',
   'sync.supporter.desc':
-    'Automatic background sync and 30 days of version history. Your support keeps Alethe free and open source.',
+    'Automatic background sync and 30 days of version history. Your support keeps Arcadia free and open source.',
   'sync.supporter.yearly': 'Support yearly',
   'sync.supporter.monthly': 'Support monthly',
   'sync.supporter.waiting':
     'Finish checkout in your browser. Your plan updates when you come back.',
   'sync.supporter.refresh': 'Check plan',
-  'sync.supporter.thanks': 'Thank you for supporting Alethe.',
+  'sync.supporter.thanks': 'Thank you for supporting Arcadia.',
   'sync.supporter.renews': 'Renews {when}.',
   'sync.supporter.ends': 'Active until {when}.',
   'sync.supporter.manage': 'Manage subscription',
@@ -3054,7 +3054,7 @@ export const en = {
   'sync.account.exportDone': 'Cloud data saved.',
   'sync.account.delete': 'Delete account',
   'sync.account.confirmDelete':
-    'Delete your Alethe Cloud account and everything stored in it? Local data on this machine stays. An active subscription is cancelled.',
+    'Delete your Arcadia Cloud account and everything stored in it? Local data on this machine stays. An active subscription is cancelled.',
   'sync.account.deleted': 'Account deleted.',
   'sync.account.signOut': 'Sign out',
   'sync.file.title': 'File',
@@ -3062,7 +3062,7 @@ export const en = {
     'Move preferences, project settings, and MCP setup with a .alethe file. No account needed, and secrets are never included.',
   'sync.file.export': 'Export',
   'sync.file.import': 'Import',
-  'sync.file.filter': 'Alethe export',
+  'sync.file.filter': 'Arcadia export',
   'sync.file.exportDone': 'Export saved.',
   'sync.file.previewTitle': 'Importing this file will add or change:',
   'sync.file.previewNothing': 'This file matches what you already have.',
@@ -3085,10 +3085,10 @@ export const en = {
   'sync.error.payload_too_large':
     'Too much data for your plan. Large inline project icons are the usual cause.',
   'sync.error.rate_limited': 'Too many syncs in the last hour. Try again later.',
-  'sync.error.client_outdated': 'This data was synced by a newer Alethe. Update this app first.',
+  'sync.error.client_outdated': 'This data was synced by a newer Arcadia. Update this app first.',
   'sync.error.billing_unavailable': 'Subscriptions are not available yet.',
   'sync.error.no_customer': 'No subscription was found for this account.',
-  'sync.error.invalid_bundle': 'This is not an Alethe export file.',
+  'sync.error.invalid_bundle': 'This is not an Arcadia export file.',
   'sync.error.conflict_retry_exhausted': 'Other devices kept changing the data. Try again.',
   'sync.error.profile_limit': 'Your plan syncs one profile.',
   'sync.error.no_remote': 'Nothing was uploaded to the Gist.',
@@ -3117,7 +3117,7 @@ export const en = {
   'tooling.statusInstalled': 'Installed',
   'tooling.statusMissing': 'Missing',
   'tooling.statusUnavailable': 'Not on this machine',
-  'tooling.skillUnavailableHint': 'Only skills bundled with Alethe install automatically',
+  'tooling.skillUnavailableHint': 'Only skills bundled with Arcadia install automatically',
   'tooling.secretsHint':
     'These values were not synced. Enter them to install the server on this machine.',
   'tooling.secretHeader': 'Header {key}',
@@ -3143,10 +3143,10 @@ export const en = {
 
   /* ---- resource supervisor ---- */
   'resource.warning.title': 'Memory use is rising',
-  'resource.warning.body': 'Alethe is using about {total} MB. Hidden idle runtimes may be parked.',
+  'resource.warning.body': 'Arcadia is using about {total} MB. Hidden idle runtimes may be parked.',
   'resource.critical.title': 'Memory budget reached',
   'resource.critical.body':
-    'Alethe is using about {total} MB. New runtimes are paused until memory recovers.',
+    'Arcadia is using about {total} MB. New runtimes are paused until memory recovers.',
   'resource.normal.title': 'Memory pressure cleared',
   'resource.normal.body': 'New runtimes can start normally again.',
   'resource.suspended.title': 'Runtime parked to protect the system',
@@ -3162,11 +3162,11 @@ export const en = {
   'menu.openLogs': 'Open logs',
   'menu.exportLogs': 'Export logs…',
   'menu.exportLogsTitle': 'Export logs',
-  'menu.logsFilter': 'Alethe logs',
+  'menu.logsFilter': 'Arcadia logs',
   'sandbox.eyebrow': 'Experimental orchestration',
   'sandbox.title': 'Agent Sandbox',
   'sandbox.subtitle':
-    'A real planner-to-worker POC: Claude Code plans, Codex implements, and Alethe relays the handoff.',
+    'A real planner-to-worker POC: Claude Code plans, Codex implements, and Arcadia relays the handoff.',
   'sandbox.close': 'Back to workspace',
   'sandbox.start': 'Restart sandbox',
   'sandbox.startDemo': 'Run demo session',
@@ -3280,7 +3280,7 @@ export const en = {
   'merge.postActionHint':
     '"Keep chat" reopens the panel on the new branch with a fresh conversation. "Keep session" would try to resume the exact same conversation there.',
   'merge.postActionRelocateSessionDisabledHint':
-    'Disabled for now — resuming a session from a different directory hangs indefinitely on every agent CLI tested so far (confirmed with OpenCode; root cause is upstream, outside Alethe’s control). Selecting this option silently falls back to a fresh conversation until an upstream fix lands.',
+    'Disabled for now — resuming a session from a different directory hangs indefinitely on every agent CLI tested so far (confirmed with OpenCode; root cause is upstream, outside Arcadia’s control). Selecting this option silently falls back to a fresh conversation until an upstream fix lands.',
   'merge.commitConfirmTitle': 'Commit pending work — {branch}',
   'merge.commitConfirmDescription':
     'This worktree has changes that were never committed. Merge only moves commits — review what will be committed and write a description before integrating.',
@@ -3514,7 +3514,7 @@ export const en = {
   'mcp.errNoDisable': 'This agent has no disable flag — remove the server instead.',
   'mcp.errNoScope': 'This agent has no config at the selected scope.',
   'mcp.errUnsupportedFields': 'This agent cannot express every field of that server.',
-  'mcp.errJsonc': 'Alethe does not write opencode.jsonc, to avoid stripping your comments.',
+  'mcp.errJsonc': 'Arcadia does not write opencode.jsonc, to avoid stripping your comments.',
   'mcp.errSelfCheck': 'The generated file did not validate, so nothing was written.',
   'mcp.errUnreadable': 'The config file could not be read.',
   'mcp.errWrite': 'The config file could not be written.',
@@ -3535,7 +3535,7 @@ export const en = {
   'mcp.runSetup': 'Review my MCP servers',
   'onboarding.mcpTitle': 'MCP servers',
   'onboarding.mcpSubtitle':
-    'Alethe reads the MCP servers each agent already has and can copy one across the others, so a tool set up in Claude also works in Codex.',
+    'Arcadia reads the MCP servers each agent already has and can copy one across the others, so a tool set up in Claude also works in Codex.',
   'onboarding.mcpScanning': 'Reading the agent configs…',
   'onboarding.mcpStatServers': 'servers',
   'onboarding.mcpStatAgents': 'agents with servers',
@@ -3571,7 +3571,7 @@ export const en = {
   'mcp.registryReviewVersion': 'Published version',
   'mcp.registryReviewRepository': 'Repository',
   'mcp.registryAcknowledgement':
-    'I understand this is third-party software that may execute local code or contact remote services when an agent launches, and that a registry listing is not an endorsement by Alethe.',
+    'I understand this is third-party software that may execute local code or contact remote services when an agent launches, and that a registry listing is not an endorsement by Arcadia.',
   'mcp.addWritten': '{count} server(s) added to {agents}',
   'mcp.fieldName': 'Name',
   'mcp.fieldTransport': 'Transport',
@@ -3611,7 +3611,7 @@ export const en = {
   'skills.loading': 'Reading the skill folders…',
   'skills.emptyTitle': 'No skill installed',
   'skills.emptyDescription':
-    'Alethe looks in the skills folder of each agent and in the shared store.',
+    'Arcadia looks in the skills folder of each agent and in the shared store.',
   'skills.selectOne': 'Pick a skill to inspect it',
   'skills.sharedStore': 'Shared store',
   'skills.lockSource': 'source',
@@ -3630,7 +3630,7 @@ export const en = {
   'skills.removed': '{name} removed',
   'skills.removedLinkOnly': 'The shared copy was kept at {path}',
   'skills.removeFailed': 'Could not remove the skill',
-  'skills.errBundled': 'This skill ships with the agent and cannot be removed from Alethe.',
+  'skills.errBundled': 'This skill ships with the agent and cannot be removed from Arcadia.',
   'skills.official': 'Official skills',
   'skills.badgeOfficial': 'official',
   'skills.versionLabel': 'v{version}',
@@ -3643,7 +3643,7 @@ export const en = {
   'skills.projectInstalled': '{name} installed in this project',
   'skills.projectRemoved': '{name} removed from this project',
   'skills.installedSection': 'Installed',
-  'skills.badgeAlethe': 'Alethe',
+  'skills.badgeAlethe': 'Arcadia',
   'skills.installAction': 'Install',
   'skills.updateAction': 'Update',
   'skills.availableFor': 'Available for',
@@ -3652,7 +3652,7 @@ export const en = {
   'skills.stateUpdate': 'update available',
   'skills.stateConflict': 'name already in use',
   'skills.conflictNote':
-    'Another skill with this name already exists there and was not installed by Alethe. Remove or rename it to install this one.',
+    'Another skill with this name already exists there and was not installed by Arcadia. Remove or rename it to install this one.',
   'skills.installed': '{name} installed',
   'skills.installFailed': 'Could not install the skill',
 
@@ -3664,42 +3664,42 @@ export const en = {
   'router9.stateReady': 'Ready, not running',
   'router9.stateRunning': 'Routing through {url}',
   'router9.setupIntro':
-    'Nothing installed yet. Alethe can install a private, version-pinned copy for you, or use a 9router you already have on your PATH.',
+    'Nothing installed yet. Arcadia can install a private, version-pinned copy for you, or use a 9router you already have on your PATH.',
   'router9.sourceLabel': 'Which install to run',
   'router9.probing': 'Checking what you already have…',
-  'router9.nodeFound': 'Node {version} detected — Alethe can install 9router for you.',
+  'router9.nodeFound': 'Node {version} detected — Arcadia can install 9router for you.',
   'router9.nodeMissing': 'Node.js was not found. It is required to install or run 9router.',
   'router9.needsNodeToInstall': 'Install Node.js first, then come back to install 9router.',
-  'router9.sourceManaged': 'Installed by Alethe',
+  'router9.sourceManaged': 'Installed by Arcadia',
   'router9.sourceExternal': 'My own install',
-  'router9.managedInstalled': 'Ready · {version}, in the Alethe profile folder',
-  'router9.managedMissing': 'Not installed yet — Alethe can install it for you',
+  'router9.managedInstalled': 'Ready · {version}, in the Arcadia profile folder',
+  'router9.managedMissing': 'Not installed yet — Arcadia can install it for you',
   'router9.externalInstalled': 'Found · {version} at {path}',
   'router9.externalMissing': 'No 9router found on your PATH',
   'router9.externalDetected':
     'You already have a 9router on your PATH. Pick "My own install" to use it instead of a second copy.',
   'router9.fallbackManaged':
-    'Your own install is gone, so the copy installed by Alethe is used instead.',
+    'Your own install is gone, so the copy installed by Arcadia is used instead.',
   'router9.fallbackExternal':
-    'The copy installed by Alethe is gone, so your own install is used instead.',
+    'The copy installed by Arcadia is gone, so your own install is used instead.',
   'router9.installForMe': 'Install it for me',
-  'router9.uninstallManaged': "Remove Alethe's copy",
+  'router9.uninstallManaged': "Remove Arcadia's copy",
   'router9.install': 'Install',
   'router9.reinstall': 'Reinstall',
   'router9.update': 'Update to {version}',
   'router9.installDone': '9router is installed and ready to route.',
   'router9.installFailed': '9router was not installed. The installer output is below.',
-  'router9.uninstallDone': '9router was removed from Alethe’s folder.',
+  'router9.uninstallDone': '9router was removed from Arcadia’s folder.',
   'router9.uninstallFailed': '9router is still installed. The output is below.',
   'router9.retry': 'Try again',
   'router9.installTitle': 'Install 9router',
   'router9.uninstallTitle': 'Remove 9router',
   'router9.installIntro':
-    'Installed into a private folder managed by Alethe, pinned to a known version. Your global npm packages are not touched.',
+    'Installed into a private folder managed by Arcadia, pinned to a known version. Your global npm packages are not touched.',
   'router9.uninstallIntro':
-    'The proxy is stopped and the package is removed from the Alethe folder.',
+    'The proxy is stopped and the package is removed from the Arcadia folder.',
   'router9.securityNote':
-    '9router has known security advisories. Alethe never installs or updates it on its own, only routes over loopback, and never enables its remote sharing feature. Read the advisories before routing real credentials through it.',
+    '9router has known security advisories. Arcadia never installs or updates it on its own, only routes over loopback, and never enables its remote sharing feature. Read the advisories before routing real credentials through it.',
   'router9.securityAdvisories': 'Read the security advisories',
   'router9.statusInstalled': 'Installed · {version}',
   'router9.statusNotInstalled': 'Not installed',
@@ -3712,7 +3712,7 @@ export const en = {
   'router9.enabled': 'Routing',
   'router9.enabledOn': 'Enabled',
   'router9.enabledOff': 'Disabled',
-  'router9.autoStart': 'Start with Alethe',
+  'router9.autoStart': 'Start with Arcadia',
   'router9.autoStartOn': 'Yes',
   'router9.autoStartOff': 'No',
   'router9.port': 'Port',
@@ -3723,7 +3723,7 @@ export const en = {
   'router9.portInUse':
     'Port {port} is already taken by another process. Stop it or pick a different port.',
   'router9.pinnedMismatch':
-    'The installed version differs from the one Alethe pins. Use Update to move to the pinned version.',
+    'The installed version differs from the one Arcadia pins. Use Update to move to the pinned version.',
   'router9.runningTerminalsHint':
     'Turning routing off only affects terminals opened afterwards. Agents already running keep the address they started with — restart them to change route.',
   'router9.routeToggle': 'Route through 9router',
@@ -3915,8 +3915,8 @@ export const en = {
   'playbooks.readOnlyYes': 'yes',
   'playbooks.readOnlyNo': 'no: the runner cannot enforce read-only here, so scouts skip it',
   'playbooks.factUsage': 'Usage',
-  'playbooks.usageRead': 'read by Alethe: {windows}',
-  'playbooks.usageNotRead': 'not read by Alethe yet; the planner asks you',
+  'playbooks.usageRead': 'read by Arcadia: {windows}',
+  'playbooks.usageNotRead': 'not read by Arcadia yet; the planner asks you',
   'playbooks.factTraffic': 'Traffic',
   'playbooks.trafficDirect': 'direct',
   'playbooks.factChecked': 'Checked',
@@ -3927,7 +3927,7 @@ export const en = {
   'playbooks.later': 'Later',
   'playbooks.routeTitle': 'Route',
   'playbooks.routeGatewayHint':
-    'Alethe points this CLI at the local gateway; model names then go to whatever the gateway maps them to.',
+    'Arcadia points this CLI at the local gateway; model names then go to whatever the gateway maps them to.',
   'playbooks.modelsFound': 'Models the planner found for this CLI.',
   'playbooks.modelsNone':
     'No model list was recorded; the CLI picks its default unless you name one.',
@@ -3936,7 +3936,7 @@ export const en = {
   'playbooks.tierEffortFor': 'Effort for the {tier} tier',
   'playbooks.kindRoute': 'Route',
   'playbooks.routePanelHint':
-    'A local gateway on the model traffic path, not a worker. Alethe starts it and points a CLI at it; the planner never starts, installs or reconfigures it.',
+    'A local gateway on the model traffic path, not a worker. Arcadia starts it and points a CLI at it; the planner never starts, installs or reconfigures it.',
   'playbooks.factPort': 'Port',
   'playbooks.factStatus': 'Status',
   'playbooks.statusRunning': 'running',
@@ -3980,8 +3980,8 @@ export const en = {
     'The planner found {providers} providers and built {profiles} profiles; you approved them on {date}.',
   'playbooks.usageTitle': 'Usage',
   'playbooks.usagePillTitle': '{provider}: {detail}',
-  'playbooks.usageSimulatedTitle': '{provider}: {detail}. Alethe does not read this yet; simulated',
-  'playbooks.unreadNote': 'Alethe does not read this usage yet; the values below are a simulation.',
+  'playbooks.usageSimulatedTitle': '{provider}: {detail}. Arcadia does not read this yet; simulated',
+  'playbooks.unreadNote': 'Arcadia does not read this usage yet; the values below are a simulation.',
   'playbooks.stateLow': 'low',
   'playbooks.stateSpare': 'spare',
   'playbooks.resets': 'resets',

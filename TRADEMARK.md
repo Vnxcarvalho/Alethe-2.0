@@ -1,14 +1,14 @@
-# Alethe Trademark Policy
+# Arcadia Trademark Policy
 
-The **Alethe** name, logo, application icon, and other distinctive Alethe branding
-(collectively, the "Alethe Marks") identify Kauã Miguel's original project and its
-official releases. Rights in the Alethe Marks are reserved by Kauã Miguel to the
+The **Arcadia** name, logo, application icon, and other distinctive Arcadia branding
+(collectively, the "Arcadia Marks") identify Kauã Miguel's original project and its
+official releases. Rights in the Arcadia Marks are reserved by Kauã Miguel to the
 extent provided by applicable law.
 
 ## The code license does not license the brand
 
-The AGPL-3.0-or-later license applies to the source code, not to the Alethe Marks.
-It does not grant permission to use the Alethe Marks for a fork, modified build,
+The AGPL-3.0-or-later license applies to the source code, not to the Arcadia Marks.
+It does not grant permission to use the Arcadia Marks for a fork, modified build,
 product, service, company, domain name, package, application listing, or other
 commercial offering.
 
@@ -20,16 +20,16 @@ endorsement, affiliation, or official status.
 ## Commercial use
 
 Prior written permission from Kauã Miguel is required to market, sell, license,
-or otherwise commercially offer a product or service under the Alethe Marks. A
+or otherwise commercially offer a product or service under the Arcadia Marks. A
 commercial offering based on the code must be independently branded and must
 still comply with the AGPL.
 
 ## Allowed references
 
-You may use the name Alethe truthfully to:
+You may use the name Arcadia truthfully to:
 
 - identify the original project or link to it;
-- state that a separately branded project is based on or compatible with Alethe;
+- state that a separately branded project is based on or compatible with Arcadia;
 - preserve copyright, license, attribution, and historical notices; or
 - discuss, review, or report on the project.
 
@@ -37,5 +37,5 @@ These references must not be more prominent than the name of your own project an
 must not suggest that your project is official or endorsed. This policy does not
 restrict uses that applicable law permits without authorization.
 
-For trademark permission, contact Kauã Miguel through the official Alethe
+For trademark permission, contact Kauã Miguel through the official Arcadia
 repository.
