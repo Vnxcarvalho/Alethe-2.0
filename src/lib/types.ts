@@ -161,8 +161,7 @@ export type BuiltinTheme =
 export type Theme = BuiltinTheme | (string & {})
 
 /** Native desktop icon variants. The UI theme and app icon theme are independent. */
-export type AppIconTheme =
-  'elite-original' | 'elite-pure-black' | 'elite-indigo' | 'elite-blush' | 'carvalho'
+export type AppIconTheme = 'arcadia' | 'carvalho'
 
 export type VisualStyle = 'normal' | 'clean'
 
@@ -956,7 +955,7 @@ export const DEFAULT_PREFERENCES: Preferences = {
   uiTheme: 'elite-pure-black',
   visualStyle: 'clean',
   motionPreference: 'reduced',
-  appIconTheme: 'carvalho',
+  appIconTheme: 'arcadia',
   uiZoom: 0.9,
   windowOpacity: 1,
   terminalTheme: 'dark-lemon',

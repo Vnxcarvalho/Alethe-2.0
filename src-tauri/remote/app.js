@@ -151,7 +151,7 @@ let appearanceSyncing = false
 let rendered = false
 let appearance = {
   uiTheme: 'elite-indigo',
-  appIconTheme: 'elite-indigo',
+  appIconTheme: 'arcadia',
   language: 'en',
   motionPreference: 'animated',
   colorScheme: 'dark',

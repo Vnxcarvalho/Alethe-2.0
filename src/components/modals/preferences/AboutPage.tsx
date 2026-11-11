@@ -107,7 +107,7 @@ function VersionSection({ version }: { version: string }) {
           <div className={about.identity}>
             <span className={about.appMark} aria-hidden="true" />
             <div className={styles.versionCardCopy}>
-              <strong>Alethe</strong>
+              <strong>Arcadia</strong>
               <span>
                 {tauriVersion ? `com.kc1t.alethe · Tauri ${tauriVersion}` : 'com.kc1t.alethe'}
               </span>

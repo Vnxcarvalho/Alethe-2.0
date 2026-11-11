@@ -43,7 +43,7 @@ fn appearance_from_document(document: &Value) -> RemoteAppearance {
         .get("appIconTheme")
         .and_then(Value::as_str)
         .filter(|theme| is_known_app_icon(theme))
-        .unwrap_or("elite-indigo")
+        .unwrap_or("arcadia")
         .to_string();
     let language = match preferences.get("language").and_then(Value::as_str) {
         Some("pt-BR") => "pt-BR",
@@ -104,20 +104,13 @@ fn is_light_theme(theme: &str) -> bool {
 }
 
 fn is_known_app_icon(theme: &str) -> bool {
-    matches!(
-        theme,
-        "elite-original" | "elite-pure-black" | "elite-indigo" | "elite-blush"
-    )
+    matches!(theme, "arcadia" | "carvalho")
 }
 
 pub(crate) fn selected_brand_icon(document: &Value) -> &'static [u8] {
     match appearance_from_document(document).app_icon_theme.as_str() {
-        "elite-original" => include_bytes!("../../../src/assets/theme-icons/elite-original.png"),
-        "elite-pure-black" => {
-            include_bytes!("../../../src/assets/theme-icons/elite-pure-black.png")
-        }
-        "elite-blush" => include_bytes!("../../../src/assets/theme-icons/elite-blush.png"),
-        _ => include_bytes!("../../../src/assets/theme-icons/elite-indigo.png"),
+        "carvalho" => include_bytes!("../../../src/assets/theme-icons/carvalho.png"),
+        _ => include_bytes!("../../../src/assets/theme-icons/arcadia.png"),
     }
 }
 
@@ -132,7 +125,7 @@ mod tests {
             appearance_from_document(&json!({})),
             RemoteAppearance {
                 ui_theme: "elite-indigo".into(),
-                app_icon_theme: "elite-indigo".into(),
+                app_icon_theme: "arcadia".into(),
                 language: "en".into(),
                 motion_preference: "animated".into(),
                 color_scheme: "dark".into(),
@@ -146,14 +139,14 @@ mod tests {
             appearance_from_document(&json!({
                 "preferences": {
                     "uiTheme": "elite-blush",
-                    "appIconTheme": "elite-original",
+                    "appIconTheme": "carvalho",
                     "language": "pt-BR",
                     "motionPreference": "reduced"
                 }
             })),
             RemoteAppearance {
                 ui_theme: "elite-blush".into(),
-                app_icon_theme: "elite-original".into(),
+                app_icon_theme: "carvalho".into(),
                 language: "pt-BR".into(),
                 motion_preference: "reduced".into(),
                 color_scheme: "light".into(),
@@ -173,7 +166,7 @@ mod tests {
         }));
 
         assert_eq!(appearance.ui_theme, "elite-indigo");
-        assert_eq!(appearance.app_icon_theme, "elite-indigo");
+        assert_eq!(appearance.app_icon_theme, "arcadia");
         assert_eq!(appearance.language, "en");
         assert_eq!(appearance.motion_preference, "animated");
     }
@@ -181,14 +174,14 @@ mod tests {
     #[test]
     fn selected_brand_icon_uses_embedded_png_assets() {
         let icon = selected_brand_icon(&json!({
-            "preferences": { "appIconTheme": "elite-blush" }
+            "preferences": { "appIconTheme": "carvalho" }
         }));
 
         assert_eq!(&icon[..8], b"\x89PNG\r\n\x1a\n");
         assert_ne!(
             icon,
             selected_brand_icon(&json!({
-                "preferences": { "appIconTheme": "elite-indigo" }
+                "preferences": { "appIconTheme": "arcadia" }
             }))
         );
     }

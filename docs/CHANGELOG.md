@@ -445,12 +445,19 @@ Notable user-facing changes to **Arcadia** are documented here. The format is ba
   installer instead.
 
 ### Changed
+- **The Arcadia logo is the default app icon and profile picture.** It replaces the Elite artwork
+  icons, which are removed; the Elite colour themes stay. The `.exe`, installer, taskbar
+  and shortcut icons use the Arcadia logo too, and the window title, loading screen, About page,
+  welcome screen and Discord status say Arcadia. The app icon choices are now Arcadia and
+  Carvalho, and anyone who had picked an Elite icon moves to Arcadia. A profile with its own photo
+  keeps it.
 - **Alethe is now Arcadia.** The name changes across the app (window title, every screen and
   message, in all three languages), the READMEs and the documentation. The update check and the update download now use the Arcadia repository address; the old address
   still redirects, so installs on 1.7.6 or earlier keep updating. The installer, the window and the
   Windows product now use the Arcadia name and installer artwork, and the Arcadia logo replaces the
-  old Alethe logos and photos (the unused ones are removed). The bundle identifier and the data
-  folder keep their current names, so existing installs keep their data.
+  old Alethe logos and photos (the unused ones are removed). The installer removes an existing Alethe install and installs Arcadia in its place, keeping
+  your projects, profiles and settings; the bundle identifier and the data folder keep their
+  current names.
 - **Update prompt in the title bar.** When a newer version is available, a button with the new
   version number now sits right after the profile name in the title bar, replacing the chip at the
   bottom of the sidebar. It opens the same prompt, with **Later** and **Update now**.

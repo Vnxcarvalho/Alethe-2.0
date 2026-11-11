@@ -13,7 +13,7 @@ const ICON_URLS = import.meta.glob('../assets/theme-icons/*/*.png', {
 }) as Record<string, string>
 
 const MASTER_ICON_URLS = import.meta.glob(
-  ['../assets/theme-icons/elite-*.png', '../assets/theme-icons/carvalho.png'],
+  ['../assets/theme-icons/arcadia.png', '../assets/theme-icons/carvalho.png'],
   {
     eager: true,
     query: '?url',
@@ -22,23 +22,17 @@ const MASTER_ICON_URLS = import.meta.glob(
 ) as Record<string, string>
 
 const ICON_FILES: Record<AppIconTheme, string> = {
-  'elite-original': 'elite-original.png',
-  'elite-pure-black': 'elite-pure-black.png',
-  'elite-indigo': 'elite-indigo.png',
-  'elite-blush': 'elite-blush.png',
+  arcadia: 'arcadia.png',
   carvalho: 'carvalho.png',
 }
 
 export const APP_ICON_OPTIONS: { id: AppIconTheme; label: string }[] = [
+  { id: 'arcadia', label: 'Arcadia' },
   { id: 'carvalho', label: 'Carvalho' },
-  { id: 'elite-original', label: 'Elite Original' },
-  { id: 'elite-pure-black', label: 'Elite Pure Black' },
-  { id: 'elite-indigo', label: 'Elite Indigo' },
-  { id: 'elite-blush', label: 'Elite Blush' },
 ]
 
 export function normalizeAppIconTheme(value: unknown): AppIconTheme {
-  return typeof value === 'string' && value in ICON_FILES ? (value as AppIconTheme) : 'carvalho'
+  return typeof value === 'string' && value in ICON_FILES ? (value as AppIconTheme) : 'arcadia'
 }
 
 function preferredSize(): number {

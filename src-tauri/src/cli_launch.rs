@@ -106,7 +106,7 @@ pub fn format_update_outcome(result: Result<CliUpdateReport, String>) -> CliExit
             code: 1,
             stdout: String::new(),
             stderr: format!(
-                "alethe {available_version} is available, but Alethe is open. Close it and run \
+                "alethe {available_version} is available, but Arcadia is open. Close it and run \
                  `alethe update` again, or update from inside the app.\n"
             ),
         },
@@ -464,7 +464,7 @@ mod tests {
         assert!(blocked.stdout.is_empty());
         assert!(blocked
             .stderr
-            .contains("alethe 1.8.0 is available, but Alethe is open."));
+            .contains("alethe 1.8.0 is available, but Arcadia is open."));
 
         assert_eq!(
             format_install_start("1.7.0", "1.8.0"),

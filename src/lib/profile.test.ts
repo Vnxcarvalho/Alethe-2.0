@@ -51,10 +51,10 @@ describe('getProfileAccountName', () => {
 
 describe('getProfileImageUrl', () => {
   it('falls back to the app icon the person picked', () => {
-    const blush = getProfileImageUrl({ ...DEFAULT_PREFERENCES, appIconTheme: 'elite-blush' })
-    expect(blush).toContain('elite-blush')
+    const carvalho = getProfileImageUrl({ ...DEFAULT_PREFERENCES, appIconTheme: 'carvalho' })
+    expect(carvalho).toContain('carvalho')
     expect(getProfileImageUrl({ ...DEFAULT_PREFERENCES, profileImageUrl: '  ' })).toContain(
-      'carvalho',
+      'arcadia',
     )
   })
 

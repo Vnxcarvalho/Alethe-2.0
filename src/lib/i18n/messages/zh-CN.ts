@@ -1236,6 +1236,10 @@ export const zhCN: Record<MessageKey, string> = {
   'whatsNew.close': '明白了',
   'whatsNew.update': '查看更新',
   'whatsNew.releaseHeading': 'v{version} — {date}',
+  'whatsNew.v177.note1':
+    'Alethe 现在叫 Arcadia：全新的名称、标志和安装程序图案。你的项目、配置文件和设置保持不变。',
+  'whatsNew.v177.note2':
+    'Arcadia 标志现在是默认的应用图标和个人资料头像。Elite 插画图标已移除，Elite 配色主题保留。',
   'whatsNew.v176.note1':
     '维护版本，没有可见变化，发布目的是验证应用内更新可以完成并自动重新打开 Arcadia。',
   'whatsNew.v175.note1':

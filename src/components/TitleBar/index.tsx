@@ -46,7 +46,7 @@ import styles from './TitleBar.module.css'
 
 const CLAUDE_POLL_INTERVAL_MS = 5 * 60_000
 const REMOTE_CONTROL_POLL_INTERVAL_MS = 2_000
-const APP_TITLE = import.meta.env.DEV ? '(DEV) Alethe' : 'Alethe'
+const APP_TITLE = import.meta.env.DEV ? '(DEV) Arcadia' : 'Arcadia'
 // macOS draws its own close/minimize/zoom buttons (`tauri.macos.conf.json`): the bar leaves
 // room for them on the left instead of drawing a second set on the right.
 const NATIVE_WINDOW_CONTROLS = isMacOS()

@@ -39,7 +39,7 @@ const OPEN_MEMBER_HINT = [
  */
 export function teamHelperPrompt(): string {
   return [
-    `Alethe can run a team of agents for you.`,
+    `Arcadia can run a team of agents for you.`,
     OPEN_MEMBER_HINT,
     `Do nothing now; say you are ready.`,
   ].join(' ')

@@ -36,8 +36,10 @@ Mac synced through: `v1.7.0` (`80e44a3`)
 
 ## Unreleased
 
+- `pending` · `contract` · feat: Arcadia logo as the default icon and profile picture, new app icons and texts
+  - Files: `src/lib/themeIcons.ts`, `src/lib/types.ts` (`AppIconTheme`), `src/assets/theme-icons/arcadia.png`, `src-tauri/icons/*`. Window title, loading screen, About page, welcome screen and Discord status now say Arcadia; the Elite icon artwork is removed. Contract: `preferences.appIconTheme` now accepts only `arcadia` and `carvalho`; any other stored value (including `elite-*`) must read as `arcadia`, in the app and in the remote page. The Elite colour themes (`uiTheme`) are unchanged.
 - `pending` · `platform` · feat: Arcadia product name, installer artwork and logo
-  - Files: `src-tauri/tauri.conf.json` (`productName`), `src-tauri/tauri.macos.conf.json`, `src-tauri/installer/*.bmp`, `src/App.tsx`, `src/assets/theme-icons/new-logo-Arcadia.png`. The Windows installer artwork is Windows only; the Mac app needs its own icon and product name. No persisted data changes: the bundle identifier stays `com.kc1t.alethe`.
+  - Files: `src-tauri/tauri.conf.json` (`productName`), `src-tauri/tauri.macos.conf.json`, `src-tauri/installer/*.bmp`, `src-tauri/installer/hooks.nsh`, `src/App.tsx`, `src/assets/theme-icons/new-logo-Arcadia.png`. The Windows installer artwork is Windows only; the Mac app needs its own icon and product name. No persisted data changes: the bundle identifier stays `com.kc1t.alethe`.
 - `pending` · `ui` · fix: rename the remote web app to Arcadia
   - Files: `src-tauri/remote/locales.js`, `src-tauri/remote/index.html`, `src-tauri/remote/manifest.webmanifest`. No persisted data changes: the `alethe.remote.*` browser storage keys keep their names so paired phones stay signed in.
 - `pending` · `ui` · feat: rename the app from Alethe to Arcadia in UI text and docs

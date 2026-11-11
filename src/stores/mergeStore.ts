@@ -138,7 +138,7 @@ type MergeState = {
 /** Rules/step-by-step shared by both prompts (initial and retry) —
  *  agent-facing, so it stays outside UI i18n (its own messages, not sourced
  *  from `messages/*.ts`), but follows the app's CURRENT LANGUAGE
- *  (`getLocale()`) — explicit user request: Alethe already has two
+ *  (`getLocale()`) — explicit user request: Arcadia already has two
  *  languages (en/pt-BR/zh-CN), so the conflict agent should speak the same
  *  language the user is currently using in the app, with an explicit
  *  instruction to that effect (the UI's language alone doesn't guarantee
@@ -166,7 +166,7 @@ function conflictRules(locale: Locale): string {
       '3. 如果两处改动可以兼容，请合并并保留双方意图（这不算歧义 — 直接解决，无需询问）。\n' +
       '4. 解决后，确认文件中不再残留冲突标记（<<<<<<<、=======、>>>>>>>）。\n\n' +
       '## 完成时 — 高优先级\n' +
-      '- 在此目录创建一个名为 ALETHE_RESOLVED 的空文件（这是 Alethe 用来判断你已完成的信号）。\n' +
+      '- 在此目录创建一个名为 ALETHE_RESOLVED 的空文件（这是 Arcadia 用来判断你已完成的信号）。\n' +
       '- 宣告你已完成。'
     )
   }
@@ -184,7 +184,7 @@ function conflictRules(locale: Locale): string {
       '3. Se as duas mudanças forem compatíveis, combine preservando a intenção das duas (não é ambíguo — resolva direto, sem perguntar).\n' +
       '4. Depois de resolver, confirme que não sobrou nenhum marcador de conflito (<<<<<<<, =======, >>>>>>>) no arquivo.\n\n' +
       '## AO TERMINAR — prioridade alta\n' +
-      '- Crie um arquivo vazio chamado ALETHE_RESOLVED neste diretório (é o sinal que o Alethe usa pra saber que você acabou).\n' +
+      '- Crie um arquivo vazio chamado ALETHE_RESOLVED neste diretório (é o sinal que o Arcadia usa pra saber que você acabou).\n' +
       '- Avise que terminou.'
     )
   }
@@ -201,7 +201,7 @@ function conflictRules(locale: Locale): string {
     '3. If the two changes are compatible, combine them preserving both intents (not ambiguous — resolve directly, no need to ask).\n' +
     '4. After resolving, confirm no conflict markers (<<<<<<<, =======, >>>>>>>) remain in the file.\n\n' +
     '## WHEN DONE — high priority\n' +
-    '- Create an empty file named ALETHE_RESOLVED in this directory (this is the signal Alethe uses to know you finished).\n' +
+    '- Create an empty file named ALETHE_RESOLVED in this directory (this is the signal Arcadia uses to know you finished).\n' +
     '- Announce that you are done.'
   )
 }

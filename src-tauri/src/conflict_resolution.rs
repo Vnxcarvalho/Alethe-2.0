@@ -113,7 +113,7 @@ fn emit(event_type: &str, meta: &MergeMeta, data: serde_json::Value) {
 
 fn build_prompt(meta: &MergeMeta, conflicts: &[ConflictFile]) -> String {
     let mut lines = vec![
-        "# Merge conflict resolution (Alethe)".to_string(),
+        "# Merge conflict resolution (Arcadia)".to_string(),
         String::new(),
         format!("Merge from `{}` into `{}`. This directory is an EPHEMERAL environment for this integration only.", meta.source, meta.target),
         String::new(),
@@ -121,7 +121,7 @@ fn build_prompt(meta: &MergeMeta, conflicts: &[ConflictFile]) -> String {
         "- Resolve ONLY the conflicts listed below. Nothing beyond that.".to_string(),
         "- NEVER implement features, change requirements, or change architecture.".to_string(),
         "- Preserve the intent of BOTH branches; confirm nothing was lost.".to_string(),
-        "- When done, just save the resolved files (no commit — Alethe commits after validation).".to_string(),
+        "- When done, just save the resolved files (no commit — Arcadia commits after validation).".to_string(),
         String::new(),
         "## Conflicted files".to_string(),
     ];

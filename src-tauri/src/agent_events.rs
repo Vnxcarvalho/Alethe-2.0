@@ -785,7 +785,7 @@ pub fn start_listener(app: AppHandle) {
                 let payload = serde_json::json!({ "agent": "codex", "task": task });
                 let _ = app.emit("agent-spawn", &payload);
                 let _ = request.respond(tiny_http::Response::from_string(
-                    "queued no terminal codex do Alethe",
+                    "queued no terminal codex do Arcadia",
                 ));
                 continue;
             }
