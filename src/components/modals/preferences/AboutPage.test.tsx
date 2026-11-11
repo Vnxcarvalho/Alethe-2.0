@@ -54,10 +54,9 @@ describe('AboutPage', () => {
     useProjectsStore.setState({ ...structuredClone(EMPTY_PROJECTS_FILE), hydrated: true })
   })
 
-  it('introduces the creator with a photo and links to their profiles', async () => {
+  it('introduces the creator and links to their profiles', async () => {
     render(<AboutPage />)
     expect(screen.getByText('Kauã Miguel')).toBeInTheDocument()
-    expect(screen.getByRole('img', { name: 'Kauã Miguel' })).toBeInTheDocument()
     expect(await screen.findByText('com.kc1t.alethe · Tauri 2.8.0')).toBeInTheDocument()
     fireEvent.click(screen.getByRole('button', { name: 'Instagram' }))
     expect(openInBrowser).toHaveBeenCalledWith('https://www.instagram.com/kc1t_dev')

@@ -36,6 +36,8 @@ Mac synced through: `v1.7.0` (`80e44a3`)
 
 ## Unreleased
 
+- `pending` · `platform` · feat: Arcadia product name, installer artwork and logo
+  - Files: `src-tauri/tauri.conf.json` (`productName`), `src-tauri/tauri.macos.conf.json`, `src-tauri/installer/*.bmp`, `src/App.tsx`, `src/assets/theme-icons/new-logo-Arcadia.png`. The Windows installer artwork is Windows only; the Mac app needs its own icon and product name. No persisted data changes: the bundle identifier stays `com.kc1t.alethe`.
 - `pending` · `ui` · fix: rename the remote web app to Arcadia
   - Files: `src-tauri/remote/locales.js`, `src-tauri/remote/index.html`, `src-tauri/remote/manifest.webmanifest`. No persisted data changes: the `alethe.remote.*` browser storage keys keep their names so paired phones stay signed in.
 - `pending` · `ui` · feat: rename the app from Alethe to Arcadia in UI text and docs

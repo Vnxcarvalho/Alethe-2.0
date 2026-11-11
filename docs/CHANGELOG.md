@@ -447,8 +447,10 @@ Notable user-facing changes to **Arcadia** are documented here. The format is ba
 ### Changed
 - **Alethe is now Arcadia.** The name changes across the app (window title, every screen and
   message, in all three languages), the READMEs and the documentation. The update check and the update download now use the Arcadia repository address; the old address
-  still redirects, so installs on 1.7.6 or earlier keep updating. The installer file name and the
-  data folder keep their current names for now, so existing installs keep their data. The new logo and icons are still to come.
+  still redirects, so installs on 1.7.6 or earlier keep updating. The installer, the window and the
+  Windows product now use the Arcadia name and installer artwork, and the Arcadia logo replaces the
+  old Alethe logos and photos (the unused ones are removed). The bundle identifier and the data
+  folder keep their current names, so existing installs keep their data.
 - **Update prompt in the title bar.** When a newer version is available, a button with the new
   version number now sits right after the profile name in the title bar, replacing the chip at the
   bottom of the sidebar. It opens the same prompt, with **Later** and **Update now**.

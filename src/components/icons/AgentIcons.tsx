@@ -2,7 +2,7 @@ import { Bot } from 'lucide-react'
 
 import claudeLogo from '../../assets/claude-code.png'
 import codexLogo from '../../assets/codex.png'
-import freebuffLogo from '../../assets/freebuff.png'
+import freebuffLogo from '../../../docs/assets/agents/freebuff.png'
 import antigravityLogo from '../../assets/antigravity.png'
 import kiroLogo from '../../assets/kiro.svg'
 import { iconMap } from '../../assets/icons'

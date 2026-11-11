@@ -4,7 +4,7 @@ import { lazy, Suspense, useEffect, useRef } from 'react'
 import { Group as PanelGroup, Panel, Separator, usePanelRef } from 'react-resizable-panels'
 
 import styles from './App.module.css'
-import homeBackground from './assets/home-bg-right.png'
+import homeBackground from './assets/theme-icons/new-logo-Arcadia.png'
 import { AgentSandbox } from './components/AgentSandbox'
 import { ContributedModals } from './components/ContributedModals'
 import { ContributedOverlays } from './components/ContributedOverlays'

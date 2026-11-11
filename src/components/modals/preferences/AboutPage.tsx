@@ -20,7 +20,7 @@ import {
 } from 'lucide-react'
 import { useEffect, useState } from 'react'
 
-import creatorPhoto from '../../../assets/creator-kaua-miguel.jpg'
+import creatorPhoto from '../../../assets/theme-icons/new-logo-Arcadia.png'
 import { announceBackup, exportProfileState } from '../../../lib/backup'
 import { CURRENT_VERSION, formatReleaseDate } from '../../../lib/changelogData'
 import { saveFile } from '../../../lib/dialog'
@@ -138,12 +138,7 @@ function CreatorSection() {
     >
       <div className={about.stack}>
         <div className={about.creatorCard}>
-          <img
-            src={creatorPhoto}
-            alt={t('prefs.aboutCreatorPhotoAlt')}
-            className={about.creatorPhoto}
-            draggable={false}
-          />
+          <img src={creatorPhoto} alt="" className={about.creatorPhoto} draggable={false} />
           <div className={about.creatorCopy}>
             <strong>Kauã Miguel</strong>
             <span>@kc1t_dev · {t('prefs.aboutCreatorRole')}</span>

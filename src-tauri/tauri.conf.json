@@ -1,6 +1,6 @@
 {
   "$schema": "https://schema.tauri.app/config/2",
-  "productName": "Alethe",
+  "productName": "Arcadia",
   "version": "1.7.6",
   "identifier": "com.kc1t.alethe",
   "build": {

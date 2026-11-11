@@ -5,7 +5,6 @@ This file documents the public app assets and the core design tokens used by the
 ## Logo and Icons
 
 - Main mark: [src/assets/alethe-mark.svg](../src/assets/alethe-mark.svg)
-- Loading mark: [src/assets/alethe-loading-mark.png](../src/assets/alethe-loading-mark.png)
 - Default profile avatar: [src/assets/default-profile.svg](../src/assets/default-profile.svg)
 - App icons: [src-tauri/icons/](../src-tauri/icons/)
 
