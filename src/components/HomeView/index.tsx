@@ -16,6 +16,7 @@ import {
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { useShallow } from 'zustand/react/shallow'
 
+import homeBackground from '../../assets/home-bg.png'
 import { getCachedActivity } from '../../lib/activityCache'
 import { pickDirectory } from '../../lib/dialog'
 import { formatHomeDate, formatRelativeTimestamp, getGreeting } from '../../lib/greeting'
@@ -260,6 +261,9 @@ export function HomeView() {
 
   return (
     <section className={styles.home}>
+      <div className={styles.homeBackdrop} aria-hidden="true">
+        <img className={styles.homeBackdropImage} src={homeBackground} alt="" draggable={false} />
+      </div>
       <section className={styles.heroStage}>
         <div className={styles.identity}>
           <div className={styles.identityMedia}>
@@ -286,7 +290,6 @@ export function HomeView() {
             <h1 className={styles.greeting}>
               {greeting}, {firstNameLower}.
             </h1>
-            <div className={styles.date}>{dateStr}</div>
           </div>
         </div>
 
@@ -408,6 +411,8 @@ export function HomeView() {
             </button>
           </div>
         </form>
+
+        <div className={styles.date}>{dateStr}</div>
 
         <div className={styles.heroFooter}>
           <div className={styles.heroActions}>

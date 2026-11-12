@@ -2006,13 +2006,41 @@
 .homeBackdrop {
   position: absolute;
   z-index: 0;
+  --bg-drop: 35px;
+  /* Full width, top-aligned: the whole picture shows behind the greeting and fades out below. */
   inset: 0 0 auto;
-  height: clamp(560px, 72vh, 780px);
+  height: calc(640px + var(--bg-drop));
   pointer-events: auto;
   overflow: hidden;
   opacity: 0.9;
-  -webkit-mask-image: linear-gradient(to bottom, black 0%, black 70%, transparent 100%);
-  mask-image: linear-gradient(to bottom, black 0%, black 70%, transparent 100%);
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    transparent 0,
+    transparent var(--bg-drop),
+    black calc(var(--bg-drop) + 60px),
+    black 62%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    transparent 0,
+    transparent var(--bg-drop),
+    black calc(var(--bg-drop) + 60px),
+    black 62%,
+    transparent 100%
+  );
+}
+
+.homeBackdropImage {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding-top: var(--bg-drop);
+  box-sizing: border-box;
+  object-fit: contain;
+  object-position: 50% 0;
+  user-select: none;
+  pointer-events: none;
 }
 
 .homeBackdrop::after {
@@ -2020,7 +2048,7 @@
   position: absolute;
   inset: 0;
   pointer-events: none;
-  background: color-mix(in srgb, var(--bg) 32%, transparent);
+  background: color-mix(in srgb, var(--bg) 30%, transparent);
 }
 
 .asciiBackdrop {
@@ -2050,14 +2078,18 @@
 }
 
 .heroStage {
+  /* The greeting sits --hero-lift higher and the terminal --hero-drop lower than the natural
+     centred stack, so the face in the artwork stays clear between them. */
+  --hero-lift: 35px;
+  --hero-drop: 175px;
   position: relative;
-  min-height: clamp(430px, 56vh, 610px);
+  min-height: calc(clamp(430px, 56vh, 610px) + var(--hero-drop) - var(--hero-lift));
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 18px;
-  padding: 28px 18px 42px;
+  padding: 68px 18px 42px;
   text-align: center;
 }
 
@@ -2139,7 +2171,6 @@
 }
 
 .date {
-  margin-top: 7px;
   color: var(--fg);
   font-weight: 500;
   padding: 3px 8px;
@@ -2194,7 +2225,9 @@
 }
 
 .quickLaunch {
-  width: min(100%, 620px);
+  width: min(100%, 720px);
+  /* The date moved below the terminal, so the greeting-to-terminal distance gains its old height. */
+  margin-top: calc(var(--hero-drop) + var(--hero-lift) + 32px);
   display: flex;
   flex-direction: column;
   gap: 4px;
@@ -2732,12 +2765,12 @@
   }
 
   .homeBackdrop {
-    height: 620px;
+    height: calc(620px + var(--bg-drop));
     opacity: 0.84;
   }
 
   .heroStage {
-    min-height: 430px;
+    min-height: calc(430px + var(--hero-drop) - var(--hero-lift));
   }
 
   .overviewGrid {

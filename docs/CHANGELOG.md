@@ -448,7 +448,9 @@ Notable user-facing changes to **Arcadia** are documented here. The format is ba
 - **The Arcadia logo is the default app icon and profile picture.** It replaces the Elite artwork
   icons, which are removed; the Elite colour themes stay. The `.exe`, installer, taskbar
   and shortcut icons use the Arcadia logo too, and the window title, loading screen, About page,
-  welcome screen and Discord status say Arcadia. The app icon choices are now Arcadia and
+  welcome screen and Discord status say Arcadia. The loading screen shows
+  new Arcadia artwork as an ASCII background, and the Home screen shows the whole artwork
+  across the top, fading out toward the bottom. The app icon choices are now Arcadia and
   Carvalho, and anyone who had picked an Elite icon moves to Arcadia. A profile with its own photo
   keeps it.
 - **Alethe is now Arcadia.** The name changes across the app (window title, every screen and
