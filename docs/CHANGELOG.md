@@ -445,7 +445,8 @@ Notable user-facing changes to **Arcadia** are documented here. The format is ba
   installer instead.
 
 ### Changed
-- **The Arcadia logo is the default app icon and profile picture.** It replaces the Elite artwork
+- **The Arcadia logo is the pixel-art bust with the red blindfold.** It is the default app icon and
+  profile picture and replaces the Elite artwork
   icons, which are removed; the Elite colour themes stay. The `.exe`, installer, taskbar
   and shortcut icons use the Arcadia logo too, and the window title, loading screen, About page,
   welcome screen and Discord status say Arcadia. The loading screen shows
