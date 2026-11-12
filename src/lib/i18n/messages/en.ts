@@ -1459,6 +1459,8 @@ export const en = {
     'Alethe is now Arcadia: a new name, a new logo and new installer artwork. Your projects, profiles and settings stay where they are.',
   'whatsNew.v177.note2':
     'The Arcadia logo is now the default app icon and profile picture. The Elite artwork icons are gone; the Elite colour themes stay.',
+  'whatsNew.v178.note1':
+    'The app logo is now the pixel-art bust with the red blindfold, in the window, the taskbar, the installer and the .exe.',
   'whatsNew.v176.note1':
     'Maintenance release with no visible changes, published to verify that updating from inside the app finishes and reopens Arcadia by itself.',
   'whatsNew.v175.note1':

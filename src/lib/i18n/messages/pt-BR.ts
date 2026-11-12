@@ -1486,6 +1486,8 @@ export const ptBR: Record<MessageKey, string> = {
     'O Alethe agora é Arcadia: novo nome, nova logo e nova arte do instalador. Seus projetos, perfis e configurações continuam onde estão.',
   'whatsNew.v177.note2':
     'A logo do Arcadia agora é o ícone do app e a foto de perfil padrão. Os ícones da arte Elite foram removidos; os temas de cores Elite continuam.',
+  'whatsNew.v178.note1':
+    'A logo do app agora é o busto em pixel art com a venda vermelha, na janela, na barra de tarefas, no instalador e no .exe.',
   'whatsNew.v176.note1':
     'Versão de manutenção sem mudanças visíveis, publicada para verificar que a atualização pelo próprio app termina e reabre o Arcadia sozinho.',
   'whatsNew.v175.note1':
