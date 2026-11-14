@@ -11,6 +11,11 @@ export type ChangelogRelease = {
  * here, so the notes for a release are written before it, not after. */
 export const CHANGELOG_RELEASES: ChangelogRelease[] = [
   {
+    version: '1.7.9',
+    date: '2026-11-14',
+    noteKeys: ['whatsNew.v179.note1'],
+  },
+  {
     version: '1.7.8',
     date: '2026-11-12',
     noteKeys: ['whatsNew.v178.note1'],

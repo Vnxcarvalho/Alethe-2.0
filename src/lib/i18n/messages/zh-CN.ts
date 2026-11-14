@@ -1240,6 +1240,8 @@ export const zhCN: Record<MessageKey, string> = {
     'Alethe 现在叫 Arcadia：全新的名称、标志和安装程序图案。你的项目、配置文件和设置保持不变。',
   'whatsNew.v177.note2':
     'Arcadia 标志现在是默认的应用图标和个人资料头像。Elite 插画图标已移除，Elite 配色主题保留。',
+  'whatsNew.v179.note1':
+    '使用 GitHub 登录后，可从主页或“新项目”中选择并克隆你的仓库（包括私有仓库）。克隆现在会包含完整历史。',
   'whatsNew.v178.note1':
     '应用标志现在是戴红色眼罩的像素风半身像，用于窗口、任务栏、安装程序和 .exe。',
   'whatsNew.v176.note1':
