@@ -173,16 +173,13 @@ mod tests {
 
     #[test]
     fn selected_brand_icon_uses_embedded_png_assets() {
-        let icon = selected_brand_icon(&json!({
-            "preferences": { "appIconTheme": "carvalho" }
-        }));
+        // Both themes ship the same bust artwork, so each one only has to be a valid PNG.
+        for theme in ["carvalho", "arcadia"] {
+            let icon = selected_brand_icon(&json!({
+                "preferences": { "appIconTheme": theme }
+            }));
 
-        assert_eq!(&icon[..8], b"\x89PNG\r\n\x1a\n");
-        assert_ne!(
-            icon,
-            selected_brand_icon(&json!({
-                "preferences": { "appIconTheme": "arcadia" }
-            }))
-        );
+            assert_eq!(&icon[..8], b"\x89PNG\r\n\x1a\n");
+        }
     }
 }
