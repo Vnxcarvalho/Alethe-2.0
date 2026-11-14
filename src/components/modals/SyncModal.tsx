@@ -1,5 +1,6 @@
 import { Heart } from 'lucide-react'
 
+import { CLOUD_SYNC_ENABLED } from '../../lib/featureFlags'
 import { useT } from '../../lib/i18n'
 import { openInBrowser } from '../../lib/tauri'
 import { useUiStore } from '../../stores/uiStore'
@@ -21,7 +22,7 @@ export function SyncModal() {
       <p className={styles.subtitle}>{t('sync.subtitle')}</p>
 
       <div className={styles.grid}>
-        <CloudCard open={open} />
+        {CLOUD_SYNC_ENABLED ? <CloudCard open={open} /> : null}
         <FileCard open={open} />
         <LegacyGistCard open={open} />
       </div>

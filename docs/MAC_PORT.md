@@ -36,6 +36,12 @@ Mac synced through: `v1.7.0` (`80e44a3`)
 
 ## Unreleased
 
+- `pending` · `ui` · feat: pixel-art bust with the red blindfold as the Arcadia logo
+  - Files: `src/assets/theme-icons/{,32,48,64}/arcadia.png` (now the same art as the Carvalho icon), `src-tauri/icons/*` regenerated from a 1024px master with transparent corners. No persisted data changes.
+- `pending` · `ui` · feat: artwork background on the Home and a larger terminal card
+  - Files: `src/components/HomeView/index.tsx`, `src/components/HomeView/HomeView.module.css`, `src/App.tsx`, `src/assets/home-bg.png`. The Home draws the artwork behind the greeting; the quick-launch terminal is wider and the date sits below it. No persisted data changes.
+- `pending` · `contract` · feat: sign in with GitHub to list and clone your repositories
+  - Files: `src-tauri/src/github_account.rs`, `src-tauri/src/projects.rs` (`clone_github_repo` authenticates https github.com clones), `src-tauri/src/secure_store.rs` (`GithubAccountToken`), `src/components/modals/GithubRepoPicker.tsx`, `src/components/modals/NewProjectModal.tsx`. OAuth device flow with scope `repo read:user` and a client ID supplied by the build (`ARCADIA_GITHUB_CLIENT_ID`); token in the OS credential store under `github-account-token`; profile (login, name, avatar) in `github_account.json` in the profile data folder, not synced. `GET /user/repos` (3 pages max), git authenticates through `GIT_CONFIG_*` env vars scoped to github.com, never the URL or arguments.
 - `pending` · `contract` · feat: Arcadia logo as the default icon and profile picture, new app icons and texts
   - Files: `src/lib/themeIcons.ts`, `src/lib/types.ts` (`AppIconTheme`), `src/assets/theme-icons/arcadia.png`, `src-tauri/icons/*`. Window title, loading screen, About page, welcome screen and Discord status now say Arcadia; the loading screen draws `src/assets/home-bg.png` as an ASCII background and the Home screen (`src/components/HomeView`) shows the whole image itself, full width at the top and faded toward the bottom; the Elite icon artwork is removed. Contract: `preferences.appIconTheme` now accepts only `arcadia` and `carvalho`; any other stored value (including `elite-*`) must read as `arcadia`, in the app and in the remote page. The Elite colour themes (`uiTheme`) are unchanged.
 - `pending` · `platform` · feat: Arcadia product name, installer artwork and logo

@@ -1,4 +1,4 @@
-import { Folder, GitBranch, Network, Palette, Terminal } from 'lucide-react'
+import { Folder, GitBranch, Github, Network, Palette, Terminal } from 'lucide-react'
 import { useEffect, useState } from 'react'
 
 import { pickDirectory } from '../../lib/dialog'
@@ -12,6 +12,7 @@ import { useUiStore } from '../../stores/uiStore'
 import { Dropdown } from '../ui/Dropdown'
 import { ColorPalettePopover } from './ColorPalettePopover'
 import controls from './controls.module.css'
+import { GithubRepoPicker } from './GithubRepoPicker'
 import { ImageInput } from './ImageInput'
 import { Modal } from './Modal'
 import { WslPathPicker } from './WslPathPicker'
@@ -22,6 +23,7 @@ export function NewProjectModal() {
   const context = useUiStore((s) => s.modalContext) as {
     groupId?: string | null
     defaultCwd?: string
+    openGithubPicker?: boolean
   } | null
   const closeModal = useUiStore((s) => s.closeModal)
   const createProject = useProjectsStore((s) => s.createProject)
@@ -36,6 +38,7 @@ export function NewProjectModal() {
   const [iconUrl, setIconUrl] = useState('')
   const [defaultCwd, setDefaultCwd] = useState('')
   const [githubUrl, setGithubUrl] = useState('')
+  const [pickerOpen, setPickerOpen] = useState(false)
   const [mode, setMode] = useState<'standard' | 'agentSandbox'>('standard')
   const [groupId, setGroupId] = useState<string | null>(context?.groupId ?? null)
   const [isColorPopoverOpen, setIsColorPopoverOpen] = useState(false)
@@ -47,12 +50,17 @@ export function NewProjectModal() {
     if (open && context?.defaultCwd) setDefaultCwd(context.defaultCwd)
   }, [open, context?.defaultCwd])
 
+  useEffect(() => {
+    if (open && context?.openGithubPicker) setPickerOpen(true)
+  }, [open, context?.openGithubPicker])
+
   const reset = () => {
     setName('')
     setColor(GROUP_COLORS[0])
     setIconUrl('')
     setDefaultCwd('')
     setGithubUrl('')
+    setPickerOpen(false)
     setMode('standard')
     setGroupId(context?.groupId ?? null)
     setIsColorPopoverOpen(false)
@@ -306,6 +314,24 @@ export function NewProjectModal() {
             placeholder="https://github.com/user/repository"
           />
           <span className={controls.hint}>{t('crud.githubUrlHint')}</span>
+          <button
+            type="button"
+            className={controls.btn}
+            aria-expanded={pickerOpen}
+            onClick={() => setPickerOpen((value) => !value)}
+          >
+            <Github size={14} aria-hidden="true" />
+            {t('githubAccount.browse')}
+          </button>
+          {pickerOpen ? (
+            <GithubRepoPicker
+              onPick={(repo) => {
+                setGithubUrl(repo.clone_url)
+                setName((current) => current.trim() || repo.name)
+                setPickerOpen(false)
+              }}
+            />
+          ) : null}
         </div>
       )}
 

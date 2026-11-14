@@ -34,6 +34,7 @@ mod ghostty_bridge;
 #[cfg(all(target_os = "macos", ghostty_linked))]
 mod ghostty_ffi;
 mod git_control;
+mod github_account;
 mod github_pr;
 mod github_sync;
 mod graphify;
@@ -482,6 +483,11 @@ pub fn run() {
             github_sync::github_sync_logout,
             github_sync::github_sync_push,
             github_sync::github_sync_pull,
+            github_account::github_account_status,
+            github_account::github_account_device_start,
+            github_account::github_account_device_finish,
+            github_account::github_account_logout,
+            github_account::github_account_repos,
             cloud_sync::cloud_sync_status,
             cloud_sync::cloud_sync_device_start,
             cloud_sync::cloud_sync_device_finish,

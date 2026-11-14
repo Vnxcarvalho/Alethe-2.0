@@ -4,6 +4,7 @@ import { useCallback, useEffect, useRef, useState } from 'react'
 
 import { resolveAgentCliCommand } from '../../lib/agentProviders'
 import { latestVersionFor } from '../../lib/agentVersions'
+import { CLOUD_SYNC_ENABLED } from '../../lib/featureFlags'
 import { FEATURES } from '../../lib/features'
 import { LOCALES, useT } from '../../lib/i18n'
 import { defaultProfileImageUrl, getProfileInitial } from '../../lib/profile'
@@ -21,10 +22,10 @@ import {
 import { getThemeIcon } from '../../lib/themeIcons'
 import {
   AGENT_TYPE_LABELS,
-  ALL_AGENT_TYPES,
-  isShellAgentType,
   type AgentType,
+  ALL_AGENT_TYPES,
   type BuiltinAgentType,
+  isShellAgentType,
 } from '../../lib/types'
 import { useProjectsStore } from '../../stores/projectsStore'
 import { useUiStore } from '../../stores/uiStore'
@@ -168,6 +169,7 @@ export function OnboardingModal() {
     if (preferences.onboardingDone || agentDetectionStartedRef.current) return
     agentDetectionStartedRef.current = true
     void detectAgents()
+    if (!CLOUD_SYNC_ENABLED) return
     cloudSyncStatus()
       .then((status) => {
         setCloudConfigured(true)

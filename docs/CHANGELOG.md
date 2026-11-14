@@ -11,6 +11,14 @@ Notable user-facing changes to **Arcadia** are documented here. The format is ba
 ## [Unreleased]
 
 ### Added
+- **Clone your GitHub repositories from Arcadia.** The Home has a "clone from github" button, and New
+  project has "Choose from my GitHub"; both sign you in
+  with GitHub (a code you confirm in the browser) and lists your repositories, including private and
+  organization ones, with search. Picking one fills in the repository and the project name, and the
+  clone uses your account, so private repositories work. The access token stays in the system
+  credential store, and signing out removes it. Cloning now brings the full history instead of only
+  the latest commit. The old cloud sign-in, which depended on a server that was taken down and could
+  not finish, is hidden from the welcome screen and the Sync window.
 - **New app icon: Carvalho.** A pixel-art bust with a red blindfold joins the window and taskbar
   icon choices in Preferences → Appearance, and is now the default for new profiles and the profile
   picture fallback. It is also the icon of the installer and the `.exe`, and the logo at the top of

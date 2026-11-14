@@ -205,7 +205,11 @@ fn normalize_github_url(raw: &str) -> String {
 }
 
 #[tauri::command]
-pub async fn clone_github_repo(url: String, target_dir: String) -> Result<String, String> {
+pub async fn clone_github_repo(
+    app: tauri::AppHandle,
+    url: String,
+    target_dir: String,
+) -> Result<String, String> {
     tokio::task::spawn_blocking(move || {
         let normalized = normalize_github_url(&url);
         let target_dir = resolve_clone_target(&target_dir, &normalized)?;
@@ -220,20 +224,31 @@ pub async fn clone_github_repo(url: String, target_dir: String) -> Result<String
             &target_dir,
             &[
                 "clone",
-                "--depth",
-                "1",
                 normalized.as_str(),
                 target_dir.as_str(),
             ],
         );
         crate::git_control::hide_console(&mut cmd);
 
+        // Signed in to GitHub: authenticate https clones so private repositories work.
+        let token = if normalized.starts_with("https://github.com/") {
+            crate::github_account::token_for_clone(&app)
+        } else {
+            None
+        };
+        if let Some(token) = token.as_deref() {
+            cmd.envs(crate::github_account::git_auth_env(token));
+        }
+
         let output = cmd
             .output()
             .map_err(|e| format!("Falha ao executar git clone: {e}"))?;
 
         if !output.status.success() {
-            let stderr = String::from_utf8_lossy(&output.stderr);
+            let mut stderr = String::from_utf8_lossy(&output.stderr).to_string();
+            if let Some(token) = token.as_deref() {
+                stderr = stderr.replace(token, "***");
+            }
             return Err(format!(
                 "Erro ao clonar repositório ({normalized}): {stderr}"
             ));

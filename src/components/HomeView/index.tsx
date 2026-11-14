@@ -432,6 +432,14 @@ export function HomeView() {
               <FolderPlus size={14} />
               {t('home.newProject')}
             </button>
+            <button
+              type="button"
+              className={styles.heroSecondaryAction}
+              onClick={() => openModal('newProject', { openGithubPicker: true })}
+            >
+              <Github size={14} />
+              {t('home.cloneFromGithub')}
+            </button>
           </div>
         </div>
       </section>
